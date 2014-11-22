@@ -1,0 +1,72 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+!/taglit/data-migrate/sql/*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Custom #
+#############
+taglit/modules/contrib
+taglit/1/modules
+taglit/themes/contrib
+taglit/libraries
+www
+pantheon-install.sh
+install.sh
+
+# IDE #
+##########
+.project
+.settings/
+.idea
+
+# Behat
+taglit/behat/vendor/
+behat.local.yml
+taglit/behat/bin
+taglit/behat/composer.phar
+
+remote-install.sh
+
+#sass
+taglit/themes/custom/bootstrap_subtheme/.sass-cache
+
+# taglit components #
+######################
+dist
+jekyll/node_modules
+jekyll/app/_bower_components

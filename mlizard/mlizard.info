@@ -1,0 +1,48 @@
+name = Marching Lizard
+description = Marching Lizard
+version = VERSION
+core = 7.x
+
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = contextual
+dependencies[] = help
+dependencies[] = image
+dependencies[] = locale
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = shortcut
+dependencies[] = file
+dependencies[] = rdf
+
+; Contrib modules
+dependencies[] = admin_menu_toolbar
+dependencies[] = admin_views
+dependencies[] = ctools
+dependencies[] = contact
+dependencies[] = entity
+dependencies[] = entitycache
+dependencies[] = entity_token
+dependencies[] = entityreference
+dependencies[] = entityreference_prepopulate
+dependencies[] = features
+dependencies[] = googleanalytics
+dependencies[] = jquery_update
+dependencies[] = libraries
+dependencies[] = module_filter
+dependencies[] = pathauto
+dependencies[] = page_manager
+dependencies[] = panels
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = url
+dependencies[] = views
+dependencies[] = views_bulk_operations
+
+; Custom modules
