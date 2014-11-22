@@ -1,5 +1,6 @@
 [![Build Status](https://magnum.travis-ci.com/Gizra/taglit_fellows.svg?token=p2M1EeCrd3dY32WxWj3X&branch=installation-profile)](https://magnum.travis-ci.com/Gizra/taglit_fellows)
 
+## This is a version of Gizra's base install profile without Jekyl.
 ## Installation
 
 ```bash
@@ -37,5 +38,3 @@ Apache solr configuration:
 - copy search_api_solr/solr-conf/4.x to example/solr/taglit/conf
 ```
 This configuration can be changed according `search_ui` features data.
-
-pages html design at : [taglit](http://gizra.github.io/taglit/)

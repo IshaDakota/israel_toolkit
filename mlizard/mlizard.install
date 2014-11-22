@@ -3,18 +3,18 @@
 /**
  * Implements hook_install().
  */
-function taglit_install() {
-  taglit_standard_install();
+function mlizard_install() {
+  mlizard_standard_install();
 
   // Fixes problems when the CSV files used for importing have been created
   // on a Mac, by forcing PHP to detect the appropriate line endings.
   ini_set('auto_detect_line_endings', TRUE);
 
   // Enable our themes.
-  theme_enable(array('seven', 'bootstrap'));
+  theme_enable(array('seven', 'mlizard_bootstrap'));
 
   // Set the default theme.
-  variable_set('theme_default', 'bootstrap');
+  variable_set('theme_default', 'mlizard_bootstrap');
 
   // Enable node view page override by Page manager module.
   variable_set('page_manager_node_view_disabled', FALSE);
@@ -26,8 +26,8 @@ function taglit_install() {
 
   // Set required date API variables.
   // See date_api_status().
-  date_default_timezone_set('Asia/Jerusalem');
-  variable_set('date_default_timezone', 'Asia/Jerusalem');
+  date_default_timezone_set('America/Chicago');
+  variable_set('date_default_timezone', 'America/Chicago');
   variable_set('date_first_day', 1);
 }
 
@@ -36,7 +36,7 @@ function taglit_install() {
  *
  * @see standard_install()
  */
-function taglit_standard_install() {
+function mlizard_standard_install() {
   // Add text formats.
   $filtered_html_format = array(
     'format' => 'filtered_html',
@@ -52,6 +52,9 @@ function taglit_standard_install() {
       'filter_html' => array(
         'weight' => 1,
         'status' => 1,
+        'settings' =>  array(
+          'allowed_html' =>  '<h2> <h3> <h4> <p> <img> <a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt>',
+        ),
       ),
       // Line break filter.
       'filter_autop' => array(

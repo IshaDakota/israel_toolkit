@@ -6,13 +6,16 @@ projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][version] = "3.0-rc4"
 
 projects[admin_views][subdir] = "contrib"
-projects[admin_views][version] = "1.2"
+projects[admin_views][version] = "1.3"
+
+projects[ckeditor][subdir] = "contrib"
+projects[ckeditor][version] = "1.16"
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.4"
+projects[ctools][version] = "1.5"
 
 projects[devel][subdir] = "contrib"
-projects[devel][version] = "1.4"
+projects[devel][version] = "1.5"
 
 projects[diff][subdir] = "contrib"
 projects[diff][version] = "3.2"
@@ -33,7 +36,7 @@ projects[entityreference_prepopulate][version] = "1.5"
 projects[entityreference_prepopulate][patch][] = "https://drupal.org/files/issues/1994702-values-from-cache-20.patch"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.0"
+projects[features][version] = "2.2"
 
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "2.0"
@@ -43,6 +46,9 @@ projects[libraries][version] = "2.2"
 
 projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "2.4"
+
+projects[mandrill][version] = 2.0
+projects[mandrill][subdir] = "contrib"
 
 projects[mailsystem][version] = 2.34
 projects[mailsystem][subdir] = "contrib"
@@ -75,7 +81,7 @@ projects[url][subdir] = "contrib"
 projects[url][version] = "1.0"
 
 projects[views][subdir] = "contrib"
-projects[views][version] = "3.7"
+projects[views][version] = "3.8"
 
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "3.2"
@@ -89,3 +95,7 @@ projects[bootstrap][version] = "3.0"
 libraries[ckeditor][type] = "libraries"
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.1/ckeditor_4.4.1_standard.zip"
+
+libraries[mandrill][type] = "libraries"
+libraries[mandrill][download][type] = "get"
+libraries[mandrill][download][url] = "https://bitbucket.org/mailchimp/mandrill-api-php/get/1.0.52.zip"

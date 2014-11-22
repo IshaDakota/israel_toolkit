@@ -40,9 +40,9 @@ chmod 755 www/sites/default/files/private
 
 # Create the contrib jekyll CSS folder and copy all the related files
 # that needed.
-#rm -rf taglit/libraries/taglit
-#mkdir taglit/libraries/taglit
-#rsync -avz --exclude '.git' jekyll/dist/ taglit/libraries/taglit
+#rm -rf mlizrd/libraries/mlizard
+#mkdir mlizardlibraries/mlizard
+#rsync -avz --exclude '.git' jekyll/dist/ mlizard/libraries/mlizard
 
 cd www
 
@@ -56,7 +56,7 @@ drush en devel diff views_ui field_ui migrate_ui mimemail -y
 # These commands migrates dummy content and is used for development and testing. Comment out both lines if you wish to have a clean OpenScholar installation.
 
 # Migrate data.
-# drush en taglit_migrate -y
+# drush en mlizard_migrate -y
 # drush mi --all --user=1
 
 # This command does the login for you when the build script is done. It will open a new tab in your default browser and login to your project as the Administrator. Comment out this line if you do not want the login to happen automatically.

@@ -40,10 +40,10 @@ Thumbs.db
 
 # Custom #
 #############
-taglit/modules/contrib
-taglit/1/modules
-taglit/themes/contrib
-taglit/libraries
+mlizard/modules/contrib
+mlizard/1/modules
+mlizard/themes/contrib
+mlizard/libraries
 www
 pantheon-install.sh
 install.sh
@@ -55,15 +55,15 @@ install.sh
 .idea
 
 # Behat
-taglit/behat/vendor/
+mlizard/behat/vendor/
 behat.local.yml
-taglit/behat/bin
-taglit/behat/composer.phar
+mlizard/behat/bin
+mlizard/behat/composer.phar
 
 remote-install.sh
 
 #sass
-taglit/themes/custom/bootstrap_subtheme/.sass-cache
+mlizard/themes/custom/mlizard_bootstrap/.sass-cache
 
 # taglit components #
 ######################

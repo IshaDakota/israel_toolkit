@@ -1,4 +1,4 @@
-name = Bootstrap Sub-theme
+name = Marching Lizard Sub-theme
 description = A Bootstrap Sub-theme.
 core = 7.x
 base theme = bootstrap
@@ -63,10 +63,3 @@ stylesheets[all][] = css/style.css
 ; Method 2 uses BootstrapCDN, the only thing you might need to provide here
 ; is overrides to Bootstrap theme settings. Copy them here from the base theme
 ; to override.
-
-
-; ;-------------------------
-; ; Let panel know about all the layouts.
-; ;-------------------------
-;
-plugins[panels][layouts] = layouts

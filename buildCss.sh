@@ -4,6 +4,6 @@ cd jekyll
 grunt build
 
 cd ..
-rm -rf taglit/libraries/taglit
-mkdir taglit/libraries/taglit
-rsync -avz --exclude '.git' jekyll/dist/ taglit/libraries/taglit
+rm -rf mlizard/libraries/mlizard
+mkdir mlizard/libraries/mlizard
+rsync -avz --exclude '.git' jekyll/dist/ mlizard/libraries/mlizard
