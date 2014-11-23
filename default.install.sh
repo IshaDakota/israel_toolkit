@@ -27,7 +27,7 @@ bash scripts/build
 
 # Create the private files directory.
 mkdir -p www/sites/default/files/private
-chmod 755 www/sites/default/files/private
+chmod 775 www/sites/default/files
 
 # Build the jekyll and copy all the resources that needed as a library contrib.
 #cd jekyll
