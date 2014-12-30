@@ -58,6 +58,7 @@ remote-install.sh
 
 #sass
 toolkit/themes/custom/bootstrap_toolkit/.sass-cache
+.sass-cache
 
 # toolkit components #
 ######################
