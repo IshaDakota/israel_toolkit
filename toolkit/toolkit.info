@@ -45,5 +45,6 @@ dependencies[] = views
 dependencies[] = views_bulk_operations
 
 ; Custom modules
-dependencies[] = toolkit_content
 dependencies[] = page_element
+dependencies[] = toolkit_content
+dependencies[] = toolkit_pages
