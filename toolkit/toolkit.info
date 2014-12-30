@@ -43,6 +43,8 @@ dependencies[] = strongarm
 dependencies[] = token
 dependencies[] = views
 dependencies[] = views_bulk_operations
+dependencies[] = views_bootstrap
+
 
 ; Custom modules
 dependencies[] = page_element
