@@ -42,7 +42,7 @@ projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-beta1"
 
 projects[google_analytics][subdir] = "contrib"
-projects[google_analytics][version] = "2.0"
+projects[google_analytics][version] = "2.1"
 
 projects[libraries][subdir] = "contrib"
 projects[libraries][version] = "2.2"
