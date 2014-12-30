@@ -24,7 +24,7 @@
 ######################
 *.log
 *.sql
-!/taglit/data-migrate/sql/*.sql
+!/toolkit/data-migrate/sql/*.sql
 *.sqlite
 
 # OS generated files #
@@ -40,10 +40,10 @@ Thumbs.db
 
 # Custom #
 #############
-mlizard/modules/contrib
-mlizard/1/modules
-mlizard/themes/contrib
-mlizard/libraries
+toolkit/modules/contrib
+toolkit/1/modules
+toolkit/themes/contrib
+toolkit/libraries
 www
 pantheon-install.sh
 install.sh
@@ -54,18 +54,12 @@ install.sh
 .settings/
 .idea
 
-# Behat
-mlizard/behat/vendor/
-behat.local.yml
-mlizard/behat/bin
-mlizard/behat/composer.phar
-
 remote-install.sh
 
 #sass
-mlizard/themes/custom/mlizard_bootstrap/.sass-cache
+toolkit/themes/custom/bootstrap_toolkit/.sass-cache
 
-# taglit components #
+# toolkit components #
 ######################
 dist
 jekyll/node_modules

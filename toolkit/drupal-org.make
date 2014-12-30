@@ -39,7 +39,7 @@ projects[features][subdir] = "contrib"
 projects[features][version] = "2.2"
 
 projects[file_entity][subdir] = "contrib"
-projects[file_entity][version] = "7.x-2.0-beta1"
+projects[file_entity][version] = "2.0-beta1"
 
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "2.0"
@@ -57,10 +57,10 @@ projects[mailsystem][subdir] = "contrib"
 projects[mailsystem][version] = 2.34
 
 projects[media][subdir] = "contrib"
-projects[media][version] = 7.x-2.0-alpha4
+projects[media][version] = 2.0-alpha4
 
 projects[media_youtube][subdir] = "contrib"
-projects[media_youtube][version] = 7.x-2.0-dev
+projects[media_youtube][version] = 2.x-dev
 
 projects[mimemail][subdir] = "contrib"
 projects[mimemail][version] = 1.0-beta3

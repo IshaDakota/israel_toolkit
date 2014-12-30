@@ -11,10 +11,10 @@ function toolkit_install() {
   ini_set('auto_detect_line_endings', TRUE);
 
   // Enable our themes.
-  theme_enable(array('seven', 'toolkit_bootstrap'));
+  theme_enable(array('seven', 'bootstrap_toolkit'));
 
   // Set the default theme.
-  variable_set('theme_default', 'toolkit_bootstrap');
+  variable_set('theme_default', 'bootstrap_toolkit');
 
   // Enable node view page override by Page manager module.
   variable_set('page_manager_node_view_disabled', FALSE);

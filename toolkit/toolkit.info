@@ -4,6 +4,7 @@ version = VERSION
 core = 7.x
 
 ; Core
+dependencies[] = block
 dependencies[] = color
 dependencies[] = contextual
 dependencies[] = help
@@ -27,7 +28,6 @@ dependencies[] = ckeditor
 dependencies[] = ctools
 dependencies[] = contact
 dependencies[] = entity
-dependencies[] = entitycache
 dependencies[] = entity_token
 dependencies[] = entityreference
 dependencies[] = entityreference_prepopulate
@@ -41,7 +41,6 @@ dependencies[] = page_manager
 dependencies[] = panels
 dependencies[] = strongarm
 dependencies[] = token
-dependencies[] = url
 dependencies[] = views
 dependencies[] = views_bulk_operations
 
