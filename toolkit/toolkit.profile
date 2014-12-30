@@ -11,8 +11,9 @@
  */
 function toolkit_form_install_configure_form_alter(&$form, $form_state) {
   // Pre-populate the site name with the server name.
-  $form['site_information']['site_name']['#default_value'] = 'Marching Lizard';
-}
+  $form['site_information']['site_name']['#title'] = 'Engaging Israel: A Conflict Toolkit';
+  $form['site_information']['site_mail']['#title'] = 'adam@theicenter.org';
+  $form['site_information']['site_name']['#default_value'] = t('Israel Toolkit');}
 
 /**
  * Implements hook_install_tasks().
@@ -36,10 +37,10 @@ function toolkit_set_variables() {
     // Mime-mail.
     'mimemail_format' => 'full_html',
     'mimemail_sitestyle' => FALSE,
-    'mimemail_name' => 'Marching Lizard',
-    'mimemail_mail' => 'info@marchinglizard.net',
+    'mimemail_name' => 'The iCenter',
+    'mimemail_mail' => 'info@theicenter.org',
     // Theme default.
-    'theme_default' => 'toolkit_bootstrap',
+    'theme_default' => 'bootstrap_toolkit',
     // jQuery versions.
     'jquery_update_jquery_version' => '1.10',
     'jquery_update_jquery_admin_version' => '1.10',
