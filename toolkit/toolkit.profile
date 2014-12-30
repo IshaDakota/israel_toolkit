@@ -11,9 +11,8 @@
  */
 function toolkit_form_install_configure_form_alter(&$form, $form_state) {
   // Pre-populate the site name with the server name.
-  $form['site_information']['site_name']['#title'] = 'Engaging Israel: A Conflict Toolkit';
-  $form['site_information']['site_mail']['#title'] = 'adam@theicenter.org';
-  $form['site_information']['site_name']['#default_value'] = t('Israel Toolkit');}
+  $form['site_information']['site_mail']['#title']['#default_value'] = 'adam@theicenter.org';
+  $form['site_information']['site_name']['#default_value'] = t('Engaging Israel: A Conflict Toolkit');}
 
 /**
  * Implements hook_install_tasks().
