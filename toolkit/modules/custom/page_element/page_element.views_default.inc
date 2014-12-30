@@ -48,7 +48,7 @@ function page_element_views_default_views() {
     'field_video_image' => 0,
     'body' => 0,
   );
-  /* Field: Content: Content */
+  /* Field: Content: content */
   $handler->display->display_options['fields']['field_content']['id'] = 'field_content';
   $handler->display->display_options['fields']['field_content']['table'] = 'field_data_field_content';
   $handler->display->display_options['fields']['field_content']['field'] = 'field_content';

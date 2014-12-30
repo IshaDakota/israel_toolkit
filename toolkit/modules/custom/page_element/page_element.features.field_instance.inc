@@ -18,11 +18,11 @@ function page_element_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -33,7 +33,7 @@ function page_element_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_content',
-    'label' => 'Content',
+    'label' => 'content',
     'required' => 0,
     'settings' => array(
       'text_processing' => 1,
@@ -46,7 +46,7 @@ function page_element_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
@@ -85,7 +85,7 @@ function page_element_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -124,14 +124,14 @@ function page_element_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Content');
   t('Location');
+  t('content');
   t('page');
 
   return $field_instances;

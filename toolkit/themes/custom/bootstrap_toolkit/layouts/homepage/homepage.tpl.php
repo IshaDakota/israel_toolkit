@@ -21,17 +21,26 @@
   <div class="row">
     <div class="col-md-4 sidebar panel-panel">
       <div class="panel-panel-inner">
-        <?php print $content['window1']; ?>
+        <div class="window toolkit-content">
+          <div class="toolkit-title upper h3"><?php print t('Content & Programs'); ?></div>
+          <?php print $content['window1']; ?>
+        </div>
       </div>
     </div>
     <div class="col-md-4 sidebar panel-panel">
       <div class="panel-panel-inner">
-        <?php print $content['window2']; ?>
+        <div class="window toolkit-concepts">
+          <div class="toolkit-title upper h3"><?php print t('Questions & Concepts'); ?></div>
+          <?php print $content['window2']; ?>
+        </div>
       </div>
     </div>    
     <div class="col-md-4 sidebar panel-panel">
       <div class="panel-panel-inner">
-        <?php print $content['window3']; ?>
+        <div class="window toolkit-library">
+          <div class="toolkit-title upper h3"><?php print t('Resource Library'); ?></div>
+          <?php print $content['window3']; ?>
+        </div>
       </div>
     </div>
   </div>
