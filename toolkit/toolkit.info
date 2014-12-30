@@ -36,6 +36,7 @@ dependencies[] = features
 dependencies[] = googleanalytics
 dependencies[] = jquery_update
 dependencies[] = libraries
+dependencies[] = link
 dependencies[] = module_filter
 dependencies[] = pathauto
 dependencies[] = page_manager
