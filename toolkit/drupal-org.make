@@ -23,6 +23,9 @@ projects[diff][version] = "3.2"
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.3"
 
+projects[email_registration][subdir] = "contrib"
+projects[email_registration][version] = "1.2"
+
 projects[entity][subdir] = "contrib"
 projects[entity][version] = "1.5"
 projects[entity][patch][] = "https://www.drupal.org/files/issues/2264079-entity-wrapper-access-single-entity-reference-2.patch"
