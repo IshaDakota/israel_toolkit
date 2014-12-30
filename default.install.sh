@@ -9,10 +9,10 @@ GREEN='\e[0;32m'
 MYSQL_USERNAME="root"
 MYSQL_PASSWORD="root"
 MYSQL_HOST="localhost"
-MYSQL_DB_NAME="drupal_mlizard"
+MYSQL_DB_NAME="israel_toolkit"
 
 # Modify the URL below to match your OpenScholar base domain URL.
-BASE_DOMAIN_URL="http://mlizard.dev"
+BASE_DOMAIN_URL="http://israel_toolkit.dev"
 
 # Modify the login details below to be the desired login details for the Administrator account.
 ADMIN_USERNAME="admin"
@@ -46,7 +46,7 @@ chmod 775 www/sites/default/files
 
 cd www
 
-drush si -y mlizard --locale=en --account-name=$ADMIN_USERNAME --account-pass=$ADMIN_PASSWORD --account-mail=$ADMIN_EMAIL --db-url=mysql://$MYSQL_USERNAME:$MYSQL_PASSWORD@$MYSQL_HOST/$MYSQL_DB_NAME --uri=$BASE_DOMAIN_URL
+drush si -y toolkit --locale=en --account-name=$ADMIN_USERNAME --account-pass=$ADMIN_PASSWORD --account-mail=$ADMIN_EMAIL --db-url=mysql://$MYSQL_USERNAME:$MYSQL_PASSWORD@$MYSQL_HOST/$MYSQL_DB_NAME --uri=$BASE_DOMAIN_URL
 
 # Development modules
 drush en devel diff views_ui field_ui migrate_ui mimemail -y
