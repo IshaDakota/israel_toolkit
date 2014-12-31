@@ -1051,6 +1051,43 @@ function toolkit_content_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-resource-field_resource_type'
+  $field_instances['node-resource-field_resource_type'] = array(
+    'bundle' => 'resource',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_resource_type',
+    'label' => 'Resource Type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 35,
+    ),
+  );
+
   // Exported field_instance: 'node-resource-field_website_link'
   $field_instances['node-resource-field_website_link'] = array(
     'bundle' => 'resource',
@@ -1125,6 +1162,7 @@ function toolkit_content_field_default_field_instances() {
   t('Program Duration');
   t('Resource File or Media');
   t('Resource Tags');
+  t('Resource Type');
   t('Supporting Documents');
   t('Supporting Images');
   t('Supporting Multimedia');

@@ -80,7 +80,14 @@ function toolkit_content_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_background_resource',
-    'foreign keys' => array(),
+    'foreign keys' => array(
+      'node' => array(
+        'columns' => array(
+          'target_id' => 'nid',
+        ),
+        'table' => 'node',
+      ),
+    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -147,7 +154,14 @@ function toolkit_content_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_discussion_guide',
-    'foreign keys' => array(),
+    'foreign keys' => array(
+      'node' => array(
+        'columns' => array(
+          'target_id' => 'nid',
+        ),
+        'table' => 'node',
+      ),
+    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -185,7 +199,14 @@ function toolkit_content_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_educator_tools',
-    'foreign keys' => array(),
+    'foreign keys' => array(
+      'node' => array(
+        'columns' => array(
+          'target_id' => 'nid',
+        ),
+        'table' => 'node',
+      ),
+    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -454,6 +475,40 @@ function toolkit_content_field_default_field_bases() {
       'allowed_values' => array(
         0 => array(
           'vocabulary' => 'resource_tags',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_resource_type'
+  $field_bases['field_resource_type'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_resource_type',
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'resource_type',
           'parent' => 0,
         ),
       ),
