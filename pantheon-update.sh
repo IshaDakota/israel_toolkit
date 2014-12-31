@@ -7,10 +7,10 @@ BOLD=`tput bold`
 NORMAL=`tput sgr0`
 GREEN='\e[0;32m'
 
-PANTHEON_DIR="~/Documents/www/pantheon/toolkit"
+PANTHEON_DIR="/Users/adamstewart/Sites/pantheon/toolkit"
 
 rm -rf $PANTHEON_DIR/profiles/toolkit
-cp -R taglit $PANTHEON_DIR/profiles/toolkit
+cp -R toolkit $PANTHEON_DIR/profiles/toolkit
 
 cd $PANTHEON_DIR
 git add .
