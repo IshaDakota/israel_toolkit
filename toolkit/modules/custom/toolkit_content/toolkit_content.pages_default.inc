@@ -394,8 +394,8 @@ function toolkit_content_default_page_manager_handlers() {
         'link' => 1,
       ),
       'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Discussion Guides',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -456,8 +456,8 @@ function toolkit_content_default_page_manager_handlers() {
         'link' => 1,
       ),
       'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Background Resources',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -471,19 +471,21 @@ function toolkit_content_default_page_manager_handlers() {
     $display->content['new-283bbd8d-d42c-4f59-bf63-94c3f3649cf4'] = $pane;
     $display->panels['sidebar'][5] = 'new-283bbd8d-d42c-4f59-bf63-94c3f3649cf4';
     $pane = new stdClass();
-    $pane->pid = 'new-3d17cbf9-81fb-42ba-97c1-17506d751671';
+    $pane->pid = 'new-07624a13-4450-4713-bb52-50bcb2b7927a';
     $pane->panel = 'sidebar';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_supporting_documents';
+    $pane->subtype = 'node:field_supporting_materials';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'title',
-      'formatter' => 'file_default',
+      'formatter' => 'entityreference_label',
       'delta_limit' => '0',
       'delta_offset' => '0',
       'delta_reversed' => 0,
-      'formatter_settings' => array(),
+      'formatter_settings' => array(
+        'link' => 1,
+      ),
       'context' => 'argument_entity_id:node_1',
       'override_title' => 0,
       'override_title_text' => '',
@@ -496,40 +498,9 @@ function toolkit_content_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 6;
     $pane->locks = array();
-    $pane->uuid = '3d17cbf9-81fb-42ba-97c1-17506d751671';
-    $display->content['new-3d17cbf9-81fb-42ba-97c1-17506d751671'] = $pane;
-    $display->panels['sidebar'][6] = 'new-3d17cbf9-81fb-42ba-97c1-17506d751671';
-    $pane = new stdClass();
-    $pane->pid = 'new-90039d41-42e2-4f9d-a49a-0886d035adec';
-    $pane->panel = 'sidebar';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_supporting_multimedia';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'title',
-      'formatter' => 'file_rendered',
-      'delta_limit' => '0',
-      'delta_offset' => '0',
-      'delta_reversed' => 0,
-      'formatter_settings' => array(
-        'file_view_mode' => 'preview',
-      ),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 7;
-    $pane->locks = array();
-    $pane->uuid = '90039d41-42e2-4f9d-a49a-0886d035adec';
-    $display->content['new-90039d41-42e2-4f9d-a49a-0886d035adec'] = $pane;
-    $display->panels['sidebar'][7] = 'new-90039d41-42e2-4f9d-a49a-0886d035adec';
+    $pane->uuid = '07624a13-4450-4713-bb52-50bcb2b7927a';
+    $display->content['new-07624a13-4450-4713-bb52-50bcb2b7927a'] = $pane;
+    $display->panels['sidebar'][6] = 'new-07624a13-4450-4713-bb52-50bcb2b7927a';
     $pane = new stdClass();
     $pane->pid = 'new-c4efcd1a-8c66-497f-b426-4fc6bdc1a239';
     $pane->panel = 'sidebar';
@@ -556,11 +527,11 @@ function toolkit_content_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 8;
+    $pane->position = 7;
     $pane->locks = array();
     $pane->uuid = 'c4efcd1a-8c66-497f-b426-4fc6bdc1a239';
     $display->content['new-c4efcd1a-8c66-497f-b426-4fc6bdc1a239'] = $pane;
-    $display->panels['sidebar'][8] = 'new-c4efcd1a-8c66-497f-b426-4fc6bdc1a239';
+    $display->panels['sidebar'][7] = 'new-c4efcd1a-8c66-497f-b426-4fc6bdc1a239';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

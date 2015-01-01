@@ -517,37 +517,6 @@ function toolkit_content_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_supporting_documents'
-  $field_bases['field_supporting_documents'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_supporting_documents',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'file',
-    'settings' => array(
-      'display_default' => 0,
-      'display_field' => 0,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'file',
-  );
-
   // Exported field_base: 'field_supporting_image'
   $field_bases['field_supporting_image'] = array(
     'active' => 1,
@@ -578,35 +547,49 @@ function toolkit_content_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_supporting_multimedia'
-  $field_bases['field_supporting_multimedia'] = array(
+  // Exported field_base: 'field_supporting_materials'
+  $field_bases['field_supporting_materials'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_supporting_multimedia',
+    'field_name' => 'field_supporting_materials',
     'foreign keys' => array(
-      'fid' => array(
+      'node' => array(
         'columns' => array(
-          'fid' => 'fid',
+          'target_id' => 'nid',
         ),
-        'table' => 'file_managed',
+        'table' => 'node',
       ),
     ),
     'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'file',
+    'module' => 'entityreference',
     'settings' => array(
-      'display_default' => 0,
-      'display_field' => 0,
-      'uri_scheme' => 'public',
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'direction' => 'ASC',
+          'property' => 'title',
+          'type' => 'property',
+        ),
+        'target_bundles' => array(
+          'resource' => 'resource',
+        ),
+      ),
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'file',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_themes'

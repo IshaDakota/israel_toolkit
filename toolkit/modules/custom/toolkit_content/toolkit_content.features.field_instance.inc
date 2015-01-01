@@ -95,7 +95,7 @@ function toolkit_content_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -132,7 +132,7 @@ function toolkit_content_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -175,7 +175,7 @@ function toolkit_content_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -215,7 +215,7 @@ function toolkit_content_field_default_field_instances() {
         'size' => 100,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -258,7 +258,7 @@ function toolkit_content_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -301,7 +301,7 @@ function toolkit_content_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 15,
+      'weight' => 14,
     ),
   );
 
@@ -366,7 +366,7 @@ function toolkit_content_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 19,
+      'weight' => 17,
     ),
   );
 
@@ -406,7 +406,7 @@ function toolkit_content_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -446,7 +446,7 @@ function toolkit_content_field_default_field_instances() {
         'size' => 100,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -486,7 +486,7 @@ function toolkit_content_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -526,7 +526,7 @@ function toolkit_content_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 14,
+      'weight' => 13,
     ),
   );
 
@@ -563,62 +563,7 @@ function toolkit_content_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'node-curriculum_content-field_supporting_documents'
-  $field_instances['node-curriculum_content-field_supporting_documents'] = array(
-    'bundle' => 'curriculum_content',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
-        'weight' => 14,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_supporting_documents',
-    'label' => 'Supporting Documents',
-    'required' => 0,
-    'settings' => array(
-      'description_field' => 0,
-      'file_directory' => 'supporting-documents',
-      'file_extensions' => 'txt doc docx pdf',
-      'max_filesize' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 'document',
-          'image' => 0,
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 0,
-          'upload' => 'upload',
-        ),
-      ),
-      'type' => 'media_generic',
-      'weight' => 17,
+      'weight' => 6,
     ),
   );
 
@@ -665,6 +610,7 @@ function toolkit_content_field_default_field_instances() {
       'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
+          'private' => 0,
           'public' => 'public',
           'youtube' => 0,
         ),
@@ -677,7 +623,7 @@ function toolkit_content_field_default_field_instances() {
         'browser_plugins' => array(
           'media_default--media_browser_1' => 'media_default--media_browser_1',
           'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
+          'media_internet' => 'media_internet',
           'upload' => 'upload',
           'youtube' => 0,
         ),
@@ -687,20 +633,22 @@ function toolkit_content_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-curriculum_content-field_supporting_multimedia'
-  $field_instances['node-curriculum_content-field_supporting_multimedia'] = array(
+  // Exported field_instance: 'node-curriculum_content-field_supporting_materials'
+  $field_instances['node-curriculum_content-field_supporting_materials'] = array(
     'bundle' => 'curriculum_content',
+    'default_value' => NULL,
+    'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'file_entity',
+        'module' => 'entityreference',
         'settings' => array(
-          'file_view_mode' => 'default',
+          'link' => FALSE,
         ),
-        'type' => 'file_rendered',
-        'weight' => 15,
+        'type' => 'entityreference_label',
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -710,40 +658,27 @@ function toolkit_content_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_supporting_multimedia',
-    'label' => 'Supporting Multimedia',
+    'field_name' => 'field_supporting_materials',
+    'label' => 'Supporting Materials',
     'required' => 0,
     'settings' => array(
-      'description_field' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'txt',
-      'max_filesize' => '',
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'media',
+      'module' => 'entityreference',
       'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-          'youtube' => 'youtube',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 0,
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 'media_internet',
-          'upload' => 0,
-          'youtube' => 0,
-        ),
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
       ),
-      'type' => 'media_generic',
-      'weight' => 18,
+      'type' => 'entityreference_autocomplete',
+      'weight' => 15,
     ),
   );
 
@@ -780,7 +715,7 @@ function toolkit_content_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -820,7 +755,7 @@ function toolkit_content_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -860,7 +795,7 @@ function toolkit_content_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -960,9 +895,11 @@ function toolkit_content_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'file_rendered',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -979,8 +916,8 @@ function toolkit_content_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => 'resource-files',
-      'file_extensions' => 'txt',
-      'max_filesize' => '',
+      'file_extensions' => 'txt doc docx pdf jpg png gif',
+      'max_filesize' => '8 MB',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1163,9 +1100,8 @@ function toolkit_content_field_default_field_instances() {
   t('Resource File or Media');
   t('Resource Tags');
   t('Resource Type');
-  t('Supporting Documents');
   t('Supporting Images');
-  t('Supporting Multimedia');
+  t('Supporting Materials');
   t('Themes');
   t('Timely Relevance');
   t('Values');
