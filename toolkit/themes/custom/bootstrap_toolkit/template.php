@@ -56,13 +56,8 @@ function bootstrap_toolkit_preprocess_field(&$variables) {
       $wrapper = entity_metadata_wrapper('node', $node->nid);
 
     foreach($variables['items'] as $key => $item){
-      if($wrapper->field_background_resource[$key]->field_resource_type[0]->tid->value() == 24) {
-        $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-link" aria-hidden="true"></span>';
-      }
-
-      if($wrapper->field_background_resource[$key]->field_resource_type[0]->tid->value() == 25) {
-        $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-film" aria-hidden="true"></span>';
-      }
+      $term_wrapper = entity_metadata_wrapper('taxonomy_term', $wrapper->field_background_resource[$key]->field_resource_type[0]->tid->value());
+      $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon ' . $term_wrapper->field_resource_glyphicon->value() .'" aria-hidden="true"></span>';
     }
   }
   
@@ -71,13 +66,8 @@ function bootstrap_toolkit_preprocess_field(&$variables) {
       $wrapper = entity_metadata_wrapper('node', $node->nid);
 
     foreach($variables['items'] as $key => $item){
-      if($wrapper->field_supporting_materials[$key]->field_resource_type[0]->tid->value() == 24) {
-        $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-link" aria-hidden="true"></span>';
-      }
-
-      if($wrapper->field_supporting_materials[$key]->field_resource_type[0]->tid->value() == 25) {
-        $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-film" aria-hidden="true"></span>';
-      }
+      $term_wrapper = entity_metadata_wrapper('taxonomy_term', $wrapper->field_supporting_materials[$key]->field_resource_type[0]->tid->value());
+      $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon ' . $term_wrapper->field_resource_glyphicon->value() .'" aria-hidden="true"></span>';
     }
   }
 }
