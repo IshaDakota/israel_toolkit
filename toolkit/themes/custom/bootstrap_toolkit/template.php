@@ -29,15 +29,55 @@ function bootstrap_toolkit_preprocess_field(&$variables) {
     }
   }
     
-  //Add glyphicons as "bullets" to core learning and key question fileds.
+  //Add glyphicons as "bullets" to core learning field.
   if($variables['element']['#field_name'] == 'field_core_learnings'){
     foreach($variables['items'] as $key => $item){
       $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>';
     }
   }
+  
+  //Add glyphicons as "bullets" to key question field.  
   if($variables['element']['#field_name'] == 'field_key_questions'){
     foreach($variables['items'] as $key => $item){
       $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>';
+    }
+  }
+
+  //Add glyphicons as "bullets" to discussion guide field.  
+  if($variables['element']['#field_name'] == 'field_discussion_guide'){
+    foreach($variables['items'] as $key => $item){
+      $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>';
+    }
+  }
+  
+  //Add glyphicons as "bullets" to background resources and supporting resources depending on the resource type.
+  if($variables['element']['#field_name'] == 'field_background_resource') {
+      $node = menu_get_object();
+      $wrapper = entity_metadata_wrapper('node', $node->nid);
+
+    foreach($variables['items'] as $key => $item){
+      if($wrapper->field_background_resource[$key]->field_resource_type[0]->tid->value() == 24) {
+        $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-link" aria-hidden="true"></span>';
+      }
+
+      if($wrapper->field_background_resource[$key]->field_resource_type[0]->tid->value() == 25) {
+        $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-film" aria-hidden="true"></span>';
+      }
+    }
+  }
+  
+  if($variables['element']['#field_name'] == 'field_supporting_materials'){
+      $node = menu_get_object();
+      $wrapper = entity_metadata_wrapper('node', $node->nid);
+
+    foreach($variables['items'] as $key => $item){
+      if($wrapper->field_supporting_materials[$key]->field_resource_type[0]->tid->value() == 24) {
+        $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-link" aria-hidden="true"></span>';
+      }
+
+      if($wrapper->field_supporting_materials[$key]->field_resource_type[0]->tid->value() == 25) {
+        $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-film" aria-hidden="true"></span>';
+      }
     }
   }
 }
