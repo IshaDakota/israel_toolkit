@@ -46,7 +46,7 @@ function bootstrap_toolkit_preprocess_field(&$variables) {
   //Add glyphicons as "bullets" to discussion guide field.  
   if($variables['element']['#field_name'] == 'field_discussion_guide'){
     foreach($variables['items'] as $key => $item){
-      $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>';
+      $variables['items'][ $key ]['#prefix'] = '<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>';
     }
   }
   
