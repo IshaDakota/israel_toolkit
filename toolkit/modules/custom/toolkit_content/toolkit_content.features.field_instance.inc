@@ -883,7 +883,7 @@ function toolkit_content_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 2,
     ),
   );
 
@@ -944,7 +944,47 @@ function toolkit_content_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 33,
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-resource-field_resource_source'
+  $field_instances['node-resource-field_resource_source'] = array(
+    'bundle' => 'resource',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_resource_source',
+    'label' => 'Resource Source',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 7,
     ),
   );
 
@@ -984,7 +1024,7 @@ function toolkit_content_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 34,
+      'weight' => 6,
     ),
   );
 
@@ -1012,7 +1052,7 @@ function toolkit_content_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_resource_type',
     'label' => 'Resource Type',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -1021,7 +1061,7 @@ function toolkit_content_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 35,
+      'weight' => 5,
     ),
   );
 
@@ -1078,7 +1118,7 @@ function toolkit_content_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 32,
+      'weight' => 3,
     ),
   );
 
@@ -1132,6 +1172,7 @@ function toolkit_content_field_default_field_instances() {
   t('Program Description');
   t('Program Duration');
   t('Resource File or Media');
+  t('Resource Source');
   t('Resource Tags');
   t('Resource Type');
   t('Supporting Images');
