@@ -85,7 +85,28 @@
   font-size: 18px;
 }
 
-/* line 27, ../sass/style.scss */
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+/* line 13, ../sass/pages/_concept.scss */
+.concept .glyphicon {
+  margin-right: 5px;
+  font-size: .75em;
+}
+/* line 19, ../sass/pages/_concept.scss */
+.concept .sidebar .jumbotron {
+  line-height: 1.5;
+  padding: 30px;
+  font-size: 18px;
+}
+
+/* line 28, ../sass/style.scss */
 body {
   font-family: "freight-text-pro";
   /* 1 */
@@ -97,17 +118,17 @@ body {
   /* 2 */
 }
 
-/* line 37, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 h1, h2, h3, h4, h5, h6, .h1,
 .h2, .h3, .h4, .h5, .h6 {
   font-family: "pt-sans";
 }
 
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 header#navbar a.logo {
   margin-top: 13.5px;
 }
-/* line 45, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 header#navbar a.logo img {
   max-height: 32px;
 }

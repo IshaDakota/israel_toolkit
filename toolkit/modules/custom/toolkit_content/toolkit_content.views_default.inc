@@ -158,6 +158,36 @@ function toolkit_content_views_default_views() {
     ),
   );
   $handler->display->display_options['inherit_panels_path'] = '0';
+
+  /* Display: Ed Tool - Referenced Curriculum pane */
+  $handler = $view->new_display('panel_pane', 'Ed Tool - Referenced Curriculum pane', 'panel_pane_4');
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_educator_tools_target_id']['id'] = 'field_educator_tools_target_id';
+  $handler->display->display_options['relationships']['field_educator_tools_target_id']['table'] = 'field_data_field_educator_tools';
+  $handler->display->display_options['relationships']['field_educator_tools_target_id']['field'] = 'field_educator_tools_target_id';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['relationship'] = 'field_educator_tools_target_id';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['argument_input'] = array(
+    'nid' => array(
+      'type' => 'none',
+      'context' => 'entity:node.nid',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => 'Content: Nid',
+    ),
+  );
+  $handler->display->display_options['inherit_panels_path'] = '0';
   $translatables['referenced_content'] = array(
     t('Master'),
     t('more'),
@@ -182,6 +212,8 @@ function toolkit_content_views_default_views() {
     t('Content entity referenced from field_supporting_materials'),
     t('Discussion - Referenced Curriculum pane'),
     t('Content entity referenced from field_discussion_guide'),
+    t('Ed Tool - Referenced Curriculum pane'),
+    t('Content entity referenced from field_educator_tools'),
   );
   $export['referenced_content'] = $view;
 
