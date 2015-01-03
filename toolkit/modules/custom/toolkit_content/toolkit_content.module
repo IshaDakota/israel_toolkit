@@ -5,3 +5,14 @@
  */
 
 include_once 'toolkit_content.features.inc';
+
+/**
+ * Implements hook_views_query_alter().
+ */
+//function toolkit_content_views_query_alter(&$view, &$query) {
+//  if ($view->name == 'referenced_content') {
+//    $query->where[0]['type'] = 'OR';
+//    $query->where[1]['type'] = 'OR';
+//    dsm($query, 'after');
+//  }
+//}
