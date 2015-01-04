@@ -76,6 +76,51 @@ function toolkit_pages_default_page_manager_pages() {
     $pane->uuid = 'e3a9c87f-9176-49a8-8199-785780a4a053';
     $display->content['new-e3a9c87f-9176-49a8-8199-785780a4a053'] = $pane;
     $display->panels['contentmain'][0] = 'new-e3a9c87f-9176-49a8-8199-785780a4a053';
+    $pane = new stdClass();
+    $pane->pid = 'new-c11bf305-efe4-4c71-9d20-a747100ae611';
+    $pane->panel = 'sidebar';
+    $pane->type = 'block';
+    $pane->subtype = 'search-form';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'c11bf305-efe4-4c71-9d20-a747100ae611';
+    $display->content['new-c11bf305-efe4-4c71-9d20-a747100ae611'] = $pane;
+    $display->panels['sidebar'][0] = 'new-c11bf305-efe4-4c71-9d20-a747100ae611';
+    $pane = new stdClass();
+    $pane->pid = 'new-1e8e4064-b1b4-4794-a8fc-1c693051e46a';
+    $pane->panel = 'sidebar';
+    $pane->type = 'block';
+    $pane->subtype = 'views-7dbace8b84e260492dba75b295050d1b';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'inherit_path' => 1,
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '1e8e4064-b1b4-4794-a8fc-1c693051e46a';
+    $display->content['new-1e8e4064-b1b4-4794-a8fc-1c693051e46a'] = $pane;
+    $display->panels['sidebar'][1] = 'new-1e8e4064-b1b4-4794-a8fc-1c693051e46a';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -90,7 +135,10 @@ function toolkit_pages_default_page_manager_pages() {
   $page->admin_title = 'Homepage';
   $page->admin_description = '';
   $page->path = 'home';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(

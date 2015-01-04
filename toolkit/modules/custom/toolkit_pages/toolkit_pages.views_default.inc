@@ -58,7 +58,7 @@ function toolkit_pages_views_default_views() {
   $handler->display->display_options['fields']['field_header_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_header_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_header_image']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => 'media_thumbnail',
     'image_link' => 'content',
   );
   /* Sort criterion: Content: Post date */
@@ -80,9 +80,43 @@ function toolkit_pages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'curriculum_content' => 'curriculum_content',
   );
+  /* Filter criterion: Content: Themes (field_themes) */
+  $handler->display->display_options['filters']['field_themes_tid']['id'] = 'field_themes_tid';
+  $handler->display->display_options['filters']['field_themes_tid']['table'] = 'field_data_field_themes';
+  $handler->display->display_options['filters']['field_themes_tid']['field'] = 'field_themes_tid';
+  $handler->display->display_options['filters']['field_themes_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_themes_tid']['expose']['operator_id'] = 'field_themes_tid_op';
+  $handler->display->display_options['filters']['field_themes_tid']['expose']['label'] = 'Themes';
+  $handler->display->display_options['filters']['field_themes_tid']['expose']['operator'] = 'field_themes_tid_op';
+  $handler->display->display_options['filters']['field_themes_tid']['expose']['identifier'] = 'field_themes_tid';
+  $handler->display->display_options['filters']['field_themes_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['field_themes_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_themes_tid']['vocabulary'] = 'themes';
+  /* Filter criterion: Content: Values (field_values) */
+  $handler->display->display_options['filters']['field_values_tid']['id'] = 'field_values_tid';
+  $handler->display->display_options['filters']['field_values_tid']['table'] = 'field_data_field_values';
+  $handler->display->display_options['filters']['field_values_tid']['field'] = 'field_values_tid';
+  $handler->display->display_options['filters']['field_values_tid']['value'] = '';
+  $handler->display->display_options['filters']['field_values_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_values_tid']['expose']['operator_id'] = 'field_values_tid_op';
+  $handler->display->display_options['filters']['field_values_tid']['expose']['label'] = 'Values';
+  $handler->display->display_options['filters']['field_values_tid']['expose']['operator'] = 'field_values_tid_op';
+  $handler->display->display_options['filters']['field_values_tid']['expose']['identifier'] = 'field_values_tid';
+  $handler->display->display_options['filters']['field_values_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['field_values_tid']['vocabulary'] = 'values';
 
   /* Display: Landing Page pane */
   $handler = $view->new_display('panel_pane', 'Landing Page pane', 'panel_pane_1');
+  $handler->display->display_options['exposed_block'] = TRUE;
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $translatables['curriculum_content'] = array(
     t('Master'),
     t('more'),
@@ -98,6 +132,8 @@ function toolkit_pages_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
+    t('Themes'),
+    t('Values'),
     t('Landing Page pane'),
     t('View panes'),
   );
