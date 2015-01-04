@@ -1,0 +1,17 @@
+name = Toolkit Taxonomy Displays
+description = Replaces core taxonomy displays.
+core = 7.x
+package = Toolkit
+dependencies[] = page_manager
+dependencies[] = views
+dependencies[] = views_bootstrap
+dependencies[] = views_content
+features[ctools][] = page_manager:pages_default:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[page_manager_handlers][] = term_view_panel_context
+features[page_manager_handlers][] = term_view_panel_context_2
+features[page_manager_handlers][] = term_view_panel_context_3
+features[views_view][] = theme_terms
+features_exclude[dependencies][ctools] = ctools
+mtime = 1420347628
