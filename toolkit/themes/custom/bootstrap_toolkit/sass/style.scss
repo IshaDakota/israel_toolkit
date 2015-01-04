@@ -33,18 +33,44 @@ body {
   -webkit-text-size-adjust: 100%; /* 2 */
   // Show a background image that can be used to debug your alignments.
   // @include debug-vertical-alignment();
-}
 
-h1, h2, h3, h4, h5, h6, .h1, 
-.h2, .h3, .h4, .h5, .h6 {
-  font-family: "pt-sans";  
-}
 
-header#navbar {
-  a.logo {
-    margin-top: 13.5px;
-    img {
-      max-height: 32px;
+  h1, h2, h3, h4, h5, h6, .h1, 
+  .h2, .h3, .h4, .h5, .h6 {
+    font-family: "pt-sans";  
+  }
+  
+  header#navbar {
+    a.logo {
+      margin-top: 13.5px;
+      img {
+        max-height: 32px;
+      }
+    }
+  }
+  
+  footer {
+    .footer-credit {
+      text-align: center;
+      
+      .icenter-logo {
+        background: url("../images/footer-icenter-logo.png") 0 0 no-repeat;
+        background-size: 100px 30px;
+        width: 100px;
+        height: 30px;
+        display: inline-block;
+        margin-top: 5px;
+        margin-right: 20px;
+      }
+  
+      .jjf-logo {
+        background: url("../images/footer-jjf-logo.jpg") 0 0 no-repeat;
+        background-size: 118px 35px;
+        width: 118px;
+        height: 35px;
+        display: inline-block;
+        margin-top: 5px;
+      }    
     }
   }
 }

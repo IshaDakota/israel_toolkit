@@ -117,20 +117,41 @@ body {
   -webkit-text-size-adjust: 100%;
   /* 2 */
 }
-
 /* line 38, ../sass/style.scss */
-h1, h2, h3, h4, h5, h6, .h1,
-.h2, .h3, .h4, .h5, .h6 {
+body h1, body h2, body h3, body h4, body h5, body h6, body .h1,
+body .h2, body .h3, body .h4, body .h5, body .h6 {
   font-family: "pt-sans";
 }
-
 /* line 44, ../sass/style.scss */
-header#navbar a.logo {
+body header#navbar a.logo {
   margin-top: 13.5px;
 }
 /* line 46, ../sass/style.scss */
-header#navbar a.logo img {
+body header#navbar a.logo img {
   max-height: 32px;
+}
+/* line 53, ../sass/style.scss */
+body footer .footer-credit {
+  text-align: center;
+}
+/* line 56, ../sass/style.scss */
+body footer .footer-credit .icenter-logo {
+  background: url("../images/footer-icenter-logo.png") 0 0 no-repeat;
+  background-size: 100px 30px;
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+/* line 66, ../sass/style.scss */
+body footer .footer-credit .jjf-logo {
+  background: url("../images/footer-jjf-logo.jpg") 0 0 no-repeat;
+  background-size: 118px 35px;
+  width: 118px;
+  height: 35px;
+  display: inline-block;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
