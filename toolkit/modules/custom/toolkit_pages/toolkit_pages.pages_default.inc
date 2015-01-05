@@ -460,6 +460,29 @@ function toolkit_pages_default_page_manager_pages() {
     $pane->uuid = 'd91c4724-cbf4-4dea-9aa3-e9e98d141baa';
     $display->content['new-d91c4724-cbf4-4dea-9aa3-e9e98d141baa'] = $pane;
     $display->panels['contentmain'][0] = 'new-d91c4724-cbf4-4dea-9aa3-e9e98d141baa';
+    $pane = new stdClass();
+    $pane->pid = 'new-fbe219e0-cfdc-4452-9194-499c2d3a2024';
+    $pane->panel = 'sidebar';
+    $pane->type = 'block';
+    $pane->subtype = 'views-d708093bb3437f5d42dde828ef4f3c3a';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'inherit_path' => 1,
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'fbe219e0-cfdc-4452-9194-499c2d3a2024';
+    $display->content['new-fbe219e0-cfdc-4452-9194-499c2d3a2024'] = $pane;
+    $display->panels['sidebar'][0] = 'new-fbe219e0-cfdc-4452-9194-499c2d3a2024';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

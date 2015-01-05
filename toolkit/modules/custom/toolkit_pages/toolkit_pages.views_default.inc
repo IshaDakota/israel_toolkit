@@ -267,6 +267,7 @@ function toolkit_pages_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
@@ -291,9 +292,63 @@ function toolkit_pages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'resource' => 'resource',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Resource Type (field_resource_type) */
+  $handler->display->display_options['filters']['field_resource_type_tid']['id'] = 'field_resource_type_tid';
+  $handler->display->display_options['filters']['field_resource_type_tid']['table'] = 'field_data_field_resource_type';
+  $handler->display->display_options['filters']['field_resource_type_tid']['field'] = 'field_resource_type_tid';
+  $handler->display->display_options['filters']['field_resource_type_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_resource_type_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_resource_type_tid']['expose']['operator_id'] = 'field_resource_type_tid_op';
+  $handler->display->display_options['filters']['field_resource_type_tid']['expose']['label'] = 'Resource Type';
+  $handler->display->display_options['filters']['field_resource_type_tid']['expose']['operator'] = 'field_resource_type_tid_op';
+  $handler->display->display_options['filters']['field_resource_type_tid']['expose']['identifier'] = 'field_resource_type_tid';
+  $handler->display->display_options['filters']['field_resource_type_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['field_resource_type_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_resource_type_tid']['vocabulary'] = 'resource_type';
+  /* Filter criterion: Content: Resource Source (field_resource_source) */
+  $handler->display->display_options['filters']['field_resource_source_tid']['id'] = 'field_resource_source_tid';
+  $handler->display->display_options['filters']['field_resource_source_tid']['table'] = 'field_data_field_resource_source';
+  $handler->display->display_options['filters']['field_resource_source_tid']['field'] = 'field_resource_source_tid';
+  $handler->display->display_options['filters']['field_resource_source_tid']['value'] = '';
+  $handler->display->display_options['filters']['field_resource_source_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_resource_source_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_resource_source_tid']['expose']['operator_id'] = 'field_resource_source_tid_op';
+  $handler->display->display_options['filters']['field_resource_source_tid']['expose']['label'] = 'Source';
+  $handler->display->display_options['filters']['field_resource_source_tid']['expose']['operator'] = 'field_resource_source_tid_op';
+  $handler->display->display_options['filters']['field_resource_source_tid']['expose']['identifier'] = 'field_resource_source_tid';
+  $handler->display->display_options['filters']['field_resource_source_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['field_resource_source_tid']['vocabulary'] = 'resource_source';
+  /* Filter criterion: Content: Resource Tags (field_resource_tags) */
+  $handler->display->display_options['filters']['field_resource_tags_tid']['id'] = 'field_resource_tags_tid';
+  $handler->display->display_options['filters']['field_resource_tags_tid']['table'] = 'field_data_field_resource_tags';
+  $handler->display->display_options['filters']['field_resource_tags_tid']['field'] = 'field_resource_tags_tid';
+  $handler->display->display_options['filters']['field_resource_tags_tid']['value'] = '';
+  $handler->display->display_options['filters']['field_resource_tags_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_resource_tags_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_resource_tags_tid']['expose']['operator_id'] = 'field_resource_tags_tid_op';
+  $handler->display->display_options['filters']['field_resource_tags_tid']['expose']['label'] = 'Tags';
+  $handler->display->display_options['filters']['field_resource_tags_tid']['expose']['operator'] = 'field_resource_tags_tid_op';
+  $handler->display->display_options['filters']['field_resource_tags_tid']['expose']['identifier'] = 'field_resource_tags_tid';
+  $handler->display->display_options['filters']['field_resource_tags_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['field_resource_tags_tid']['vocabulary'] = 'resource_tags';
 
   /* Display: Landing Page pane */
   $handler = $view->new_display('panel_pane', 'Landing Page pane', 'panel_pane_1');
+  $handler->display->display_options['exposed_block'] = TRUE;
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $translatables['resource_library'] = array(
     t('Master'),
     t('more'),
@@ -309,6 +364,9 @@ function toolkit_pages_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
+    t('Resource Type'),
+    t('Source'),
+    t('Tags'),
     t('Landing Page pane'),
     t('View panes'),
   );
