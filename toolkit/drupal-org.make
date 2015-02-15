@@ -9,7 +9,7 @@ projects[admin_views][subdir] = "contrib"
 projects[admin_views][version] = "1.3"
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.5"
+projects[ctools][version] = "1.6"
 
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][version] = "1.16"
@@ -39,7 +39,7 @@ projects[entityreference_prepopulate][version] = "1.5"
 projects[entityreference_prepopulate][patch][] = "https://drupal.org/files/issues/1994702-values-from-cache-20.patch"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.2"
+projects[features][version] = "2.3"
 
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-beta1"
@@ -47,14 +47,14 @@ projects[file_entity][version] = "2.0-beta1"
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "2.1"
 
+projects[jquery_update][subdir] = "contrib"
+projects[jquery_update][version] = "2.5"
+
 projects[link][subdir] = "contrib"
 projects[link][version] = "1.3"
 
 projects[libraries][subdir] = "contrib"
 projects[libraries][version] = "2.2"
-
-projects[jquery_update][subdir] = "contrib"
-projects[jquery_update][version] = "2.4"
 
 projects[mandrill][subdir] = "contrib"
 projects[mandrill][version] = 2.0
@@ -75,7 +75,7 @@ projects[module_filter][subdir] = "contrib"
 projects[module_filter][version] = 2.0-alpha2
 
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.4"
+projects[panels][version] = "3.5"
 
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "1.2"
@@ -87,7 +87,7 @@ projects[token][subdir] = "contrib"
 projects[token][version] = "1.5"
 
 projects[views][subdir] = "contrib"
-projects[views][version] = "3.8"
+projects[views][version] = "3.10"
 
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "3.2"
