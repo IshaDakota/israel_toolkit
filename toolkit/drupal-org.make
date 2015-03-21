@@ -6,10 +6,10 @@ projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][version] = "3.0-rc5"
 
 projects[admin_views][subdir] = "contrib"
-projects[admin_views][version] = "1.3"
+projects[admin_views][version] = "1.4"
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.6"
+projects[ctools][version] = "1.7"
 
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][version] = "1.16"
@@ -27,9 +27,8 @@ projects[email_registration][subdir] = "contrib"
 projects[email_registration][version] = "1.2"
 
 projects[entity][subdir] = "contrib"
-projects[entity][version] = "1.5"
-projects[entity][patch][] = "https://www.drupal.org/files/issues/2264079-entity-wrapper-access-single-entity-reference-2.patch"
-projects[entity][patch][] = "https://www.drupal.org/files/issues/2086225-entity-access-check-node-create-3.patch"
+projects[entity][version] = "1.6"
+projects[entity][patch][] = "https://www.drupal.org/files/issues/2086225-entity-access-check-18.patch"
 
 projects[entityreference][subdir] = "contrib"
 projects[entityreference][version] = "1.1"
@@ -39,7 +38,7 @@ projects[entityreference_prepopulate][version] = "1.5"
 projects[entityreference_prepopulate][patch][] = "https://drupal.org/files/issues/1994702-values-from-cache-20.patch"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.3"
+projects[features][version] = "2.4"
 
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-beta1"
@@ -72,7 +71,7 @@ projects[mimemail][subdir] = "contrib"
 projects[mimemail][version] = 1.0-beta3
 
 projects[module_filter][subdir] = "contrib"
-projects[module_filter][version] = 2.0-alpha2
+projects[module_filter][version] = 2.0
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.5"
@@ -84,7 +83,7 @@ projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2.0"
 
 projects[token][subdir] = "contrib"
-projects[token][version] = "1.5"
+projects[token][version] = "1.6"
 
 projects[views][subdir] = "contrib"
 projects[views][version] = "3.10"
