@@ -116,31 +116,32 @@ body {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  background: url("../images/body-bkgd.jpg") repeat;
 }
-/* line 38, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 body h1, body h2, body h3, body h4, body h5, body h6, body .h1,
 body .h2, body .h3, body .h4, body .h5, body .h6 {
   font-family: "pt-sans";
 }
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 body a.btn {
   font-family: "PT Sans";
 }
-/* line 48, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 body header#navbar a.logo {
   margin-top: 13.5px;
 }
-/* line 50, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 body header#navbar a.logo img {
   max-height: 32px;
 }
-/* line 57, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 body footer .footer-credit {
   text-align: center;
   font-family: "PT Sans";
   font-size: .75em;
 }
-/* line 62, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 body footer .footer-credit .icenter-logo {
   background: url("../images/footer-icenter-logo.png") 0 0 no-repeat;
   background-size: 100px 30px;
@@ -150,7 +151,7 @@ body footer .footer-credit .icenter-logo {
   margin-top: 5px;
   margin-right: 20px;
 }
-/* line 72, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 body footer .footer-credit .jjf-logo {
   background: url("../images/footer-jjf-logo.jpg") 0 0 no-repeat;
   background-size: 100px 30px;
