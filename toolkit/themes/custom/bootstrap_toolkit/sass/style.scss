@@ -34,7 +34,6 @@ body {
   // Show a background image that can be used to debug your alignments.
   // @include debug-vertical-alignment();
 
-
   h1, h2, h3, h4, h5, h6, .h1, 
   .h2, .h3, .h4, .h5, .h6 {
     font-family: "pt-sans";  
@@ -44,21 +43,90 @@ body {
     font-family: "PT Sans";
   }
   
-  header#navbar {
-    a.logo {
-      margin-top: 13.5px;
-      img {
-        max-height: 32px;
+  header {
+    background-color: #192d3b;
+    color: #ffffff;
+    
+    a, a:focus, a:hover {
+      color: #ffffff;
+    }
+    
+    ul.navbar-nav {
+      float: none;
+      text-align: center;
+      
+      li {
+        float: none;
+        display: inline-block;
+        margin: 0 1.5em;
+        
+        a:hover, a:focus {
+          background-color: #192d3b;
+          text-decoration: underline;
+        }
+      }
+    }
+    
+    .logo-wrapper {
+      margin: 2em 0 1em;
+
+      .logo {
+        margin: 0 auto;
+        background: url('../images/header-front-logo.png') top center no-repeat;
+        height: 40px;
+        width: 40px;
+        background-size: 40px 40px;
+      }
+    }
+
+    .small-title-wrapper, .large-title-wrapper {
+      .small-title, .large-title {
+        margin: 0 auto;
+        text-align: center;
+      }
+      .small-title {
+        font-size: 1.5em;
+        font-family: "reenie-beanie", cursive;
+      }
+      
+      .large-title {
+        font-size: 2.5em;
+        line-height: 1.2;
+        text-transform: uppercase;
+      }
+    }
+
+    .homepage-message-wrapper {
+      margin: 0 auto 4em;;
+      text-align: center;
+      max-width: 780px;
+
+      .homepage-message {
+        font-size: .9em;
+        line-height: 1.2;        
+      }
+    }
+    .learn-more-wrapper {
+      margin: 0 auto 4em;;
+      padding-top: 1em;
+      width: 260px;
+      border-top: 1px solid #ffffff;
+      text-align: center;
+      
+      .learn-more {
+        text-transform: uppercase;
+        font-size: 1.2em;
+        line-height: 1.2;        
       }
     }
   }
-  
+
   footer {
     .footer-credit {
       text-align: center;
       font-family: "PT Sans";
       font-size: .75em;
-      
+
       .icenter-logo {
         background: url("../images/footer-icenter-logo.png") 0 0 no-repeat;
         background-size: 100px 30px;
@@ -68,7 +136,7 @@ body {
         margin-top: 5px;
         margin-right: 20px;
       }
-  
+
       .jjf-logo {
         background: url("../images/footer-jjf-logo.jpg") 0 0 no-repeat;
         background-size: 100px 30px;
@@ -76,7 +144,7 @@ body {
         height: 30px;
         display: inline-block;
         margin-top: 5px;
-      }    
+      }
     }
   }
 }

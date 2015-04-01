@@ -117,30 +117,100 @@ body {
   -webkit-text-size-adjust: 100%;
   /* 2 */
 }
-/* line 38, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 body h1, body h2, body h3, body h4, body h5, body h6, body .h1,
 body .h2, body .h3, body .h4, body .h5, body .h6 {
   font-family: "pt-sans";
 }
-/* line 43, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 body a.btn {
   font-family: "PT Sans";
 }
-/* line 48, ../sass/style.scss */
-body header#navbar a.logo {
-  margin-top: 13.5px;
+/* line 46, ../sass/style.scss */
+body header {
+  background-color: #192d3b;
+  color: #ffffff;
 }
 /* line 50, ../sass/style.scss */
-body header#navbar a.logo img {
-  max-height: 32px;
+body header a, body header a:focus, body header a:hover {
+  color: #ffffff;
 }
-/* line 57, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
+body header ul.navbar-nav {
+  float: none;
+  text-align: center;
+}
+/* line 58, ../sass/style.scss */
+body header ul.navbar-nav li {
+  float: none;
+  display: inline-block;
+  margin: 0 1.5em;
+}
+/* line 63, ../sass/style.scss */
+body header ul.navbar-nav li a:hover, body header ul.navbar-nav li a:focus {
+  background-color: #192d3b;
+  text-decoration: underline;
+}
+/* line 70, ../sass/style.scss */
+body header .logo-wrapper {
+  margin: 2em 0 1em;
+}
+/* line 73, ../sass/style.scss */
+body header .logo-wrapper .logo {
+  margin: 0 auto;
+  background: url("../images/header-front-logo.png") top center no-repeat;
+  height: 40px;
+  width: 40px;
+  background-size: 40px 40px;
+}
+/* line 83, ../sass/style.scss */
+body header .small-title-wrapper .small-title, body header .small-title-wrapper .large-title, body header .large-title-wrapper .small-title, body header .large-title-wrapper .large-title {
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 87, ../sass/style.scss */
+body header .small-title-wrapper .small-title, body header .large-title-wrapper .small-title {
+  font-size: 1.5em;
+  font-family: "reenie-beanie", cursive;
+}
+/* line 92, ../sass/style.scss */
+body header .small-title-wrapper .large-title, body header .large-title-wrapper .large-title {
+  font-size: 2.5em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+/* line 99, ../sass/style.scss */
+body header .homepage-message-wrapper {
+  margin: 0 auto 4em;
+  text-align: center;
+  max-width: 780px;
+}
+/* line 104, ../sass/style.scss */
+body header .homepage-message-wrapper .homepage-message {
+  font-size: .9em;
+  line-height: 1.2;
+}
+/* line 109, ../sass/style.scss */
+body header .learn-more-wrapper {
+  margin: 0 auto 4em;
+  padding-top: 1em;
+  width: 260px;
+  border-top: 1px solid #ffffff;
+  text-align: center;
+}
+/* line 116, ../sass/style.scss */
+body header .learn-more-wrapper .learn-more {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+/* line 125, ../sass/style.scss */
 body footer .footer-credit {
   text-align: center;
   font-family: "PT Sans";
   font-size: .75em;
 }
-/* line 62, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 body footer .footer-credit .icenter-logo {
   background: url("../images/footer-icenter-logo.png") 0 0 no-repeat;
   background-size: 100px 30px;
@@ -150,7 +220,7 @@ body footer .footer-credit .icenter-logo {
   margin-top: 5px;
   margin-right: 20px;
 }
-/* line 72, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 body footer .footer-credit .jjf-logo {
   background: url("../images/footer-jjf-logo.jpg") 0 0 no-repeat;
   background-size: 100px 30px;
