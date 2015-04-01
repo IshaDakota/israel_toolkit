@@ -31,6 +31,7 @@ body {
   line-height: 30px;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  overflow-x: hidden;
   // Show a background image that can be used to debug your alignments.
   // @include debug-vertical-alignment();
 
@@ -147,4 +148,33 @@ body {
       }
     }
   }
+}
+
+section {
+    position: relative;
+}
+section:before {
+    position: absolute;
+    content:'';
+}
+section.homepage {
+    background: #fff;
+}
+
+.homepage {
+    z-index: 1;
+    padding: 3em;
+}
+.homepage:before {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    background: inherit;
+    overflow: hidden;
 }
