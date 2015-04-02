@@ -59,7 +59,7 @@ The Israel conflict toolkit is designed to be a sophisticated and nuanced approa
     
   </div>
 </section>
-<footer class="footer container">
+<footer class="footer">
     <div class="row disclaimer">
       <div class="col-md-12 footer-credit">
         <p>The Conflict Toolkit is a project of <a href="http://www.theicenter.org">the iCenter</a> made possible through a grant from the Jim Joseph Foundation.</p>
