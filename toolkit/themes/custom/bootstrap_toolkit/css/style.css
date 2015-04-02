@@ -205,13 +205,22 @@ body header .learn-more-wrapper .learn-more {
   font-size: 1.2em;
   line-height: 1.2;
 }
-/* line 126, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
+body footer {
+  position: relative;
+  background: #eaeaea;
+  z-index: 1;
+  padding: 3em;
+  min-height: 250px;
+}
+/* line 132, ../sass/style.scss */
 body footer .footer-credit {
   text-align: center;
   font-family: "PT Sans";
   font-size: .75em;
+  margin-top: -45px;
 }
-/* line 131, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 body footer .footer-credit .icenter-logo {
   background: url("../images/footer-icenter-logo.png") 0 0 no-repeat;
   background-size: 100px 30px;
@@ -221,7 +230,7 @@ body footer .footer-credit .icenter-logo {
   margin-top: 5px;
   margin-right: 20px;
 }
-/* line 141, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 body footer .footer-credit .jjf-logo {
   background: url("../images/footer-jjf-logo.jpg") 0 0 no-repeat;
   background-size: 100px 30px;
@@ -230,30 +239,46 @@ body footer .footer-credit .jjf-logo {
   display: inline-block;
   margin-top: 5px;
 }
+/* line 159, ../sass/style.scss */
+body footer:before {
+  position: absolute;
+  content: '';
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0;
+  margin-top: -200px;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  background-color: #eaeaea;
+}
 
-/* line 153, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 section {
   position: relative;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 section:before {
   position: absolute;
   content: '';
 }
 
-/* line 160, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 section.homepage {
   background: #fff;
 }
 
-/* line 164, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .homepage {
   z-index: 1;
   padding: 3em;
 }
 
-/* line 168, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .homepage:before {
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
