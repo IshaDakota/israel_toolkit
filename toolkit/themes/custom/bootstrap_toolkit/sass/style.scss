@@ -91,6 +91,7 @@ body {
       }
       
       .large-title {
+        margin-bottom: 120px;
         font-size: 2.5em;
         line-height: 1.2;
         text-transform: uppercase;
@@ -188,6 +189,7 @@ section.homepage {
     z-index: 1;
     padding: 3em;
 }
+
 .homepage:before {
     -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg);
