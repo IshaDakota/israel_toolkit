@@ -17,26 +17,94 @@
  * https://drupal.org/node/1707736
  */
 /* line 13, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .logo-wrapper {
+  margin: 1em 0;
+}
+/* line 19, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .large-title-wrapper .large-title {
+  margin-bottom: 120px;
+}
+/* line 25, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content section.content-abstract {
+  background: #eaeaea;
+  z-index: 1;
+  padding: 3em;
+}
+/* line 30, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content section.content-abstract .highlighted {
+  margin-top: -50px;
+  margin-bottom: 100px;
+}
+/* line 34, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content section.content-abstract .highlighted .pane-node-title {
+  text-align: center;
+}
+/* line 38, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content section.content-abstract .highlighted .pane-node-field-introduction {
+  text-align: center;
+}
+/* line 44, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .content-abstract:before {
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0;
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  overflow: hidden;
+}
+/* line 58, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content section.inner-page {
+  background: #fff;
+  z-index: 1;
+  padding: 3em;
+}
+/* line 63, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content section.inner-page .page-content {
+  margin-top: -170px;
+  margin-bottom: 100px;
+}
+/* line 69, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .inner-page:before {
+  position: absolute;
+  content: '';
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0;
+  margin-top: -200px;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  background-color: #ffffff;
+}
+/* line 85, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-header-image {
   margin-top: 20px;
 }
-/* line 17, ../sass/pages/_curriculum.scss */
+/* line 89, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .glyphicon {
   margin-right: 5px;
   font-size: .75em;
 }
-/* line 22, ../sass/pages/_curriculum.scss */
+/* line 94, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .jumbotron {
   overflow: auto;
 }
-/* line 25, ../sass/pages/_curriculum.scss */
+/* line 97, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-age-range,
 .node-type-curriculum-content .pane-node-field-program-duration {
   display: inline;
   float: left;
   margin-right: 40px;
 }
-/* line 34, ../sass/pages/_curriculum.scss */
+/* line 106, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .field-name-field-age-range .field-item,
 .node-type-curriculum-content .field-name-field-program-duration .field-item {
   display: inline;
@@ -180,18 +248,18 @@ body header .small-title-wrapper .large-title, body header .large-title-wrapper 
   line-height: 1.2;
   text-transform: uppercase;
 }
-/* line 100, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 body header .homepage-message-wrapper {
   margin: 0 auto 4em;
   text-align: center;
   max-width: 780px;
 }
-/* line 105, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 body header .homepage-message-wrapper .homepage-message {
   font-size: .9em;
   line-height: 1.2;
 }
-/* line 110, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 body header .learn-more-wrapper {
   margin: 0 auto 4em;
   padding-top: 1em;
@@ -199,13 +267,13 @@ body header .learn-more-wrapper {
   border-top: 1px solid #ffffff;
   text-align: center;
 }
-/* line 117, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 body header .learn-more-wrapper .learn-more {
   text-transform: uppercase;
   font-size: 1.2em;
   line-height: 1.2;
 }
-/* line 125, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 body footer {
   position: relative;
   background: #eaeaea;
@@ -213,14 +281,14 @@ body footer {
   padding: 3em;
   min-height: 250px;
 }
-/* line 132, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 body footer .footer-credit {
   text-align: center;
   font-family: "PT Sans";
   font-size: .75em;
   margin-top: -45px;
 }
-/* line 138, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 body footer .footer-credit .icenter-logo {
   background: url("../images/footer-icenter-logo.png") 0 0 no-repeat;
   background-size: 100px 30px;
@@ -230,7 +298,7 @@ body footer .footer-credit .icenter-logo {
   margin-top: 5px;
   margin-right: 20px;
 }
-/* line 148, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 body footer .footer-credit .jjf-logo {
   background: url("../images/footer-jjf-logo.jpg") 0 0 no-repeat;
   background-size: 100px 30px;
@@ -239,7 +307,7 @@ body footer .footer-credit .jjf-logo {
   display: inline-block;
   margin-top: 5px;
 }
-/* line 159, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 body footer:before {
   position: absolute;
   content: '';
@@ -256,29 +324,29 @@ body footer:before {
   background-color: #eaeaea;
 }
 
-/* line 176, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 section {
   position: relative;
 }
 
-/* line 179, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 section:before {
   position: absolute;
   content: '';
 }
 
-/* line 183, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 section.homepage {
   background: #fff;
 }
 
-/* line 187, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .homepage {
   z-index: 1;
   padding: 3em;
 }
 
-/* line 191, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .homepage:before {
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
