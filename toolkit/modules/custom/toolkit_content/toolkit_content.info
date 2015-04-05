@@ -91,4 +91,3 @@ features[taxonomy][] = values
 features[variable][] = field_bundle_settings_node__curriculum_content
 features[variable][] = field_bundle_settings_node__resource
 features[views_view][] = referenced_content
-mtime = 1420325943
