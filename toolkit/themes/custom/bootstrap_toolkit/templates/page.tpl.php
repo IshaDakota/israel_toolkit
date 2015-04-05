@@ -90,6 +90,7 @@
             <?php print render($primary_nav); ?>
           </nav>
         </div>
+        <div class="logo-wrapper"><div class="logo"></div></div>        
       </div>
     </div>
     <div class="row">

@@ -22,7 +22,7 @@
 </section>
 
 <section class="inner-page">
-  <div class="container">
+  <div class="container page-content">
   <a id="main-content"></a>        
     <div class="row">
       <div class="col-md-8 content panel-panel">

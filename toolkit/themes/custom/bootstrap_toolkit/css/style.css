@@ -17,25 +17,33 @@
  * https://drupal.org/node/1707736
  */
 /* line 13, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .logo-wrapper {
+  margin: 1em 0;
+}
+/* line 19, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .large-title-wrapper .large-title {
+  margin-bottom: 120px;
+}
+/* line 25, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content section.content-abstract {
   background: #eaeaea;
   z-index: 1;
   padding: 3em;
 }
-/* line 18, ../sass/pages/_curriculum.scss */
+/* line 30, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content section.content-abstract .highlighted {
   margin-top: -50px;
   margin-bottom: 100px;
 }
-/* line 22, ../sass/pages/_curriculum.scss */
+/* line 34, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content section.content-abstract .highlighted .pane-node-title {
   text-align: center;
 }
-/* line 26, ../sass/pages/_curriculum.scss */
+/* line 38, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content section.content-abstract .highlighted .pane-node-field-introduction {
   text-align: center;
 }
-/* line 32, ../sass/pages/_curriculum.scss */
+/* line 44, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .content-abstract:before {
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
@@ -49,17 +57,18 @@
   background: inherit;
   overflow: hidden;
 }
-/* line 46, ../sass/pages/_curriculum.scss */
+/* line 58, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content section.inner-page {
   background: #fff;
   z-index: 1;
   padding: 3em;
 }
-/* line 51, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content section.inner-page .content, .node-type-curriculum-content section.inner-page .sidebar {
-  margin-top: -100px;
+/* line 63, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content section.inner-page .page-content {
+  margin-top: -170px;
+  margin-bottom: 100px;
 }
-/* line 56, ../sass/pages/_curriculum.scss */
+/* line 69, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .inner-page:before {
   position: absolute;
   content: '';
@@ -75,27 +84,27 @@
   background: inherit;
   background-color: #ffffff;
 }
-/* line 72, ../sass/pages/_curriculum.scss */
+/* line 85, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-header-image {
   margin-top: 20px;
 }
-/* line 76, ../sass/pages/_curriculum.scss */
+/* line 89, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .glyphicon {
   margin-right: 5px;
   font-size: .75em;
 }
-/* line 81, ../sass/pages/_curriculum.scss */
+/* line 94, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .jumbotron {
   overflow: auto;
 }
-/* line 84, ../sass/pages/_curriculum.scss */
+/* line 97, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-age-range,
 .node-type-curriculum-content .pane-node-field-program-duration {
   display: inline;
   float: left;
   margin-right: 40px;
 }
-/* line 93, ../sass/pages/_curriculum.scss */
+/* line 106, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .field-name-field-age-range .field-item,
 .node-type-curriculum-content .field-name-field-program-duration .field-item {
   display: inline;
@@ -235,7 +244,6 @@ body header .small-title-wrapper .small-title, body header .large-title-wrapper 
 }
 /* line 93, ../sass/style.scss */
 body header .small-title-wrapper .large-title, body header .large-title-wrapper .large-title {
-  margin-bottom: 120px;
   font-size: 2.5em;
   line-height: 1.2;
   text-transform: uppercase;

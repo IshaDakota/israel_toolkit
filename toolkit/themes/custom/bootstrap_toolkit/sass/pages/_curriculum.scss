@@ -10,6 +10,18 @@
 
 .node-type-curriculum-content {
   
+  .logo-wrapper {
+    margin: 1em 0;
+  }
+  
+  .large-title-wrapper {
+
+    .large-title {
+      margin-bottom: 120px;
+    }
+  }
+
+
   section.content-abstract {
     background: #eaeaea;
     z-index: 1;
@@ -48,8 +60,9 @@
     z-index: 1;
     padding: 3em;
     
-    .content, .sidebar {
-      margin-top: -100px;
+    .page-content {
+      margin-top: -170px;
+      margin-bottom: 100px;
     }
   }
 
