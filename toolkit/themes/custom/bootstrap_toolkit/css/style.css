@@ -243,10 +243,36 @@
 }
 /* line 74, ../sass/pages/_landing.scss */
 .page-curriculum-content section.inner-page .page-content {
-  margin-top: -170px;
-  margin-bottom: 100px;
+  margin-top: -100px;
+  margin-bottom: 50px;
 }
-/* line 80, ../sass/pages/_landing.scss */
+/* line 78, ../sass/pages/_landing.scss */
+.page-curriculum-content section.inner-page .page-content .views-field-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 82, ../sass/pages/_landing.scss */
+.page-curriculum-content section.inner-page .page-content .views-field-title a {
+  color: #000;
+}
+/* line 86, ../sass/pages/_landing.scss */
+.page-curriculum-content section.inner-page .page-content .views-field-field-header-image {
+  margin-bottom: 10px;
+}
+/* line 89, ../sass/pages/_landing.scss */
+.page-curriculum-content section.inner-page .page-content .views-field-field-introduction {
+  margin-bottom: 40px;
+}
+/* line 94, ../sass/pages/_landing.scss */
+.page-curriculum-content section.inner-page .page-content .views-submit-button .btn-info {
+  background-color: #192d3b;
+  border-color: #192d3b;
+}
+/* line 102, ../sass/pages/_landing.scss */
+.page-curriculum-content section.inner-page .page-content .views-widget-filter-field_themes_tid label, .page-curriculum-content section.inner-page .page-content .views-widget-filter-field_values_tid label {
+  text-transform: uppercase;
+}
+/* line 109, ../sass/pages/_landing.scss */
 .page-curriculum-content .inner-page:before {
   position: absolute;
   content: '';
@@ -262,27 +288,27 @@
   background: inherit;
   background-color: #ffffff;
 }
-/* line 96, ../sass/pages/_landing.scss */
+/* line 125, ../sass/pages/_landing.scss */
 .page-curriculum-content .pane-node-field-header-image {
   margin-top: 20px;
 }
-/* line 100, ../sass/pages/_landing.scss */
+/* line 129, ../sass/pages/_landing.scss */
 .page-curriculum-content .glyphicon {
   margin-right: 5px;
   font-size: .75em;
 }
-/* line 105, ../sass/pages/_landing.scss */
+/* line 134, ../sass/pages/_landing.scss */
 .page-curriculum-content .jumbotron {
   overflow: auto;
 }
-/* line 108, ../sass/pages/_landing.scss */
+/* line 137, ../sass/pages/_landing.scss */
 .page-curriculum-content .pane-node-field-age-range,
 .page-curriculum-content .pane-node-field-program-duration {
   display: inline;
   float: left;
   margin-right: 40px;
 }
-/* line 117, ../sass/pages/_landing.scss */
+/* line 146, ../sass/pages/_landing.scss */
 .page-curriculum-content .field-name-field-age-range .field-item,
 .page-curriculum-content .field-name-field-program-duration .field-item {
   display: inline;
@@ -389,6 +415,10 @@ body header .learn-more-wrapper .learn-more {
   line-height: 1.2;
 }
 /* line 126, ../sass/style.scss */
+body .region-content {
+  min-height: 350px;
+}
+/* line 130, ../sass/style.scss */
 body footer {
   position: relative;
   background: #eaeaea;
@@ -396,14 +426,14 @@ body footer {
   padding: 3em;
   min-height: 250px;
 }
-/* line 133, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 body footer .footer-credit {
   text-align: center;
   font-family: "PT Sans";
   font-size: .75em;
   margin-top: -45px;
 }
-/* line 139, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 body footer .footer-credit .icenter-logo {
   background: url("../images/footer-icenter-logo.png") 0 0 no-repeat;
   background-size: 100px 30px;
@@ -413,7 +443,7 @@ body footer .footer-credit .icenter-logo {
   margin-top: 5px;
   margin-right: 20px;
 }
-/* line 149, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 body footer .footer-credit .jjf-logo {
   background: url("../images/footer-jjf-logo.jpg") 0 0 no-repeat;
   background-size: 100px 30px;
@@ -422,7 +452,7 @@ body footer .footer-credit .jjf-logo {
   display: inline-block;
   margin-top: 5px;
 }
-/* line 160, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 body footer:before {
   position: absolute;
   content: '';
@@ -439,29 +469,29 @@ body footer:before {
   background-color: #eaeaea;
 }
 
-/* line 177, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 section {
   position: relative;
 }
 
-/* line 180, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 section:before {
   position: absolute;
   content: '';
 }
 
-/* line 184, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 section.homepage {
   background: #fff;
 }
 
-/* line 188, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .homepage {
   z-index: 1;
   padding: 3em;
 }
 
-/* line 193, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .homepage:before {
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
