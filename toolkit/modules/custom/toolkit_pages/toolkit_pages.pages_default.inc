@@ -16,7 +16,10 @@ function toolkit_pages_default_page_manager_pages() {
   $page->admin_title = 'Curriculum Content Landing Page';
   $page->admin_description = 'A landing page for the curriculum content sention of the Toolkit.';
   $page->path = 'curriculum-content';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -326,7 +329,10 @@ function toolkit_pages_default_page_manager_pages() {
   $page->admin_title = 'Questions Concepts Landing Page';
   $page->admin_description = 'A landing page for the curriculum content sention of the Toolkit.';
   $page->path = 'questions-concepts';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -400,7 +406,10 @@ function toolkit_pages_default_page_manager_pages() {
   $page->admin_title = 'Resource Library Landing Page';
   $page->admin_description = 'A landing page for the curriculum content sention of the Toolkit.';
   $page->path = 'resource-library';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(

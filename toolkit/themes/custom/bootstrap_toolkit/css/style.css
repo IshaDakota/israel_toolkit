@@ -174,6 +174,121 @@
   font-size: 18px;
 }
 
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+/* line 13, ../sass/pages/_landing.scss */
+.page-curriculum-content .logo-wrapper {
+  margin: 1em 0;
+}
+/* line 19, ../sass/pages/_landing.scss */
+.page-curriculum-content .large-title-wrapper .large-title {
+  margin-bottom: 120px;
+}
+/* line 25, ../sass/pages/_landing.scss */
+.page-curriculum-content section.content-abstract {
+  background: #eaeaea;
+  z-index: 1;
+  padding: 3em;
+}
+/* line 30, ../sass/pages/_landing.scss */
+.page-curriculum-content section.content-abstract .highlighted {
+  margin-top: -50px;
+  margin-bottom: 100px;
+}
+/* line 34, ../sass/pages/_landing.scss */
+.page-curriculum-content section.content-abstract .highlighted h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 39, ../sass/pages/_landing.scss */
+.page-curriculum-content section.content-abstract .highlighted .hr {
+  width: 50%;
+  border-bottom: 2px solid #000;
+  margin: 25px auto;
+}
+/* line 45, ../sass/pages/_landing.scss */
+.page-curriculum-content section.content-abstract .highlighted .pane-node-field-introduction {
+  text-align: center;
+}
+/* line 50, ../sass/pages/_landing.scss */
+.page-curriculum-content section.content-abstract .highlighted:after {
+  border-bottom: 1px solid #000;
+}
+/* line 55, ../sass/pages/_landing.scss */
+.page-curriculum-content .content-abstract:before {
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0;
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  overflow: hidden;
+}
+/* line 69, ../sass/pages/_landing.scss */
+.page-curriculum-content section.inner-page {
+  background: #fff;
+  z-index: 1;
+  padding: 3em;
+}
+/* line 74, ../sass/pages/_landing.scss */
+.page-curriculum-content section.inner-page .page-content {
+  margin-top: -170px;
+  margin-bottom: 100px;
+}
+/* line 80, ../sass/pages/_landing.scss */
+.page-curriculum-content .inner-page:before {
+  position: absolute;
+  content: '';
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0;
+  margin-top: -200px;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  background-color: #ffffff;
+}
+/* line 96, ../sass/pages/_landing.scss */
+.page-curriculum-content .pane-node-field-header-image {
+  margin-top: 20px;
+}
+/* line 100, ../sass/pages/_landing.scss */
+.page-curriculum-content .glyphicon {
+  margin-right: 5px;
+  font-size: .75em;
+}
+/* line 105, ../sass/pages/_landing.scss */
+.page-curriculum-content .jumbotron {
+  overflow: auto;
+}
+/* line 108, ../sass/pages/_landing.scss */
+.page-curriculum-content .pane-node-field-age-range,
+.page-curriculum-content .pane-node-field-program-duration {
+  display: inline;
+  float: left;
+  margin-right: 40px;
+}
+/* line 117, ../sass/pages/_landing.scss */
+.page-curriculum-content .field-name-field-age-range .field-item,
+.page-curriculum-content .field-name-field-program-duration .field-item {
+  display: inline;
+  margin-right: 10px;
+}
+
 /* line 28, ../sass/style.scss */
 body {
   font-family: "freight-text-pro";
