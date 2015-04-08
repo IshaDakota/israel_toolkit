@@ -7,8 +7,84 @@
  * Additional useful selectors can be found in Zen's online documentation.
  * https://drupal.org/node/1707736
  */
+.node-type-resource {
 
-.resource {
+  .logo-wrapper {
+    margin: 1em 0;
+  }
+  
+  .large-title-wrapper {
+
+    .large-title {
+      margin-bottom: 120px;
+    }
+  }
+    
+  section.content-abstract {
+    background: #eaeaea;
+    z-index: 1;
+    padding: 3em;
+    
+    .highlighted {
+      margin-top: -50px;
+      margin-bottom: 100px;
+      
+      .pane-node-title {
+        text-align: center;
+      }
+
+      .pane-node-title:after {
+        border-bottom: solid #000 2px;
+        width: 50%;
+        
+      }
+            
+      .pane-node-field-introduction {
+        text-align: center;
+      }
+    }
+  }
+
+  .content-abstract:before {
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+      -webkit-transform-origin: 3% 0;
+      transform-origin: 3% 0;
+      top: 0;
+      left: -25%;
+      z-index: -1;
+      width: 150%;
+      height: 75%;
+      background: inherit;
+      overflow: hidden;
+  }
+  
+  section.inner-page {
+    background: #fff;
+    z-index: 1;
+    padding: 3em;
+    
+    .page-content {
+      margin-top: -170px;
+      margin-bottom: 100px;
+    }
+  }
+
+  .inner-page:before {
+    position: absolute;
+    content:'';
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    margin-top: -200px;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    background: inherit;    
+    background-color: #ffffff;
+  }
     
   .glyphicon {
     margin-right: 5px;
@@ -16,11 +92,6 @@
   }
   
   .sidebar {
-    .jumbotron {
-      line-height: 1.5;
-      padding: 30px;
-      font-size: 18px;
-    }
   }
 }
 

@@ -9,5 +9,6 @@ $plugin = array(
     'sidebartop' => t('Sidebar - Top'),
     'sidebarbottom' => t('Sidebar - Bottom'),
     'contentmain' => t('Content'),
+    'highlighted' => t('Highlighted'),    
   ),
 );
