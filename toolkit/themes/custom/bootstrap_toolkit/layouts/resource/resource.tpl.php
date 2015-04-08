@@ -17,7 +17,7 @@
         <?php print $content['contentmain']; ?>
       </div>
     </div>
-    <div class="col-md-4 sidebar panel-panel">
+    <div class="col-md-4  sidebar panel-panel">
       <div class="row">
         <div class="panel-panel-inner jumbotron">
           <div>This resource is referenced in:</div>

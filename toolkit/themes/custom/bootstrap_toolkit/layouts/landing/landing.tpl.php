@@ -9,18 +9,34 @@
  * panel of the layout. This layout supports the following sections:
  */
 ?>
-
-<div class="panel-display landing clearfix <?php if (!empty($classes)) { print $classes; } ?><?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
-  <div class="row">
-    <div class="col-md-8 content panel-panel">
-      <div class="panel-panel-inner">
-        <?php print $content['contentmain']; ?>
+<section class="content-abstract">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 panel-panel highlighted">
+        <div class="title content-programs">
+          <h1>Content & Programs</h1>
+        </div>
+        <div class="hr">
+        </div>        
       </div>
-    </div>
-    <div class="col-md-4 sidebar panel-panel">
-      <div class="panel-panel-inner">
-        <?php print $content['sidebar']; ?>
+    </div>     
+  </div>
+</section>
+
+<section class="inner-page">
+  <div class="container page-content">
+  <a id="main-content"></a>  
+    <div class="row">
+      <div class="col-md-8 col-md-push-4 content panel-panel">
+        <div class="panel-panel-inner">
+          <?php print $content['contentmain']; ?>
+        </div>
+      </div>
+      <div class="col-md-4 col-md-pull-8 sidebar panel-panel">
+        <div class="panel-panel-inner">
+          <?php print $content['sidebar']; ?>
+        </div>
       </div>
     </div>
   </div>
-</div><!-- /.burr-flipped -->
+</section>

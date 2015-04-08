@@ -1,0 +1,152 @@
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+
+.page-curriculum-content {
+  
+  .logo-wrapper {
+    margin: 1em 0;
+  }
+  
+  .large-title-wrapper {
+
+    .large-title {
+      margin-bottom: 120px;
+    }
+  }
+
+
+  section.content-abstract {
+    background: #eaeaea;
+    z-index: 1;
+    padding: 3em;
+    
+    .highlighted {
+      margin-top: -50px;
+      margin-bottom: 100px;
+      
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+      
+      .hr {
+        width: 50%;
+        border-bottom: 2px solid #000;
+        margin: 25px auto;
+      }
+      
+      .pane-node-field-introduction {
+        text-align: center;
+      }
+    }
+    
+    .highlighted:after {
+      border-bottom: 1px solid #000;
+    }
+  }
+
+  .content-abstract:before {
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+      -webkit-transform-origin: 3% 0;
+      transform-origin: 3% 0;
+      top: 0;
+      left: -25%;
+      z-index: -1;
+      width: 150%;
+      height: 75%;
+      background: inherit;
+      overflow: hidden;
+  }
+  
+  section.inner-page {
+    background: #fff;
+    z-index: 1;
+    padding: 3em;
+    
+    .page-content {
+      margin-top: -100px;
+      margin-bottom: 50px;
+      
+      .views-field-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        
+        a { 
+          color: #000;
+        }
+      }
+      .views-field-field-header-image {
+        margin-bottom: 10px;
+      }
+      .views-field-field-introduction {
+        margin-bottom: 40px;
+      }
+      
+      .views-submit-button {
+        .btn-info {
+          background-color: #192d3b; 
+          border-color: #192d3b;
+        }
+      }
+      
+      .views-widget-filter-field_themes_tid, .views-widget-filter-field_values_tid {
+        
+        label {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .inner-page:before {
+    position: absolute;
+    content:'';
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    margin-top: -200px;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    background: inherit;    
+    background-color: #ffffff;
+  }
+
+  .pane-node-field-header-image {
+    margin-top: 20px;
+  }
+  
+  .glyphicon {
+    margin-right: 5px;
+    font-size: .75em;
+  }
+  
+  .jumbotron {
+    overflow: auto;
+  }
+  .pane-node-field-age-range,
+  .pane-node-field-program-duration {
+    display: inline;
+    float: left;
+    margin-right: 40px;
+  }
+  
+  .field-name-field-age-range, 
+  .field-name-field-program-duration {
+    .field-item {
+      display: inline;
+      margin-right: 10px;
+    }
+  }
+}
+
