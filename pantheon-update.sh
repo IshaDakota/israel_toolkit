@@ -13,6 +13,7 @@ rm -rf $PANTHEON_DIR/profiles/toolkit
 cp -R toolkit $PANTHEON_DIR/profiles/toolkit
 
 cd $PANTHEON_DIR
+git pull origin
 git add .
 git commit -am "Site update"
 git push
