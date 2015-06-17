@@ -38,7 +38,7 @@ projects[entityreference_prepopulate][version] = "1.5"
 projects[entityreference_prepopulate][patch][] = "https://drupal.org/files/issues/1994702-values-from-cache-20.patch"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.4"
+projects[features][version] = "2.5"
 
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-beta1"
@@ -65,7 +65,7 @@ projects[media][subdir] = "contrib"
 projects[media][version] = 2.0-alpha4
 
 projects[media_youtube][subdir] = "contrib"
-projects[media_youtube][version] = 2.x-dev
+projects[media_youtube][version] = 3.0
 
 projects[mimemail][subdir] = "contrib"
 projects[mimemail][version] = 1.0-beta3
@@ -86,7 +86,7 @@ projects[token][subdir] = "contrib"
 projects[token][version] = "1.6"
 
 projects[views][subdir] = "contrib"
-projects[views][version] = "3.10"
+projects[views][version] = "3.11"
 
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "3.2"
