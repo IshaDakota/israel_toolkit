@@ -32,7 +32,18 @@
       
       h1 {
         text-align: center;
-      }      
+      }
+      
+      .resource-subtitle {
+        text-align: center;
+        font-family: "PT-Sans";
+      }
+
+      .hr {
+        width: 30%;
+        border-bottom: 2px solid #000;
+        margin: 25px auto;
+      }
     }
     
     .highlighted:after {

@@ -15,6 +15,8 @@
       <div class="col-md-12 panel-panel highlighted">
         <div class="panel-panel-inner">
           <?php print $content['title']; ?>
+          <div class="hr"></div>
+          <div class="resource-subtitle">Toolkit Resource</div>
         </div>
       </div>
     </div>     
