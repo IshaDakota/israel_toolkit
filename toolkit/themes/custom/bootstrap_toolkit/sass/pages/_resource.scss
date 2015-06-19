@@ -32,47 +32,7 @@
       
       h1 {
         text-align: center;
-      }
-      
-      .hr {
-        width: 50%;
-        border-bottom: 2px solid #000;
-        margin: 25px auto;
-      }
-      
-      .pane-node-field-introduction {
-        text-align: center;
-      }
-    }
-    
-    .highlighted:after {
-      border-bottom: 1px solid #000;
-    }
-  }
-
-  section.content-abstract {
-    background: #eaeaea;
-    z-index: 1;
-    padding: 3em;
-    
-    .highlighted {
-      margin-top: -50px;
-      margin-bottom: 100px;
-      
-      h1 {
-        text-align: center;
-        //text-transform: uppercase;
-      }
-      
-      .hr {
-        width: 50%;
-        border-bottom: 2px solid #000;
-        margin: 25px auto;
-      }
-      
-      .pane-node-field-introduction {
-        text-align: center;
-      }
+      }      
     }
     
     .highlighted:after {
@@ -150,33 +110,6 @@
     background-color: #ffffff;
   }
 
-  .pane-node-field-header-image {
-    margin-top: 20px;
-  }
-  
-  .glyphicon {
-    margin-right: 5px;
-    font-size: .75em;
-  }
-  
-  .jumbotron {
-    overflow: auto;
-  }
-  .pane-node-field-age-range,
-  .pane-node-field-program-duration {
-    display: inline;
-    float: left;
-    margin-right: 40px;
-  }
-  
-  .field-name-field-age-range, 
-  .field-name-field-program-duration {
-    .field-item {
-      display: inline;
-      margin-right: 10px;
-    }
-  }
-    
   .glyphicon {
     margin-right: 5px;
     font-size: .75em;
@@ -184,9 +117,15 @@
   
   .sidebar {
     .jumbotron {
+      margin-top: 1em;
+      overflow: auto;
       line-height: 1.5;
       padding: 30px;
       font-size: 18px;
+
+      .resource-description {
+        margin-bottom: 1em;      
+      }
     }
   }
 }

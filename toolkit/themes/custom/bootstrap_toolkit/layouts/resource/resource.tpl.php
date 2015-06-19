@@ -33,8 +33,9 @@
       <div class="col-md-4 sidebar panel-panel">
         <div class="panel-panel-inner">
          <div class="row">
-          <div class="panel-panel-inner no-jumbotron">
-            <div>This resource is referenced in:</div>
+          <div class="panel-panel-inner jumbotron">
+            <div class="resource-description">This is an outside resource catalogued in the Conflict Education Toolkit <a href="/resource-library">Resource Library</a> - a collection of web resources useful for educators in teaching and learning.</div>
+            <div class="resource-reference">This resource is referenced in:</div>
             <?php print $content['sidebartop']; ?>
           </div>
         </div>
