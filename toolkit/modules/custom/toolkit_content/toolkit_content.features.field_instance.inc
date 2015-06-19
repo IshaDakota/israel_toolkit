@@ -136,7 +136,8 @@ function toolkit_content_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-curriculum_content-field_background_resource'
+  // Exported field_instance:
+  // 'node-curriculum_content-field_background_resource'
   $field_instances['node-curriculum_content-field_background_resource'] = array(
     'bundle' => 'curriculum_content',
     'default_value' => NULL,
@@ -633,7 +634,8 @@ function toolkit_content_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-curriculum_content-field_supporting_materials'
+  // Exported field_instance:
+  // 'node-curriculum_content-field_supporting_materials'
   $field_instances['node-curriculum_content-field_supporting_materials'] = array(
     'bundle' => 'curriculum_content',
     'default_value' => NULL,
@@ -1122,7 +1124,8 @@ function toolkit_content_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-resource_type-field_resource_glyphicon'
+  // Exported field_instance:
+  // 'taxonomy_term-resource_type-field_resource_glyphicon'
   $field_instances['taxonomy_term-resource_type-field_resource_glyphicon'] = array(
     'bundle' => 'resource_type',
     'default_value' => NULL,
