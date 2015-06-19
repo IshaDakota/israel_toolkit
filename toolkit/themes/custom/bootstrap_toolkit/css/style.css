@@ -258,15 +258,126 @@
  * https://drupal.org/node/1707736
  */
 /* line 13, ../sass/pages/_discussion.scss */
+.discussion .logo-wrapper {
+  margin: 1em 0;
+}
+/* line 19, ../sass/pages/_discussion.scss */
+.discussion .large-title-wrapper .large-title {
+  margin-bottom: 120px;
+}
+/* line 24, ../sass/pages/_discussion.scss */
+.discussion section.content-abstract {
+  background: #eaeaea;
+  z-index: 1;
+  padding: 2em;
+}
+/* line 29, ../sass/pages/_discussion.scss */
+.discussion section.content-abstract .highlighted {
+  margin-top: -50px;
+  margin-bottom: 100px;
+}
+/* line 33, ../sass/pages/_discussion.scss */
+.discussion section.content-abstract .highlighted h1 {
+  text-align: center;
+}
+/* line 37, ../sass/pages/_discussion.scss */
+.discussion section.content-abstract .highlighted .discussion-subtitle {
+  text-align: center;
+  font-family: "PT-Sans";
+}
+/* line 42, ../sass/pages/_discussion.scss */
+.discussion section.content-abstract .highlighted .hr {
+  width: 30%;
+  border-bottom: 2px solid #000;
+  margin: 25px auto;
+}
+/* line 49, ../sass/pages/_discussion.scss */
+.discussion section.content-abstract .highlighted:after {
+  border-bottom: 1px solid #000;
+}
+/* line 54, ../sass/pages/_discussion.scss */
+.discussion .content-abstract:before {
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0;
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  overflow: hidden;
+}
+/* line 68, ../sass/pages/_discussion.scss */
+.discussion section.inner-page {
+  background: #fff;
+  z-index: 1;
+  padding: 3em;
+}
+/* line 73, ../sass/pages/_discussion.scss */
+.discussion section.inner-page .page-content {
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+/* line 77, ../sass/pages/_discussion.scss */
+.discussion section.inner-page .page-content .views-field-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 81, ../sass/pages/_discussion.scss */
+.discussion section.inner-page .page-content .views-field-title a {
+  color: #000;
+}
+/* line 85, ../sass/pages/_discussion.scss */
+.discussion section.inner-page .page-content .views-field-field-header-image {
+  margin-bottom: 10px;
+}
+/* line 88, ../sass/pages/_discussion.scss */
+.discussion section.inner-page .page-content .views-field-field-introduction {
+  margin-bottom: 40px;
+}
+/* line 93, ../sass/pages/_discussion.scss */
+.discussion section.inner-page .page-content .views-submit-button .btn-info {
+  background-color: #192d3b;
+  border-color: #192d3b;
+}
+/* line 101, ../sass/pages/_discussion.scss */
+.discussion section.inner-page .page-content .views-widget-filter-field_themes_tid label, .discussion section.inner-page .page-content .views-widget-filter-field_values_tid label {
+  text-transform: uppercase;
+}
+/* line 108, ../sass/pages/_discussion.scss */
+.discussion .inner-page:before {
+  position: absolute;
+  content: '';
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0;
+  margin-top: -200px;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  background-color: #ffffff;
+}
+/* line 124, ../sass/pages/_discussion.scss */
 .discussion .glyphicon {
   margin-right: 5px;
   font-size: .75em;
 }
-/* line 19, ../sass/pages/_discussion.scss */
+/* line 130, ../sass/pages/_discussion.scss */
 .discussion .sidebar .jumbotron {
+  margin-top: 1em;
+  overflow: auto;
   line-height: 1.5;
   padding: 30px;
   font-size: 18px;
+}
+/* line 137, ../sass/pages/_discussion.scss */
+.discussion .sidebar .jumbotron .resource-description {
+  margin-bottom: 1em;
 }
 
 /**
