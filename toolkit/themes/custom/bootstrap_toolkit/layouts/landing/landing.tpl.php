@@ -9,15 +9,19 @@
  * panel of the layout. This layout supports the following sections:
  */
 ?>
+
 <section class="content-abstract">
   <div class="container">
     <div class="row">
       <div class="col-md-12 panel-panel highlighted">
         <div class="title content-programs">
-          <h1>Content & Programs</h1>
+          <?php print $content['title']; ?>
         </div>
         <div class="hr">
-        </div>        
+        </div>
+        <div class="subtitle content-programs">
+          <?php print $content['subtitle']; ?>
+        </div>
       </div>
     </div>     
   </div>

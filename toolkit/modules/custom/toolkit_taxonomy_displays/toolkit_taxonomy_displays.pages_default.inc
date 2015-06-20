@@ -23,7 +23,7 @@ function toolkit_taxonomy_displays_default_page_manager_handlers() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'landing',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -45,13 +45,15 @@ function toolkit_taxonomy_displays_default_page_manager_handlers() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'twocol_right';
+  $display->layout = 'landing';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'sidebar' => NULL,
       'contentmain' => NULL,
+      'title' => NULL,
+      'subtitle' => NULL,
     ),
   );
   $display->cache = array();
@@ -111,6 +113,58 @@ function toolkit_taxonomy_displays_default_page_manager_handlers() {
     $pane->uuid = 'd3e75404-34e6-431d-8e66-0d5450ee2d4c';
     $display->content['new-d3e75404-34e6-431d-8e66-0d5450ee2d4c'] = $pane;
     $display->panels['sidebar'][0] = 'new-d3e75404-34e6-431d-8e66-0d5450ee2d4c';
+    $pane = new stdClass();
+    $pane->pid = 'new-844d07ef-b94f-4c34-9713-98b5b8e887a0';
+    $pane->panel = 'subtitle';
+    $pane->type = 'term_description';
+    $pane->subtype = 'term_description';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => 'argument_term_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '844d07ef-b94f-4c34-9713-98b5b8e887a0';
+    $display->content['new-844d07ef-b94f-4c34-9713-98b5b8e887a0'] = $pane;
+    $display->panels['subtitle'][0] = 'new-844d07ef-b94f-4c34-9713-98b5b8e887a0';
+    $pane = new stdClass();
+    $pane->pid = 'new-aee11d9c-53d1-4918-a5a5-7348bf4c8329';
+    $pane->panel = 'title';
+    $pane->type = 'term_name';
+    $pane->subtype = 'term_name';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link' => 0,
+      'markup' => 'h1',
+      'id' => '',
+      'class' => '',
+      'context' => 'argument_term_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'aee11d9c-53d1-4918-a5a5-7348bf4c8329';
+    $display->content['new-aee11d9c-53d1-4918-a5a5-7348bf4c8329'] = $pane;
+    $display->panels['title'][0] = 'new-aee11d9c-53d1-4918-a5a5-7348bf4c8329';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

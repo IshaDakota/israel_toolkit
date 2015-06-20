@@ -8,7 +8,7 @@
  * https://drupal.org/node/1707736
  */
 
-.page-curriculum-content {
+.landing {
   
   .logo-wrapper {
     margin: 1em 0;
@@ -40,6 +40,11 @@
         width: 50%;
         border-bottom: 2px solid #000;
         margin: 25px auto;
+      }
+      
+      .subtitle {
+        text-align: center;
+        font-family: "PT-Sans";
       }
       
       .pane-node-field-introduction {
@@ -130,10 +135,19 @@
     margin-right: 5px;
     font-size: .75em;
   }
-  
-  .jumbotron {
-    overflow: auto;
+  .sidebar {
+
+    .jumbotron {
+      overflow: auto;
+      margin-top: 1em;
+      overflow: auto;
+      line-height: 1.5;
+      padding: 30px;
+      font-size: 18px;
+      font-family: "PT-Sans";
+    }
   }
+
   .pane-node-field-age-range,
   .pane-node-field-program-duration {
     display: inline;
