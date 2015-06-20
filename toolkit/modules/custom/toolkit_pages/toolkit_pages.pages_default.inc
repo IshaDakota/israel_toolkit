@@ -447,6 +447,56 @@ function toolkit_pages_default_page_manager_pages() {
     $display->content['new-442fad97-e890-49be-8c74-a233a1adf510'] = $pane;
     $display->panels['contentmain'][0] = 'new-442fad97-e890-49be-8c74-a233a1adf510';
     $pane = new stdClass();
+    $pane->pid = 'new-ad23488f-01a6-4b9f-9add-141e24974c5a';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'page_element-panel_page_element';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'arguments' => array(
+        'field_page_value' => 'questions_concepts_landing_page',
+        'field_location_value' => 'sidebar',
+      ),
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'jumbotron',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'ad23488f-01a6-4b9f-9add-141e24974c5a';
+    $display->content['new-ad23488f-01a6-4b9f-9add-141e24974c5a'] = $pane;
+    $display->panels['sidebar'][0] = 'new-ad23488f-01a6-4b9f-9add-141e24974c5a';
+    $pane = new stdClass();
+    $pane->pid = 'new-0801afb2-dfe1-4b4e-acf7-4913ef3c8945';
+    $pane->panel = 'sidebar';
+    $pane->type = 'block';
+    $pane->subtype = 'search-form';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '0801afb2-dfe1-4b4e-acf7-4913ef3c8945';
+    $display->content['new-0801afb2-dfe1-4b4e-acf7-4913ef3c8945'] = $pane;
+    $display->panels['sidebar'][1] = 'new-0801afb2-dfe1-4b4e-acf7-4913ef3c8945';
+    $pane = new stdClass();
     $pane->pid = 'new-e3ad0634-f707-4c9b-b8fd-2ae2bea235f0';
     $pane->panel = 'subtitle';
     $pane->type = 'views_panes';

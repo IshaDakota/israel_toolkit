@@ -164,23 +164,6 @@ function toolkit_pages_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
   $handler->display->display_options['style_options']['columns'] = '2';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Introduction */
-  $handler->display->display_options['fields']['field_introduction']['id'] = 'field_introduction';
-  $handler->display->display_options['fields']['field_introduction']['table'] = 'field_data_field_introduction';
-  $handler->display->display_options['fields']['field_introduction']['field'] = 'field_introduction';
-  $handler->display->display_options['fields']['field_introduction']['label'] = '';
-  $handler->display->display_options['fields']['field_introduction']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_introduction']['type'] = 'text_trimmed';
-  $handler->display->display_options['fields']['field_introduction']['settings'] = array(
-    'trim_length' => '600',
-  );
   /* Field: Content: Header Image Concept */
   $handler->display->display_options['fields']['field_header_image_concept']['id'] = 'field_header_image_concept';
   $handler->display->display_options['fields']['field_header_image_concept']['table'] = 'field_data_field_header_image_concept';
@@ -191,6 +174,23 @@ function toolkit_pages_views_default_views() {
   $handler->display->display_options['fields']['field_header_image_concept']['settings'] = array(
     'image_style' => 'content_list_image',
     'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '300',
   );
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';

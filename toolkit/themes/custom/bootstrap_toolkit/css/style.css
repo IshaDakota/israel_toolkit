@@ -651,18 +651,24 @@
   margin-right: 5px;
   font-size: .75em;
 }
-/* line 139, ../sass/pages/_landing.scss */
-.landing .jumbotron {
+/* line 140, ../sass/pages/_landing.scss */
+.landing .sidebar .jumbotron {
   overflow: auto;
+  margin-top: 1em;
+  overflow: auto;
+  line-height: 1.5;
+  padding: 30px;
+  font-size: 18px;
+  font-family: "PT-Sans";
 }
-/* line 142, ../sass/pages/_landing.scss */
+/* line 151, ../sass/pages/_landing.scss */
 .landing .pane-node-field-age-range,
 .landing .pane-node-field-program-duration {
   display: inline;
   float: left;
   margin-right: 40px;
 }
-/* line 151, ../sass/pages/_landing.scss */
+/* line 160, ../sass/pages/_landing.scss */
 .landing .field-name-field-age-range .field-item,
 .landing .field-name-field-program-duration .field-item {
   display: inline;
