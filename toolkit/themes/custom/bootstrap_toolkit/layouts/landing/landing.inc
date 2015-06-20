@@ -7,7 +7,7 @@ $plugin = array(
   'theme' => 'landing',
   'regions' => array(
     'title' => t('Title'),
-    'subtitle' => t('Subitle'),
+    'subtitle' => t('Subtitle'),
     'sidebar' => t('Sidebar'),
     'contentmain' => t('Content'),
   ),

@@ -16,6 +16,11 @@
         <div class="panel-panel-inner">
           <?php print $content['jumbotron']; ?>
         </div>
+        <div class="hr">
+        </div>
+        <div class="subtitle content-programs">
+          <?php print $content['subtitle']; ?>
+        </div>        
       </div>
     </div>     
   </div>
