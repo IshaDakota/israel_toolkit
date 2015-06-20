@@ -6,6 +6,8 @@ $plugin = array(
   'category' => t('Toolkit'),
   'theme' => 'landing',
   'regions' => array(
+    'title' => t('Title'),
+    'subtitle' => t('Subitle'),
     'sidebar' => t('Sidebar'),
     'contentmain' => t('Content'),
   ),
