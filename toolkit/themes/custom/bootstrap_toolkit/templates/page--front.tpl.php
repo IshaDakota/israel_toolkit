@@ -41,7 +41,8 @@ The Israel conflict toolkit is designed to be a sophisticated and nuanced approa
     <div class="row">
       <div class="col-md-12">
         <div class="learn-more-wrapper">
-          <div class="learn-more"><a href="#expand">Learn More</a></div>
+          <div class="learn-more"><a href="#specialcontent">Learn More</a></div>
+          <div class="learn-more-arrow"><a href="#specialcontent"><span class="glyphicon glyphicon-chevron-down"></span></a></div>
         </div>
       </div>
     </div>
