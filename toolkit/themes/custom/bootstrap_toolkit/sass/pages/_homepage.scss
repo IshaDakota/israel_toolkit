@@ -1,0 +1,109 @@
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+
+.front {
+  
+  .window {
+    .toolkit-title a {
+      display: block;
+      max-height: 250px;
+      //width: 100%;
+      padding: 100px 0;
+      text-align: center;
+      color: #ffffff;
+      font-family: "freight-text-pro";
+      font-size: 1.2em;
+    }
+    
+    .toolkit-title a:hover {
+      text-decoration: none;
+      transition: all 0.3s ease 0s;
+    }
+
+    .toolkit-desc {
+      margin-top: 10px;
+      text-align: center;
+      font-size: .9em;
+      line-height: 1.4;
+      font-weight: bold;
+      font-family: "PT-Sans";
+      
+      p {
+        margin-bottom: 20px;
+      }
+    }    
+  }
+    
+  .toolkit-content {
+    .toolkit-title a {
+      background:
+        linear-gradient(
+          rgba(108,150,179, 0.5),
+          rgba(108,150,179, 0.5)
+        ),
+        url(../images/content.jpg);      
+    }
+
+    .toolkit-title a:hover {
+      background:
+        linear-gradient(
+          rgba(108,150,179, 0.7),
+          rgba(108,150,179, 0.7)
+        
+        ),
+        url(../images/content.jpg);  
+    }    
+  }
+
+  .toolkit-concepts {
+    .toolkit-title a {
+      background:
+        linear-gradient(
+          rgba(126,48,48, 0.5),
+          rgba(126,48,48, 0.5)
+        ),
+        url(../images/concepts.jpg);      
+    }
+
+    .toolkit-title a:hover {
+      background:
+        linear-gradient(
+          rgba(126,48,48, 0.7),
+          rgba(126,48,48, 0.7)
+        
+        ),
+        url(../images/concepts.jpg);  
+    }    
+  }
+
+  .toolkit-library {
+    .toolkit-title a {
+      background:
+        linear-gradient(
+          rgba(221,165,98, 0.5),
+          rgba(221,165,98, 0.5)
+        ),
+        url(../images/library.jpg);  
+    }
+
+    .toolkit-title a:hover {
+      background:
+        linear-gradient(
+          rgba(221,165,98, 0.7),
+          rgba(221,165,98, 0.7)
+        
+        ),
+        url(../images/library.jpg);  
+    }    
+  }
+}
+
+
+

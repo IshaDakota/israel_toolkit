@@ -16,6 +16,68 @@
  * Additional useful selectors can be found in Zen's online documentation.
  * https://drupal.org/node/1707736
  */
+/* line 14, ../sass/pages/_homepage.scss */
+.front .window .toolkit-title a {
+  display: block;
+  max-height: 250px;
+  padding: 100px 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: "freight-text-pro";
+  font-size: 1.2em;
+}
+/* line 25, ../sass/pages/_homepage.scss */
+.front .window .toolkit-title a:hover {
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+/* line 30, ../sass/pages/_homepage.scss */
+.front .window .toolkit-desc {
+  margin-top: 10px;
+  text-align: center;
+  font-size: .9em;
+  line-height: 1.4;
+  font-weight: bold;
+  font-family: "PT-Sans";
+}
+/* line 38, ../sass/pages/_homepage.scss */
+.front .window .toolkit-desc p {
+  margin-bottom: 20px;
+}
+/* line 45, ../sass/pages/_homepage.scss */
+.front .toolkit-content .toolkit-title a {
+  background: linear-gradient(rgba(108, 150, 179, 0.5), rgba(108, 150, 179, 0.5)), url(../images/content.jpg);
+}
+/* line 54, ../sass/pages/_homepage.scss */
+.front .toolkit-content .toolkit-title a:hover {
+  background: linear-gradient(rgba(108, 150, 179, 0.7), rgba(108, 150, 179, 0.7)), url(../images/content.jpg);
+}
+/* line 66, ../sass/pages/_homepage.scss */
+.front .toolkit-concepts .toolkit-title a {
+  background: linear-gradient(rgba(126, 48, 48, 0.5), rgba(126, 48, 48, 0.5)), url(../images/concepts.jpg);
+}
+/* line 75, ../sass/pages/_homepage.scss */
+.front .toolkit-concepts .toolkit-title a:hover {
+  background: linear-gradient(rgba(126, 48, 48, 0.7), rgba(126, 48, 48, 0.7)), url(../images/concepts.jpg);
+}
+/* line 87, ../sass/pages/_homepage.scss */
+.front .toolkit-library .toolkit-title a {
+  background: linear-gradient(rgba(221, 165, 98, 0.5), rgba(221, 165, 98, 0.5)), url(../images/library.jpg);
+}
+/* line 96, ../sass/pages/_homepage.scss */
+.front .toolkit-library .toolkit-title a:hover {
+  background: linear-gradient(rgba(221, 165, 98, 0.7), rgba(221, 165, 98, 0.7)), url(../images/library.jpg);
+}
+
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
 /* line 13, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .logo-wrapper {
   margin: 1em 0;
@@ -724,7 +786,7 @@
   margin-right: 10px;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 body {
   font-family: "freight-text-pro";
   /* 1 */
@@ -736,45 +798,45 @@ body {
   /* 2 */
   overflow-x: hidden;
 }
-/* line 38, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 body h1, body h2, body h3, body h4, body h5, body h6, body .h1,
 body .h2, body .h3, body .h4, body .h5, body .h6 {
   font-family: "pt-sans";
 }
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 body a.btn {
   font-family: "PT Sans";
 }
-/* line 47, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 body header {
   background-color: #192d3b;
   color: #ffffff;
 }
-/* line 51, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 body header a, body header a:focus, body header a:hover {
   color: #ffffff;
 }
-/* line 55, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 body header ul.navbar-nav {
   float: none;
   text-align: center;
 }
-/* line 59, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 body header ul.navbar-nav li {
   float: none;
   display: inline-block;
   margin: 0 1.5em;
 }
-/* line 64, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 body header ul.navbar-nav li a:hover, body header ul.navbar-nav li a:focus {
   background-color: #192d3b;
   text-decoration: underline;
 }
-/* line 71, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 body header .logo-wrapper {
   margin: 2em 0 1em;
 }
-/* line 74, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 body header .logo-wrapper .logo {
   margin: 0 auto;
   background: url("../images/header-front-logo.png") top center no-repeat;
@@ -782,34 +844,34 @@ body header .logo-wrapper .logo {
   width: 40px;
   background-size: 40px 40px;
 }
-/* line 84, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 body header .small-title-wrapper .small-title, body header .small-title-wrapper .large-title, body header .large-title-wrapper .small-title, body header .large-title-wrapper .large-title {
   margin: 0 auto;
   text-align: center;
 }
-/* line 88, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 body header .small-title-wrapper .small-title, body header .large-title-wrapper .small-title {
   font-size: 1.5em;
   font-family: "reenie-beanie", cursive;
 }
-/* line 93, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 body header .small-title-wrapper .large-title, body header .large-title-wrapper .large-title {
   font-size: 2.5em;
   line-height: 1.2;
   text-transform: uppercase;
 }
-/* line 101, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 body header .homepage-message-wrapper {
   margin: 0 auto 4em;
   text-align: center;
   max-width: 780px;
 }
-/* line 106, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 body header .homepage-message-wrapper .homepage-message {
   font-size: .9em;
   line-height: 1.2;
 }
-/* line 111, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 body header .learn-more-wrapper {
   margin: 0 auto 4em;
   padding-top: 1em;
@@ -817,17 +879,17 @@ body header .learn-more-wrapper {
   border-top: 1px solid #ffffff;
   text-align: center;
 }
-/* line 118, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 body header .learn-more-wrapper .learn-more {
   text-transform: uppercase;
   font-size: 1.2em;
   line-height: 1.2;
 }
-/* line 126, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 body .region-content {
   min-height: 350px;
 }
-/* line 130, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 body footer {
   position: relative;
   background: #eaeaea;
@@ -835,14 +897,14 @@ body footer {
   padding: 3em;
   min-height: 250px;
 }
-/* line 137, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 body footer .footer-credit {
   text-align: center;
   font-family: "PT Sans";
   font-size: .75em;
   margin-top: -45px;
 }
-/* line 143, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 body footer .footer-credit .icenter-logo {
   background: url("../images/footer-icenter-logo.png") 0 0 no-repeat;
   background-size: 100px 30px;
@@ -852,7 +914,7 @@ body footer .footer-credit .icenter-logo {
   margin-top: 5px;
   margin-right: 20px;
 }
-/* line 153, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 body footer .footer-credit .jjf-logo {
   background: url("../images/footer-jjf-logo.jpg") 0 0 no-repeat;
   background-size: 100px 30px;
@@ -861,7 +923,7 @@ body footer .footer-credit .jjf-logo {
   display: inline-block;
   margin-top: 5px;
 }
-/* line 164, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 body footer:before {
   position: absolute;
   content: '';
@@ -878,29 +940,29 @@ body footer:before {
   background-color: #eaeaea;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 section {
   position: relative;
 }
 
-/* line 184, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 section:before {
   position: absolute;
   content: '';
 }
 
-/* line 188, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 section.homepage {
   background: #fff;
 }
 
-/* line 192, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .homepage {
   z-index: 1;
   padding: 3em;
 }
 
-/* line 197, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .homepage:before {
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
