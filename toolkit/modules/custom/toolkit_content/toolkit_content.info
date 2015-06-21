@@ -73,6 +73,7 @@ features[field_instance][] = node-resource-field_resource_tags
 features[field_instance][] = node-resource-field_resource_type
 features[field_instance][] = node-resource-field_website_link
 features[field_instance][] = taxonomy_term-resource_type-field_resource_glyphicon
+features[image][] = curriculum_sidebar
 features[node][] = concept_piece
 features[node][] = curriculum_content
 features[node][] = discussion_guide

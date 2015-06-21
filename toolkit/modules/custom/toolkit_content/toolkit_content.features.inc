@@ -24,6 +24,30 @@ function toolkit_content_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function toolkit_content_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: curriculum_sidebar.
+  $styles['curriculum_sidebar'] = array(
+    'label' => 'Curriculum Sidebar',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 150,
+          'height' => 150,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function toolkit_content_node_info() {
