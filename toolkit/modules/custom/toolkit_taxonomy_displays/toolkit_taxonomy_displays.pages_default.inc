@@ -13,6 +13,486 @@ function toolkit_taxonomy_displays_default_page_manager_handlers() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
+  $handler->name = 'term_view__panel_context_04299943-b859-4189-a271-7eb83def68ad';
+  $handler->task = 'term_view';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = 3;
+  $handler->conf = array(
+    'title' => 'Age Terms',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'landing',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'entity_bundle:taxonomy_term',
+          'settings' => array(
+            'type' => array(
+              'age' => 'age',
+            ),
+          ),
+          'context' => 'argument_term_1',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'landing';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'sidebar' => NULL,
+      'contentmain' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = 'a3d7839b-08ed-4019-aee4-d22fd61e1380';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-6c51b5ac-3797-4a1c-b507-b205ed6594b3';
+    $pane->panel = 'contentmain';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'theme_terms-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'argument_term_1',
+      ),
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '6c51b5ac-3797-4a1c-b507-b205ed6594b3';
+    $display->content['new-6c51b5ac-3797-4a1c-b507-b205ed6594b3'] = $pane;
+    $display->panels['contentmain'][0] = 'new-6c51b5ac-3797-4a1c-b507-b205ed6594b3';
+    $pane = new stdClass();
+    $pane->pid = 'new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+    $pane->panel = 'sidebar';
+    $pane->type = 'term_list';
+    $pane->subtype = 'term_list';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'title' => NULL,
+      'type' => 'top',
+      'list_type' => 'ul',
+      'path' => 'taxonomy/term',
+      'context' => 'argument_term_1',
+      'override_title' => 1,
+      'override_title_text' => 'Timely Relevance',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+    $display->content['new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40'] = $pane;
+    $display->panels['sidebar'][0] = 'new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+    $pane = new stdClass();
+    $pane->pid = 'new-190c219c-abe3-4ac3-b2d1-b85aaeba261b';
+    $pane->panel = 'subtitle';
+    $pane->type = 'term_description';
+    $pane->subtype = 'term_description';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => 'argument_term_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array();
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '190c219c-abe3-4ac3-b2d1-b85aaeba261b';
+    $display->content['new-190c219c-abe3-4ac3-b2d1-b85aaeba261b'] = $pane;
+    $display->panels['subtitle'][0] = 'new-190c219c-abe3-4ac3-b2d1-b85aaeba261b';
+    $pane = new stdClass();
+    $pane->pid = 'new-90e1e0b7-8ba9-4b6e-89f1-3a2491fab341';
+    $pane->panel = 'title';
+    $pane->type = 'term_name';
+    $pane->subtype = 'term_name';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link' => 0,
+      'markup' => 'h1',
+      'id' => '',
+      'class' => '',
+      'context' => 'argument_term_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array();
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '90e1e0b7-8ba9-4b6e-89f1-3a2491fab341';
+    $display->content['new-90e1e0b7-8ba9-4b6e-89f1-3a2491fab341'] = $pane;
+    $display->panels['title'][0] = 'new-90e1e0b7-8ba9-4b6e-89f1-3a2491fab341';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+  $handler->conf['display'] = $display;
+  $export['term_view__panel_context_04299943-b859-4189-a271-7eb83def68ad'] = $handler;
+
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'term_view__panel_context_44a175e0-37da-4423-8051-b60ba2ef158a';
+  $handler->task = 'term_view';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = 5;
+  $handler->conf = array(
+    'title' => 'Source Terms',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'landing',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'entity_bundle:taxonomy_term',
+          'settings' => array(
+            'type' => array(
+              'resource_source' => 'resource_source',
+            ),
+          ),
+          'context' => 'argument_term_1',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'landing';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'sidebar' => NULL,
+      'contentmain' => NULL,
+      'title' => NULL,
+      'subtitle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = 'a3d7839b-08ed-4019-aee4-d22fd61e1380';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-309a591d-89cb-45bb-bfb4-e4e7cea66ff3';
+    $pane->panel = 'contentmain';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'theme_terms-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'argument_term_1',
+      ),
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '309a591d-89cb-45bb-bfb4-e4e7cea66ff3';
+    $display->content['new-309a591d-89cb-45bb-bfb4-e4e7cea66ff3'] = $pane;
+    $display->panels['contentmain'][0] = 'new-309a591d-89cb-45bb-bfb4-e4e7cea66ff3';
+    $pane = new stdClass();
+    $pane->pid = 'new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+    $pane->panel = 'sidebar';
+    $pane->type = 'term_list';
+    $pane->subtype = 'term_list';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'title' => NULL,
+      'type' => 'top',
+      'list_type' => 'ul',
+      'path' => 'taxonomy/term',
+      'context' => 'argument_term_1',
+      'override_title' => 1,
+      'override_title_text' => 'Sources',
+      'include_current_term' => 0,
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+    $display->content['new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40'] = $pane;
+    $display->panels['sidebar'][0] = 'new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+    $pane = new stdClass();
+    $pane->pid = 'new-190c219c-abe3-4ac3-b2d1-b85aaeba261b';
+    $pane->panel = 'subtitle';
+    $pane->type = 'term_description';
+    $pane->subtype = 'term_description';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => 'argument_term_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '190c219c-abe3-4ac3-b2d1-b85aaeba261b';
+    $display->content['new-190c219c-abe3-4ac3-b2d1-b85aaeba261b'] = $pane;
+    $display->panels['subtitle'][0] = 'new-190c219c-abe3-4ac3-b2d1-b85aaeba261b';
+    $pane = new stdClass();
+    $pane->pid = 'new-90e1e0b7-8ba9-4b6e-89f1-3a2491fab341';
+    $pane->panel = 'title';
+    $pane->type = 'term_name';
+    $pane->subtype = 'term_name';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link' => 0,
+      'markup' => 'h1',
+      'id' => '',
+      'class' => '',
+      'context' => 'argument_term_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '90e1e0b7-8ba9-4b6e-89f1-3a2491fab341';
+    $display->content['new-90e1e0b7-8ba9-4b6e-89f1-3a2491fab341'] = $pane;
+    $display->panels['title'][0] = 'new-90e1e0b7-8ba9-4b6e-89f1-3a2491fab341';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+  $handler->conf['display'] = $display;
+  $export['term_view__panel_context_44a175e0-37da-4423-8051-b60ba2ef158a'] = $handler;
+
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'term_view__panel_context_52a85693-3e1a-4628-8356-55a36351f0f1';
+  $handler->task = 'term_view';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = 4;
+  $handler->conf = array(
+    'title' => 'Tag Terms',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'landing',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'entity_bundle:taxonomy_term',
+          'settings' => array(
+            'type' => array(
+              'resource_tags' => 'resource_tags',
+            ),
+          ),
+          'context' => 'argument_term_1',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'landing';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'sidebar' => NULL,
+      'contentmain' => NULL,
+      'title' => NULL,
+      'subtitle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = 'a3d7839b-08ed-4019-aee4-d22fd61e1380';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-309a591d-89cb-45bb-bfb4-e4e7cea66ff3';
+    $pane->panel = 'contentmain';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'theme_terms-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'argument_term_1',
+      ),
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '309a591d-89cb-45bb-bfb4-e4e7cea66ff3';
+    $display->content['new-309a591d-89cb-45bb-bfb4-e4e7cea66ff3'] = $pane;
+    $display->panels['contentmain'][0] = 'new-309a591d-89cb-45bb-bfb4-e4e7cea66ff3';
+    $pane = new stdClass();
+    $pane->pid = 'new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+    $pane->panel = 'sidebar';
+    $pane->type = 'term_list';
+    $pane->subtype = 'term_list';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'title' => NULL,
+      'type' => 'top',
+      'list_type' => 'ul',
+      'path' => 'taxonomy/term',
+      'context' => 'argument_term_1',
+      'override_title' => 1,
+      'override_title_text' => 'Topics',
+      'include_current_term' => 0,
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+    $display->content['new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40'] = $pane;
+    $display->panels['sidebar'][0] = 'new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+    $pane = new stdClass();
+    $pane->pid = 'new-190c219c-abe3-4ac3-b2d1-b85aaeba261b';
+    $pane->panel = 'subtitle';
+    $pane->type = 'term_description';
+    $pane->subtype = 'term_description';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => 'argument_term_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '190c219c-abe3-4ac3-b2d1-b85aaeba261b';
+    $display->content['new-190c219c-abe3-4ac3-b2d1-b85aaeba261b'] = $pane;
+    $display->panels['subtitle'][0] = 'new-190c219c-abe3-4ac3-b2d1-b85aaeba261b';
+    $pane = new stdClass();
+    $pane->pid = 'new-90e1e0b7-8ba9-4b6e-89f1-3a2491fab341';
+    $pane->panel = 'title';
+    $pane->type = 'term_name';
+    $pane->subtype = 'term_name';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link' => 0,
+      'markup' => 'h1',
+      'id' => '',
+      'class' => '',
+      'context' => 'argument_term_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '90e1e0b7-8ba9-4b6e-89f1-3a2491fab341';
+    $display->content['new-90e1e0b7-8ba9-4b6e-89f1-3a2491fab341'] = $pane;
+    $display->panels['title'][0] = 'new-90e1e0b7-8ba9-4b6e-89f1-3a2491fab341';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+  $handler->conf['display'] = $display;
+  $export['term_view__panel_context_52a85693-3e1a-4628-8356-55a36351f0f1'] = $handler;
+
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
   $handler->name = 'term_view_panel_context';
   $handler->task = 'term_view';
   $handler->subtask = '';
