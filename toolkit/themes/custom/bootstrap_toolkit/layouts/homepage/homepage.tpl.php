@@ -11,36 +11,40 @@
 ?>
 
 <div class="panel-display homepage clearfix <?php if (!empty($classes)) { print $classes; } ?><?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
-  <div class="row">
-    <div class="col-md-4 sidebar panel-panel">
+  <div class="row buckets">
+    <div class="col-md-4 panel-panel">
       <div class="panel-panel-inner">
         <div class="window toolkit-content">
-          <div class="toolkit-title upper h3"><?php print t('Content & Programs'); ?></div>
-          <?php print $content['window1']; ?>
+          <div class="toolkit-title upper h3"><a href="curriculum-content"><?php print t('Content & Programs'); ?></a></div>
+          <div class="toolkit-desc"><?php print $content['window1']; ?></div>
         </div>
       </div>
     </div>
-    <div class="col-md-4 sidebar panel-panel">
+    <div class="col-md-4 panel-panel">
       <div class="panel-panel-inner">
         <div class="window toolkit-concepts">
-          <div class="toolkit-title upper h3"><?php print t('Questions & Concepts'); ?></div>
-          <?php print $content['window2']; ?>
+          <div class="toolkit-title upper h3"><a href="questions-concepts"><?php print t('Questions & Concepts'); ?></a></div>
+          <div class="toolkit-desc"><?php print $content['window2']; ?></div>
         </div>
       </div>
     </div>    
-    <div class="col-md-4 sidebar panel-panel">
+    <div class="col-md-4 panel-panel">
       <div class="panel-panel-inner">
         <div class="window toolkit-library">
-          <div class="toolkit-title upper h3"><?php print t('Resource Library'); ?></div>
-          <?php print $content['window3']; ?>
+          <div class="toolkit-title upper h3"><a href="resource-library"><?php print t('Resource Library'); ?></a></div>
+          <div class="toolkit-desc"><?php print $content['window3']; ?></div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row learn-more">
     <div class="col-md-12 content panel-panel">
       <div class="panel-panel-inner">
-        <?php print $content['contentmain']; ?>
+        <div class="hr"></div>
+        <div id="expand-section">
+          <a id="specialcontent"></a>
+          <?php print $content['contentmain']; ?>
+        </div>
       </div>
     </div>
   </div>

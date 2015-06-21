@@ -19,6 +19,7 @@ $grid-gutter-width: 10px;
 @import "compass/css3/border-radius";
 //@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 //@import "mixins";
+@import "pages/homepage";
 @import "pages/curriculum";
 @import "pages/resource";
 @import "pages/discussion";
@@ -97,30 +98,6 @@ body {
         text-transform: uppercase;
       }
     }
-
-    .homepage-message-wrapper {
-      margin: 0 auto 4em;;
-      text-align: center;
-      max-width: 780px;
-
-      .homepage-message {
-        font-size: .9em;
-        line-height: 1.2;        
-      }
-    }
-    .learn-more-wrapper {
-      margin: 0 auto 4em;;
-      padding-top: 1em;
-      width: 260px;
-      border-top: 1px solid #ffffff;
-      text-align: center;
-      
-      .learn-more {
-        text-transform: uppercase;
-        font-size: 1.2em;
-        line-height: 1.2;        
-      }
-    }
   }
   
   .region-content {
@@ -184,26 +161,4 @@ section {
 section:before {
     position: absolute;
     content:'';
-}
-section.homepage {
-    background: #fff;
-}
-
-.homepage {
-    z-index: 1;
-    padding: 3em;
-}
-
-.homepage:before {
-    -webkit-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-    -webkit-transform-origin: 3% 0;
-    transform-origin: 3% 0;
-    top: 0;
-    left: -25%;
-    z-index: -1;
-    width: 150%;
-    height: 75%;
-    background: inherit;
-    overflow: hidden;
 }

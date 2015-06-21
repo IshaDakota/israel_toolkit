@@ -1,0 +1,181 @@
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+
+.front {
+  
+  header {
+    padding-bottom: 25px;
+  }
+
+  .homepage {
+      z-index: 1;
+      padding: 1em 2.5em 4em;
+  }
+  
+  .homepage:before {
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+      -webkit-transform-origin: 3% 0;
+      transform-origin: 3% 0;
+      top: 0;
+      left: -25%;
+      z-index: -1;
+      width: 150%;
+      height: 75%;
+      background: inherit;
+      overflow: hidden;
+  }
+  
+  section.homepage {
+      background: #fff;
+  }
+
+  .homepage-message-wrapper {
+    margin: 0 auto 4em;;
+    text-align: center;
+    max-width: 780px;
+
+    .homepage-message {
+      font-size: .9em;
+      line-height: 1.2;        
+    }
+  }
+  .learn-more-wrapper {
+    margin: 0 auto 4.5em;;
+    padding-top: 1em;
+    width: 260px;
+    border-top: 1px solid #ffffff;
+    text-align: center;
+    
+    .learn-more {
+      text-transform: uppercase;
+      font-size: 1.2em;
+      line-height: 1.2;        
+    }
+  }
+
+  .buckets {
+    margin-bottom: 70px;
+  }
+  
+  .learn-more {
+
+    #expand-section {
+      margin-top: 130px;
+      
+      img {
+        margin: 0 auto;
+      }   
+    }
+  }
+  
+  .hr {
+    width: 50%;
+    border-bottom: 2px solid #000;
+    margin: 25px auto;
+  }
+  
+  .window {
+    .toolkit-title a {
+      display: block;
+      max-height: 230px;
+      //width: 100%;
+      padding: 100px 0;
+      text-align: center;
+      color: #ffffff;
+      font-family: "freight-text-pro";
+      font-size: 1.2em;
+    }
+    
+    .toolkit-title a:hover {
+      text-decoration: none;
+      transition: all 0.3s ease 0s;
+    }
+
+    .toolkit-desc {
+      margin-top: 10px;
+      text-align: center;
+      font-size: .9em;
+      line-height: 1.4;
+      font-weight: bold;
+      font-family: "PT-Sans";
+      
+      p {
+        margin-bottom: 20px;
+      }
+    }    
+  }
+    
+  .toolkit-content {
+    .toolkit-title a {
+      background:
+        linear-gradient(
+          rgba(108,150,179, 0.5),
+          rgba(108,150,179, 0.5)
+        ),
+        url(../images/content.jpg);      
+    }
+
+    .toolkit-title a:hover {
+      background:
+        linear-gradient(
+          rgba(108,150,179, 0.7),
+          rgba(108,150,179, 0.7)
+        
+        ),
+        url(../images/content.jpg);  
+    }    
+  }
+
+  .toolkit-concepts {
+    .toolkit-title a {
+      background:
+        linear-gradient(
+          rgba(126,48,48, 0.5),
+          rgba(126,48,48, 0.5)
+        ),
+        url(../images/concepts.jpg);      
+    }
+
+    .toolkit-title a:hover {
+      background:
+        linear-gradient(
+          rgba(126,48,48, 0.7),
+          rgba(126,48,48, 0.7)
+        
+        ),
+        url(../images/concepts.jpg);  
+    }    
+  }
+
+  .toolkit-library {
+    .toolkit-title a {
+      background:
+        linear-gradient(
+          rgba(221,165,98, 0.5),
+          rgba(221,165,98, 0.5)
+        ),
+        url(../images/library.jpg);  
+    }
+
+    .toolkit-title a:hover {
+      background:
+        linear-gradient(
+          rgba(221,165,98, 0.7),
+          rgba(221,165,98, 0.7)
+        
+        ),
+        url(../images/library.jpg);  
+    }    
+  }
+}
+
+
+
