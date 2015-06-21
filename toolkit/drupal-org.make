@@ -82,6 +82,9 @@ projects[panels][version] = "3.5"
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "1.2"
 
+projects[scroll_to_destination_anchors][subdir] = "contrib"
+projects[scroll_to_destination_anchors][version] = "1.3"
+
 projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2.0"
 
