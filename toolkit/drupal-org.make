@@ -14,6 +14,9 @@ projects[ctools][version] = "1.7"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][version] = "1.16"
 
+projects[colorbox][subdir] = "contrib"
+projects[colorbox][version] = "2.8"
+
 projects[devel][subdir] = "contrib"
 projects[devel][version] = "1.5"
 
@@ -107,3 +110,7 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 libraries[mandrill][type] = "libraries"
 libraries[mandrill][download][type] = "get"
 libraries[mandrill][download][url] = "https://bitbucket.org/mailchimp/mandrill-api-php/get/1.0.52.zip"
+
+libraries[colorbox][type] = "libraries"
+libraries[colorbox][download][type] = "get"
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.zip"

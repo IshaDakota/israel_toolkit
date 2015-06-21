@@ -57,6 +57,7 @@ plugins[panels][layouts] = layouts
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 ; settings[bootstrap_cdn] = ''
 
+scripts[] = 'js/bootstrap_toolkit.js'
 
 ; ;-------------------------
 ; ; METHOD 2: Bootstrap CDN

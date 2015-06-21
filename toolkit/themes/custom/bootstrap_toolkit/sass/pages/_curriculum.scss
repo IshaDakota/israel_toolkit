@@ -38,6 +38,12 @@
       .pane-node-field-introduction {
         text-align: center;
       }
+      
+      .hr {
+        width: 30%;
+        border-bottom: 2px solid #000;
+        margin: 25px auto;
+      }
     }
   }
 
@@ -69,8 +75,8 @@
   .inner-page:before {
     position: absolute;
     content:'';
-    -webkit-transform: rotate(4deg);
-    transform: rotate(4deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
     -webkit-transform-origin: 3% 0;
     transform-origin: 3% 0;
     margin-top: -200px;
@@ -97,15 +103,45 @@
   .pane-node-field-age-range,
   .pane-node-field-program-duration {
     display: inline;
-    float: left;
-    margin-right: 40px;
+    text-align: center;
   }
   
   .field-name-field-age-range, 
   .field-name-field-program-duration {
-    .field-item {
-      display: inline;
-      margin-right: 10px;
+    
+    .field-label {
+      font-family: "PT-Sans";
+    }
+    
+    .field-items {
+      text-transform: uppercase;
+      
+      .field-item {
+        display: inline;
+        padding: 0 10px;
+        border-left: solid 2px #000;
+        
+        a, a:visited {
+          text-decoration: underline;
+          color: #000;
+        }
+
+        a:hover, a:focus {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+      
+      .first {
+        border: none;
+      }
+    }
+  }
+  
+  .field-name-field-supporting-image {
+    img {
+      float: left;
+      margin: 10px;
     }
   }
   
@@ -115,6 +151,10 @@
       max-width: 100%;
       height: auto; 
     }
+  }
+  
+  .sidebar {
+    margin-top: 20px;
   }
 }
 

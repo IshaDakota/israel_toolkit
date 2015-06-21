@@ -14,14 +14,6 @@ function bootstrap_toolkit_preprocess_field(&$variables) {
     }
   }
 
-  //Make age range and program duration bootstrap buttons.
-  if($variables['element']['#field_name'] == 'field_age_range'){
-    foreach($variables['items'] as $key => $item){
-      $variables['items'][ $key ]['#options']['attributes']['class'] = 'btn btn-primary'; 
-      $variables['items'][ $key ]['#options']['attributes']['role'] = 'button';  
-    }
-  }
-
   if($variables['element']['#field_name'] == 'field_program_duration'){
     foreach($variables['items'] as $key => $item){
       $variables['items'][ $key ]['#options']['attributes']['class'] = 'btn btn-primary'; 

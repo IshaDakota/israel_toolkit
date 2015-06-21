@@ -6,8 +6,9 @@ $plugin = array(
   'category' => t('Toolkit'),
   'theme' => 'curriculum',
   'regions' => array(
-    'sidebar' => t('Sidebar'),
+    'jumbotron' => t('Title'),    
+    'subtitle' => t('Subtitle'),   
     'contentmain' => t('Content'),
-    'jumbotron' => t('Highlighted'),    
+    'sidebar' => t('Sidebar'),
   ),
 );

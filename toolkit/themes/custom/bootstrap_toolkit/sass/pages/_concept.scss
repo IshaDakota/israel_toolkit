@@ -38,6 +38,11 @@
         font-family: "PT-Sans";
       }
 
+      .concept-subtitle-icon {
+        font-size: 24px;
+        text-align: center;
+      }
+
       .hr {
         width: 30%;
         border-bottom: 2px solid #000;
@@ -131,10 +136,12 @@
       overflow: auto;
       line-height: 1.5;
       padding: 30px;
-      font-size: 18px;
+      font-size: 16px;
+      font-family: "PT-Sans";
 
       .resource-description {
-        margin-bottom: 1em;      
+        margin-bottom: 1em;
+        font-weight: bold;     
       }
     }
   }
@@ -143,14 +150,6 @@
   .glyphicon {
     margin-right: 5px;
     font-size: .75em;
-  }
-  
-  .sidebar {
-    .jumbotron {
-      line-height: 1.5;
-      padding: 30px;
-      font-size: 18px;
-    }
   }
 }
 
