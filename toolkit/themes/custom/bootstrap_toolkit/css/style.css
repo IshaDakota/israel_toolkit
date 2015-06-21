@@ -116,11 +116,11 @@
 }
 /* line 117, ../sass/pages/_homepage.scss */
 .front .toolkit-content .toolkit-title a {
-  background: linear-gradient(rgba(108, 150, 179, 0.5), rgba(108, 150, 179, 0.5)), url(../images/content.jpg);
+  background: linear-gradient(rgba(63, 88, 105, 0.5), rgba(63, 88, 105, 0.5)), url(../images/content.jpg);
 }
 /* line 126, ../sass/pages/_homepage.scss */
 .front .toolkit-content .toolkit-title a:hover {
-  background: linear-gradient(rgba(108, 150, 179, 0.7), rgba(108, 150, 179, 0.7)), url(../images/content.jpg);
+  background: linear-gradient(rgba(63, 88, 105, 0.7), rgba(63, 88, 105, 0.7)), url(../images/content.jpg);
 }
 /* line 138, ../sass/pages/_homepage.scss */
 .front .toolkit-concepts .toolkit-title a {
