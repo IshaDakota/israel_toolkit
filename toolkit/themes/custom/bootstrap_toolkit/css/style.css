@@ -78,8 +78,8 @@
 .node-type-curriculum-content .inner-page:before {
   position: absolute;
   content: '';
-  -webkit-transform: rotate(4deg);
-  transform: rotate(4deg);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
   -webkit-transform-origin: 3% 0;
   transform-origin: 3% 0;
   margin-top: -200px;
@@ -154,6 +154,10 @@
 .node-type-curriculum-content .pane-node-body img {
   max-width: 100%;
   height: auto;
+}
+/* line 156, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .sidebar {
+  margin-top: 20px;
 }
 
 /**
@@ -281,11 +285,13 @@
   overflow: auto;
   line-height: 1.5;
   padding: 30px;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: "PT-Sans";
 }
-/* line 137, ../sass/pages/_resource.scss */
+/* line 138, ../sass/pages/_resource.scss */
 .resource .sidebar .jumbotron .resource-description {
   margin-bottom: 1em;
+  font-weight: bold;
 }
 
 /**
@@ -413,11 +419,13 @@
   overflow: auto;
   line-height: 1.5;
   padding: 30px;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: "PT-Sans";
 }
-/* line 137, ../sass/pages/_discussion.scss */
+/* line 138, ../sass/pages/_discussion.scss */
 .discussion .sidebar .jumbotron .resource-description {
   margin-bottom: 1em;
+  font-weight: bold;
 }
 
 /**
@@ -458,16 +466,21 @@
   font-family: "PT-Sans";
 }
 /* line 41, ../sass/pages/_concept.scss */
+.concept section.content-abstract .highlighted .concept-subtitle-icon {
+  font-size: 24px;
+  text-align: center;
+}
+/* line 46, ../sass/pages/_concept.scss */
 .concept section.content-abstract .highlighted .hr {
   width: 30%;
   border-bottom: 2px solid #000;
   margin: 25px auto;
 }
-/* line 48, ../sass/pages/_concept.scss */
+/* line 53, ../sass/pages/_concept.scss */
 .concept section.content-abstract .highlighted:after {
   border-bottom: 1px solid #000;
 }
-/* line 53, ../sass/pages/_concept.scss */
+/* line 58, ../sass/pages/_concept.scss */
 .concept .content-abstract:before {
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
@@ -481,44 +494,44 @@
   background: inherit;
   overflow: hidden;
 }
-/* line 67, ../sass/pages/_concept.scss */
+/* line 72, ../sass/pages/_concept.scss */
 .concept section.inner-page {
   background: #fff;
   z-index: 1;
   padding: 3em;
 }
-/* line 72, ../sass/pages/_concept.scss */
+/* line 77, ../sass/pages/_concept.scss */
 .concept section.inner-page .page-content {
   margin-top: -100px;
   margin-bottom: 50px;
 }
-/* line 76, ../sass/pages/_concept.scss */
+/* line 81, ../sass/pages/_concept.scss */
 .concept section.inner-page .page-content .views-field-title {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 80, ../sass/pages/_concept.scss */
+/* line 85, ../sass/pages/_concept.scss */
 .concept section.inner-page .page-content .views-field-title a {
   color: #000;
 }
-/* line 84, ../sass/pages/_concept.scss */
+/* line 89, ../sass/pages/_concept.scss */
 .concept section.inner-page .page-content .views-field-field-header-image {
   margin-bottom: 10px;
 }
-/* line 87, ../sass/pages/_concept.scss */
+/* line 92, ../sass/pages/_concept.scss */
 .concept section.inner-page .page-content .views-field-field-introduction {
   margin-bottom: 40px;
 }
-/* line 92, ../sass/pages/_concept.scss */
+/* line 97, ../sass/pages/_concept.scss */
 .concept section.inner-page .page-content .views-submit-button .btn-info {
   background-color: #192d3b;
   border-color: #192d3b;
 }
-/* line 100, ../sass/pages/_concept.scss */
+/* line 105, ../sass/pages/_concept.scss */
 .concept section.inner-page .page-content .views-widget-filter-field_themes_tid label, .concept section.inner-page .page-content .views-widget-filter-field_values_tid label {
   text-transform: uppercase;
 }
-/* line 107, ../sass/pages/_concept.scss */
+/* line 112, ../sass/pages/_concept.scss */
 .concept .inner-page:before {
   position: absolute;
   content: '';
@@ -534,33 +547,29 @@
   background: inherit;
   background-color: #ffffff;
 }
-/* line 123, ../sass/pages/_concept.scss */
+/* line 128, ../sass/pages/_concept.scss */
 .concept .glyphicon {
   margin-right: 5px;
   font-size: .75em;
 }
-/* line 129, ../sass/pages/_concept.scss */
+/* line 134, ../sass/pages/_concept.scss */
 .concept .sidebar .jumbotron {
   margin-top: 1em;
   overflow: auto;
   line-height: 1.5;
   padding: 30px;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: "PT-Sans";
 }
-/* line 136, ../sass/pages/_concept.scss */
+/* line 142, ../sass/pages/_concept.scss */
 .concept .sidebar .jumbotron .resource-description {
   margin-bottom: 1em;
+  font-weight: bold;
 }
-/* line 143, ../sass/pages/_concept.scss */
+/* line 150, ../sass/pages/_concept.scss */
 .concept .glyphicon {
   margin-right: 5px;
   font-size: .75em;
-}
-/* line 149, ../sass/pages/_concept.scss */
-.concept .sidebar .jumbotron {
-  line-height: 1.5;
-  padding: 30px;
-  font-size: 18px;
 }
 
 /**

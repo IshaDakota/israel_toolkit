@@ -17,7 +17,7 @@
           <div class="panel-panel-inner">
             <?php print $content['title']; ?>
             <div class="hr"></div>
-            <div class="concept-subtitle">Toolkit Concept</div>
+            <div class="concept-subtitle"><span class="glyphicon glyphicon-plus"></span>Toolkit Concept</div>
           </div>
         </div>
       </div>     

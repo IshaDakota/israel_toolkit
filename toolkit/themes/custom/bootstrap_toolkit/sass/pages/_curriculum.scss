@@ -75,8 +75,8 @@
   .inner-page:before {
     position: absolute;
     content:'';
-    -webkit-transform: rotate(4deg);
-    transform: rotate(4deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
     -webkit-transform-origin: 3% 0;
     transform-origin: 3% 0;
     margin-top: -200px;
@@ -151,6 +151,10 @@
       max-width: 100%;
       height: auto; 
     }
+  }
+  
+  .sidebar {
+    margin-top: 20px;
   }
 }
 
