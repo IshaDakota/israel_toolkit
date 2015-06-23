@@ -70,9 +70,41 @@
     #expand-section {
       margin-top: 130px;
       
-      img {
-        margin: 0 auto;
-      }   
+      h2.pane-title {
+        text-align: center;
+      }
+
+      .view-toolkit-sliders {
+        .carousel-control.left, .carousel-control.right {
+          background-image: none;
+          
+          .icon-prev, .icon-next {
+            color: #000;
+            font-size: 100px;
+          }
+        }
+        
+        .item {
+          
+          img {
+            padding-top: 150px;
+          }
+          
+          .carousel-caption {
+            bottom: auto;
+            top: 0;
+            text-shadow: none;
+            
+            h3 {
+              color: #428bca;
+            }
+            
+            p {
+              color: #000000;
+            }
+          }
+        }
+      }  
     }
   }
   
@@ -176,6 +208,3 @@
     }    
   }
 }
-
-
-

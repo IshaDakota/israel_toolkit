@@ -77,16 +77,43 @@
   margin-top: 130px;
 }
 /* line 73, ../sass/pages/_homepage.scss */
-.front .learn-more #expand-section img {
-  margin: 0 auto;
+.front .learn-more #expand-section h2.pane-title {
+  text-align: center;
 }
-/* line 79, ../sass/pages/_homepage.scss */
+/* line 78, ../sass/pages/_homepage.scss */
+.front .learn-more #expand-section .view-toolkit-sliders .carousel-control.left, .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.right {
+  background-image: none;
+}
+/* line 81, ../sass/pages/_homepage.scss */
+.front .learn-more #expand-section .view-toolkit-sliders .carousel-control.left .icon-prev, .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.left .icon-next, .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.right .icon-prev, .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.right .icon-next {
+  color: #000;
+  font-size: 100px;
+}
+/* line 89, ../sass/pages/_homepage.scss */
+.front .learn-more #expand-section .view-toolkit-sliders .item img {
+  padding-top: 150px;
+}
+/* line 93, ../sass/pages/_homepage.scss */
+.front .learn-more #expand-section .view-toolkit-sliders .item .carousel-caption {
+  bottom: auto;
+  top: 0;
+  text-shadow: none;
+}
+/* line 98, ../sass/pages/_homepage.scss */
+.front .learn-more #expand-section .view-toolkit-sliders .item .carousel-caption h3 {
+  color: #428bca;
+}
+/* line 102, ../sass/pages/_homepage.scss */
+.front .learn-more #expand-section .view-toolkit-sliders .item .carousel-caption p {
+  color: #000000;
+}
+/* line 111, ../sass/pages/_homepage.scss */
 .front .hr {
   width: 50%;
   border-bottom: 2px solid #000;
   margin: 25px auto;
 }
-/* line 86, ../sass/pages/_homepage.scss */
+/* line 118, ../sass/pages/_homepage.scss */
 .front .window .toolkit-title a {
   display: block;
   max-height: 230px;
@@ -96,12 +123,12 @@
   font-family: "freight-text-pro";
   font-size: 1.2em;
 }
-/* line 97, ../sass/pages/_homepage.scss */
+/* line 129, ../sass/pages/_homepage.scss */
 .front .window .toolkit-title a:hover {
   text-decoration: none;
   transition: all 0.3s ease 0s;
 }
-/* line 102, ../sass/pages/_homepage.scss */
+/* line 134, ../sass/pages/_homepage.scss */
 .front .window .toolkit-desc {
   margin-top: 10px;
   text-align: center;
@@ -110,31 +137,31 @@
   font-weight: bold;
   font-family: "PT-Sans";
 }
-/* line 110, ../sass/pages/_homepage.scss */
+/* line 142, ../sass/pages/_homepage.scss */
 .front .window .toolkit-desc p {
   margin-bottom: 20px;
 }
-/* line 117, ../sass/pages/_homepage.scss */
+/* line 149, ../sass/pages/_homepage.scss */
 .front .toolkit-content .toolkit-title a {
   background: linear-gradient(rgba(63, 88, 105, 0.5), rgba(63, 88, 105, 0.5)), url(../images/content.jpg);
 }
-/* line 126, ../sass/pages/_homepage.scss */
+/* line 158, ../sass/pages/_homepage.scss */
 .front .toolkit-content .toolkit-title a:hover {
   background: linear-gradient(rgba(63, 88, 105, 0.7), rgba(63, 88, 105, 0.7)), url(../images/content.jpg);
 }
-/* line 138, ../sass/pages/_homepage.scss */
+/* line 170, ../sass/pages/_homepage.scss */
 .front .toolkit-concepts .toolkit-title a {
   background: linear-gradient(rgba(126, 48, 48, 0.5), rgba(126, 48, 48, 0.5)), url(../images/concepts.jpg);
 }
-/* line 147, ../sass/pages/_homepage.scss */
+/* line 179, ../sass/pages/_homepage.scss */
 .front .toolkit-concepts .toolkit-title a:hover {
   background: linear-gradient(rgba(126, 48, 48, 0.7), rgba(126, 48, 48, 0.7)), url(../images/concepts.jpg);
 }
-/* line 159, ../sass/pages/_homepage.scss */
+/* line 191, ../sass/pages/_homepage.scss */
 .front .toolkit-library .toolkit-title a {
   background: linear-gradient(rgba(221, 165, 98, 0.5), rgba(221, 165, 98, 0.5)), url(../images/library.jpg);
 }
-/* line 168, ../sass/pages/_homepage.scss */
+/* line 200, ../sass/pages/_homepage.scss */
 .front .toolkit-library .toolkit-title a:hover {
   background: linear-gradient(rgba(221, 165, 98, 0.7), rgba(221, 165, 98, 0.7)), url(../images/library.jpg);
 }

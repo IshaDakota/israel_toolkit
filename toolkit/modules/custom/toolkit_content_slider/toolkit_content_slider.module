@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the toolkit_content_slider feature.
+ */
+
+include_once 'toolkit_content_slider.features.inc';
