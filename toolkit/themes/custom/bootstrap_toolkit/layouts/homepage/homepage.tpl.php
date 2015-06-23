@@ -15,8 +15,16 @@
     <div class="col-md-4 panel-panel">
       <div class="panel-panel-inner">
         <div class="window toolkit-content">
-          <div class="toolkit-title upper h3"><a href="curriculum-content"><?php print t('Content & Programs'); ?></a></div>
+          <div class="toolkit-title upper h3"><a href="curriculum-content"><?php print t('Programs & Activities'); ?></a></div>
           <div class="toolkit-desc"><?php print $content['window1']; ?></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 panel-panel">
+      <div class="panel-panel-inner">
+        <div class="window toolkit-library">
+          <div class="toolkit-title upper h3"><a href="resource-library"><?php print t('Educational Resources'); ?></a></div>
+          <div class="toolkit-desc"><?php print $content['window3']; ?></div>
         </div>
       </div>
     </div>
@@ -25,14 +33,6 @@
         <div class="window toolkit-concepts">
           <div class="toolkit-title upper h3"><a href="questions-concepts"><?php print t('Questions & Concepts'); ?></a></div>
           <div class="toolkit-desc"><?php print $content['window2']; ?></div>
-        </div>
-      </div>
-    </div>    
-    <div class="col-md-4 panel-panel">
-      <div class="panel-panel-inner">
-        <div class="window toolkit-library">
-          <div class="toolkit-title upper h3"><a href="resource-library"><?php print t('Resource Library'); ?></a></div>
-          <div class="toolkit-desc"><?php print $content['window3']; ?></div>
         </div>
       </div>
     </div>

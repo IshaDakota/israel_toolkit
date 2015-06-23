@@ -27,7 +27,7 @@ function toolkit_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
   );
   // Exported menu link: main-menu_home:<front>
@@ -67,24 +67,24 @@ function toolkit_menu_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_resource-library:resource-library
-  $menu_links['main-menu_resource-library:resource-library'] = array(
+  // Exported menu link: main-menu_resources:resource-library
+  $menu_links['main-menu_resources:resource-library'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'resource-library',
     'router_path' => 'resource-library',
-    'link_title' => 'Resource Library',
+    'link_title' => 'Resources',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'main-menu_resource-library:resource-library',
+      'identifier' => 'main-menu_resources:resource-library',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -48,
     'customized' => 1,
   );
   // Translatables
@@ -92,7 +92,7 @@ function toolkit_menu_menu_default_menu_links() {
   t('Concepts');
   t('Home');
   t('Programs');
-  t('Resource Library');
+  t('Resources');
 
 
   return $menu_links;

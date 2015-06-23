@@ -58,7 +58,7 @@ function toolkit_pages_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Content & Programs';
+  $display->title = 'Programs & Activities';
   $display->uuid = 'bb78ea7a-94c8-4cd0-9815-e2d501c62d79';
   $display->content = array();
   $display->panels = array();
@@ -645,7 +645,7 @@ function toolkit_pages_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Resource Library';
+  $display->title = 'Educational Resources';
   $display->uuid = 'bb78ea7a-94c8-4cd0-9815-e2d501c62d79';
   $display->content = array();
   $display->panels = array();
