@@ -21,6 +21,30 @@ function toolkit_content_slider_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function toolkit_content_slider_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: slider_image.
+  $styles['slider_image'] = array(
+    'label' => 'Slider Image',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 500,
+          'height' => 500,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function toolkit_content_slider_node_info() {
