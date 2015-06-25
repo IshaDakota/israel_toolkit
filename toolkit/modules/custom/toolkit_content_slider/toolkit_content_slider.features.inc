@@ -33,8 +33,8 @@ function toolkit_content_slider_image_default_styles() {
       2 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 500,
-          'height' => 500,
+          'width' => 600,
+          'height' => 600,
         ),
         'weight' => 1,
       ),
