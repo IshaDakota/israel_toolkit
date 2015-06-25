@@ -882,6 +882,88 @@
   display: inline;
   margin-right: 10px;
 }
+/* line 168, ../sass/pages/_landing.scss */
+.landing #theme-menu ul {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 1;
+}
+/* line 180, ../sass/pages/_landing.scss */
+.landing #theme-menu a {
+  position: absolute;
+  display: block;
+  background: #214c71;
+  color: #fff;
+  height: 175px;
+  width: 175px;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 5px solid #0a141b;
+  border-spacing: -10px;
+  padding: 65px 10px;
+  line-height: 1;
+}
+/* line 201, ../sass/pages/_landing.scss */
+.landing #theme-menu .dilemmas a {
+  top: 35px;
+  left: 50%;
+  background: #214c71;
+}
+/* line 206, ../sass/pages/_landing.scss */
+.landing #theme-menu .empathy a {
+  top: 20px;
+  left: 30%;
+  background: #4c81a7;
+  color: #192d3b;
+}
+/* line 212, ../sass/pages/_landing.scss */
+.landing #theme-menu .politics a {
+  top: 114px;
+  left: 74%;
+  background: #4c6c83;
+  color: #192d3b;
+}
+/* line 218, ../sass/pages/_landing.scss */
+.landing #theme-menu .reconciliation a {
+  top: 182px;
+  left: 18%;
+  background: #e4e4e4;
+  color: #192d3b;
+}
+/* line 224, ../sass/pages/_landing.scss */
+.landing #theme-menu .consequence a {
+  top: 225px;
+  left: 58%;
+  background: #0a141b;
+  border: 5px solid #4c6c83;
+  color: #2b6083;
+}
+/* line 231, ../sass/pages/_landing.scss */
+.landing #theme-menu .narratives a {
+  top: 315px;
+  left: 34%;
+  background: #0a141b;
+  color: #2b6083;
+  border: 5px solid #4c6c83;
+}
+/* line 238, ../sass/pages/_landing.scss */
+.landing #theme-menu .silver a {
+  top: 420px;
+  left: 51%;
+  background: #4c6c83;
+}
+/* line 243, ../sass/pages/_landing.scss */
+.landing #theme-menu a:hover {
+  z-index: 2;
+}
 
 /* line 29, ../sass/style.scss */
 body {

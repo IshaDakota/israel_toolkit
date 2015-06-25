@@ -162,5 +162,85 @@
       margin-right: 10px;
     }
   }
+
+  #theme-menu {
+  
+    ul{ 
+      position:relative; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 600px; 
+      list-style-type:none; 
+      margin:0 auto; 
+      padding:0; 
+      z-index:1; 
+    }
+  
+    a { 
+        position: absolute; 
+        display:block; 
+        background:#214c71; 
+        color:#fff; 
+        height:175px; 
+        width:175px;
+        //font-family: "PT-Sans";
+        //font-weight: bold;
+        font-size:1.2em; 
+        //line-height:100px; 
+        text-align:center; 
+        text-decoration:none; 
+        //letter-spacing:1px; 
+        border-radius:50%;
+        border: 5px solid #0a141b;
+        border-spacing: -10px;
+        padding: 65px 10px;
+        line-height: 1;
+    } 
+
+    .dilemmas a{
+      top:35px;
+      left:50%;
+      background:#214c71;
+      } 
+    .empathy a{
+      top:20px;
+      left:30%;
+      background: #4c81a7;
+      color: #192d3b;
+    } 
+    .politics a{
+      top:114px;
+      left:74%;
+      background: #4c6c83;
+      color: #192d3b;
+    } 
+    .reconciliation a{
+      top:182px;
+      left:18%;
+      background: #e4e4e4;
+      color: #192d3b;
+    } 
+    .consequence a{
+      top:225px;
+      left:58%;
+      background: #0a141b;
+      border: 5px solid #4c6c83;
+      color: #2b6083;
+    } 
+    .narratives a{
+      top:315px;
+      left:34%;
+      background: #0a141b;
+      color: #2b6083;
+      border: 5px solid #4c6c83;
+    } 
+    .silver a{
+      top:420px;
+      left:51%;
+      background:#4c6c83; 
+    } 
+    a:hover{ z-index:2; }    
+  }
 }
 

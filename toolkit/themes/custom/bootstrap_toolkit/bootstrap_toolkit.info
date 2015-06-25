@@ -58,6 +58,8 @@ plugins[panels][layouts] = layouts
 ; settings[bootstrap_cdn] = ''
 
 scripts[] = 'js/bootstrap_toolkit.js'
+scripts[] = 'js/bubbles.js'
+
 
 ; ;-------------------------
 ; ; METHOD 2: Bootstrap CDN
