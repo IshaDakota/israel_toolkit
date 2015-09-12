@@ -58,6 +58,7 @@ plugins[panels][layouts] = layouts
 ; settings[bootstrap_cdn] = ''
 
 scripts[] = 'js/bootstrap_toolkit.js'
+scripts[] = 'js/toolkit_collapse.js'
 
 ; ;-------------------------
 ; ; METHOD 2: Bootstrap CDN
