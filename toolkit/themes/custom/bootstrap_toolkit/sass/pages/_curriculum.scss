@@ -95,7 +95,7 @@
     img {
       //max-width: 600px;
       //height: auto;
-      //margin: 0 auto;
+      margin: 0 auto;
     }
   }
   
@@ -107,6 +107,12 @@
   .jumbotron {
     overflow: auto;
   }
+  
+  .pane-search-form {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
   .pane-node-field-age-range,
   .pane-node-field-program-duration {
     //display: inline;
@@ -158,7 +164,17 @@
       text-decoration: none;
     }
   }
-
+  
+  .pane-node-field-themes,
+  .pane-node-field-age-range,
+  .pane-node-field-timely-relevance {
+    margin-bottom: 10px;
+    
+    .field-label {
+      font-family: "PT-Sans";
+    }
+  }
+  
   .pane-node-field-background-resource,
   .pane-node-field-discussion-guide,
   .pane-node-field-supporting-materials {
@@ -204,6 +220,27 @@
   
   .sidebar {
     margin-top: 20px;
+  }
+  
+  .field-brief-description {
+    margin-bottom: 20px;
+  }
+  
+  .node-curriculum-activity-parts {
+    .field-title {
+      background: #192d3b;
+      padding: 10px;
+      
+      a {
+        color: #ffffff;
+        font-family: PT-Sans;
+        font-weight: bold;
+      }
+      
+      a:hover, a:focus {
+        text-decoration: none;
+      }
+    }
   }
 }
 
