@@ -60,6 +60,14 @@ function toolkit_content_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'curriculum_activity_parts' => array(
+      'name' => t('Curriculum Activity Parts'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'curriculum_content' => array(
       'name' => t('Curriculum Content'),
       'base' => 'node_content',

@@ -669,6 +669,29 @@ function toolkit_pages_default_page_manager_pages() {
     $display->content['new-d91c4724-cbf4-4dea-9aa3-e9e98d141baa'] = $pane;
     $display->panels['contentmain'][0] = 'new-d91c4724-cbf4-4dea-9aa3-e9e98d141baa';
     $pane = new stdClass();
+    $pane->pid = 'new-d83156b7-5c43-4350-bf35-536e6c5a529c';
+    $pane->panel = 'sidebar';
+    $pane->type = 'block';
+    $pane->subtype = 'search-form';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'd83156b7-5c43-4350-bf35-536e6c5a529c';
+    $display->content['new-d83156b7-5c43-4350-bf35-536e6c5a529c'] = $pane;
+    $display->panels['sidebar'][0] = 'new-d83156b7-5c43-4350-bf35-536e6c5a529c';
+    $pane = new stdClass();
     $pane->pid = 'new-fbe219e0-cfdc-4452-9194-499c2d3a2024';
     $pane->panel = 'sidebar';
     $pane->type = 'block';
@@ -686,11 +709,11 @@ function toolkit_pages_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = 'fbe219e0-cfdc-4452-9194-499c2d3a2024';
     $display->content['new-fbe219e0-cfdc-4452-9194-499c2d3a2024'] = $pane;
-    $display->panels['sidebar'][0] = 'new-fbe219e0-cfdc-4452-9194-499c2d3a2024';
+    $display->panels['sidebar'][1] = 'new-fbe219e0-cfdc-4452-9194-499c2d3a2024';
     $pane = new stdClass();
     $pane->pid = 'new-4c8c094a-7418-4161-a35c-00b119ac8d72';
     $pane->panel = 'subtitle';
