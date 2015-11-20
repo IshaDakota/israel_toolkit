@@ -76,31 +76,30 @@
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-md-12 main-nav upper">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse">
-          <nav role="navigation">
-            <?php print render($primary_nav); ?>
-          </nav>
-        </div>
-        <div class="logo-wrapper"><div class="logo"></div></div>        
-      </div>
-    </div>
-    <div class="row">
       <div class="col-md-12">
-        <div class="small-title-wrapper"><div class="small-title">Engaging Israel:</div></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="large-title-wrapper"><div class="large-title">A Conflict Education Toolkit</div></div>
+        <div class="logo-wrapper"><div class="logo"></div></div>
+        
+        <div class="inner-header">
+          <div class="title-wrapper">
+            <div class="large-title"><?php print t('Approaching Conflicts') ?></div>
+            <div class="small-title"><?php print t('Contexts, Perspectives, and Values in Israel Education') ?></div>
+          </div>
+          <div class="main-nav upper">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse">
+              <nav role="navigation">
+                <?php print render($primary_nav); ?>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -108,10 +107,8 @@
 
 <div class="container">
   <?php print $messages; ?>
+  <?php print render($page['content']); ?>
 </div>
-
-<?php print render($page['content']); ?>
-
 
 <footer class="footer">
     <div class="row disclaimer">

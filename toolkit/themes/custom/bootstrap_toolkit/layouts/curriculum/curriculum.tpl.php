@@ -10,22 +10,20 @@
  */
 ?>
 <section class="content-abstract">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 panel-panel highlighted">
-        <div class="panel-panel-inner">
-          <?php print $content['jumbotron']; ?>
-        </div>
-        <div class="subtitle content-programs">
-          <?php print $content['subtitle']; ?>
-        </div>        
+  <div class="row">
+    <div class="col-md-12 panel-panel highlighted">
+      <div class="panel-panel-inner">
+        <?php print $content['jumbotron']; ?>
       </div>
-    </div>     
-  </div>
+      <div class="subtitle content-programs">
+        <?php print $content['subtitle']; ?>
+      </div>        
+    </div>
+  </div>     
 </section>
 
 <section class="inner-page">
-  <div class="container page-content">
+  <div class="page-content">
   <a id="main-content"></a>        
     <div class="row">
       <div class="col-md-8 content panel-panel">

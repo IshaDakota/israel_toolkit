@@ -10,10 +10,6 @@
 
 .node-type-curriculum-content {
   
-  .logo-wrapper {
-    margin: 1em 0;
-  }
-  
   .large-title-wrapper {
 
     .large-title {
@@ -48,17 +44,7 @@
   }
 
   .content-abstract:before {
-      -webkit-transform: rotate(-3deg);
-      transform: rotate(-3deg);
-      -webkit-transform-origin: 3% 0;
-      transform-origin: 3% 0;
-      top: 0;
-      left: -25%;
-      z-index: -1;
-      width: 150%;
-      height: 75%;
-      background: inherit;
-      overflow: hidden;
+
   }
   
   section.inner-page {
@@ -76,10 +62,10 @@
     position: absolute;
     content:'';
     -webkit-transform: rotate(3deg);
-    transform: rotate(1deg);
+    transform: rotate(10deg);
     -webkit-transform-origin: 1% 0;
     transform-origin: 1% 0;
-    margin-top: -200px;
+    margin-top: -500px;
     left: -25%;
     z-index: -1;
     width: 150%;
