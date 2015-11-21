@@ -10,10 +10,10 @@
  */
 ?>
 
-<section class="content-abstract">
+<section class="page-content">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 panel-panel highlighted">
+      <div class="col-md-8 col-md-push-4 content panel-panel highlighted">
         <div class="title content-programs">
           <?php print $content['title']; ?>
         </div>
@@ -21,18 +21,6 @@
         </div>
         <div class="subtitle content-programs">
           <?php print $content['subtitle']; ?>
-        </div>
-      </div>
-    </div>     
-  </div>
-</section>
-
-<section class="inner-page">
-  <div class="container page-content">
-  <a id="main-content"></a>  
-    <div class="row">
-      <div class="col-md-8 col-md-push-4 content panel-panel">
-        <div class="panel-panel-inner">
           <?php print $content['contentmain']; ?>
         </div>
       </div>
@@ -41,6 +29,6 @@
           <?php print $content['sidebar']; ?>
         </div>
       </div>
-    </div>
+    </div>     
   </div>
 </section>

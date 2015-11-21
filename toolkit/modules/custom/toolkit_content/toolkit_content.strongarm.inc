@@ -106,7 +106,7 @@ function toolkit_content_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '19',
+          'weight' => '20',
         ),
       ),
       'display' => array(),

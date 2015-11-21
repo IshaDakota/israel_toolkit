@@ -105,10 +105,8 @@
   </div>
 </header>
 
-<div class="container">
   <?php print $messages; ?>
   <?php print render($page['content']); ?>
-</div>
 
 <footer class="footer">
     <div class="row disclaimer">

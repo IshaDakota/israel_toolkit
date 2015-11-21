@@ -9,33 +9,21 @@
  * panel of the layout. This layout supports the following sections:
  */
 ?>
-<section class="content-abstract">
-  <div class="row">
-    <div class="col-md-12 panel-panel highlighted">
-      <div class="panel-panel-inner">
-        <?php print $content['jumbotron']; ?>
-      </div>
-      <div class="subtitle content-programs">
-        <?php print $content['subtitle']; ?>
-      </div>        
-    </div>
-  </div>     
-</section>
-
-<section class="inner-page">
-  <div class="page-content">
-  <a id="main-content"></a>        
+<section class="page-content">
+  <div class="container">
     <div class="row">
-      <div class="col-md-8 content panel-panel">
+      <div class="col-md-7 col-md-offset-1 panel-panel highlighted">
         <div class="panel-panel-inner">
+          <?php print $content['jumbotron']; ?>
+          <?php print $content['subtitle']; ?>
           <?php print $content['contentmain']; ?>
         </div>
       </div>
-      <div class="col-md-4 sidebar panel-panel">
+      <div class="col-md-4 panel-panel">
         <div class="panel-panel-inner">
           <?php print $content['sidebar']; ?>
         </div>
       </div>
-    </div>    
+    </div>
   </div>
 </section>

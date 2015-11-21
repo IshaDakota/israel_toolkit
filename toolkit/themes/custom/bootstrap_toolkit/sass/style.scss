@@ -18,7 +18,7 @@ $grid-gutter-width: 10px;
 
 @import "compass/css3/border-radius";
 //@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
-//@import "mixins";
+@import "mixins";
 @import "pages/homepage";
 @import "pages/curriculum";
 @import "pages/resource";
@@ -27,9 +27,9 @@ $grid-gutter-width: 10px;
 @import "pages/landing";
 
 body {
-  font-family: "freight-text-pro"; /* 1 */
-  font-size: 18px;
-  line-height: 30px;
+  font-family: "rucksack", sans-serif; /* 1 */
+  font-size: 14px;
+  line-height: 26px;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   overflow-x: hidden;
@@ -38,7 +38,7 @@ body {
 
   h1, h2, h3, h4, h5, h6, .h1, 
   .h2, .h3, .h4, .h5, .h6 {
-    font-family: "pt-sans";  
+    font-family: "freight-text-pro";  
   }
   
   a.btn {
@@ -75,7 +75,7 @@ body {
             
             a {
               text-transform: uppercase;
-              font-size: .9em;
+              font-size: 16px;
               line-height: 1;
               padding-top: 0;              
             }
@@ -96,16 +96,17 @@ body {
           //text-align: center;
         }
         .small-title {
-          font-size: .72em;
+          font-size: 12px;
           font-family: "rucksack", sans-serif;
         }
         
         .large-title {
           //margin-bottom: 120px;
           font-family: "rucksack", sans-serif;
-          font-size: 1.2em;
+          font-weight: 500;
+          font-size: 24px;
           line-height: 1;
-          letter-spacing: 3px;
+          letter-spacing: 1px;
           text-transform: uppercase;
         }
       }
@@ -129,6 +130,38 @@ body {
   .region-content {
     min-height: 350px;
   }
+
+  section.page-content {
+    background: url('../images/title-triangle.png') top center no-repeat;
+    z-index: 1;
+    
+    .highlighted {
+      margin-bottom: 100px;
+      background: rgba(3258,258,258,0.3);
+      
+      .panel-panel-inner {
+        z-index: 500;
+
+        .pane-node-title {
+          h1 {
+            font-size: 37px;
+            color: $purple;
+          }
+        }
+        
+        .pane-node-field-introduction {
+
+        }
+        
+        .hr {
+          width: 30%;
+          border-bottom: 2px solid #000;
+          margin: 25px auto;
+        }
+      }
+    }
+  }
+
 
   footer {
     position: relative;
