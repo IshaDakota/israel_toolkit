@@ -24,7 +24,7 @@
   .pane-node-field-header-image {
     margin-top: 20px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px 0;
     
     img {
       margin: 0 auto;
@@ -111,7 +111,6 @@
   .pane-node-field-background-resource,
   .pane-node-field-discussion-guide,
   .pane-node-field-supporting-materials {
-
     margin: 10px 0;
     padding: 0;
     
@@ -129,6 +128,22 @@
     
     a:hover, a:focus .field-label {
       text-decoration: none;
+    }
+
+    .field-item {
+      margin-left: 25px;
+      
+      .glyphicon {
+        margin-right: 5px;
+        color: $purple;
+      }
+      a {
+        color: #000;
+      }
+      
+      a:hover, a:focus {
+        text-decoration: underline;
+      }
     }
   }
   
