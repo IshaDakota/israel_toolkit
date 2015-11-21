@@ -84,7 +84,7 @@
 
 
   <div class="field-title">
-    <a class="collapsed" data-toggle="collapse" href="#collapse-<?php print $node->nid; ?>"><div<?php print $title_attributes; ?>><span class="glyphicon glyphicon-plus"></span><?php print $title; ?></div></a>
+    <a class="collapsed" data-toggle="collapse" href="#collapse-<?php print $node->nid; ?>"><div<?php print $title_attributes; ?>><span class="glyphicon glyphicon-plus-sign"></span><?php print $title; ?></div></a>
   </div>
   
   <div class="field-brief-description"><?php print render($content['field_brief_description']) ?></div>

@@ -176,205 +176,196 @@
  * Additional useful selectors can be found in Zen's online documentation.
  * https://drupal.org/node/1707736
  */
-/* line 13, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .logo-wrapper {
-  margin: 1em 0;
+/* line 15, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-title h1 {
+  font-size: 37px;
+  color: #603252;
 }
-/* line 19, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .large-title-wrapper .large-title {
-  margin-bottom: 120px;
-}
-/* line 25, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content section.content-abstract {
-  background: #eaeaea;
-  z-index: 1;
-  padding: 3em;
-}
-/* line 30, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content section.content-abstract .highlighted {
-  margin-top: -50px;
-  margin-bottom: 100px;
-}
-/* line 34, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content section.content-abstract .highlighted .pane-node-title {
-  text-align: center;
-}
-/* line 38, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content section.content-abstract .highlighted .pane-node-field-introduction {
-  text-align: center;
-}
-/* line 42, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content section.content-abstract .highlighted .hr {
-  width: 30%;
-  border-bottom: 2px solid #000;
-  margin: 25px auto;
-}
-/* line 50, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .content-abstract:before {
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-  -webkit-transform-origin: 3% 0;
-  transform-origin: 3% 0;
-  top: 0;
-  left: -25%;
-  z-index: -1;
-  width: 150%;
-  height: 75%;
-  background: inherit;
-  overflow: hidden;
-}
-/* line 64, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content section.inner-page {
-  background: #fff;
-  z-index: 1;
-  padding: 3em;
-}
-/* line 69, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content section.inner-page .page-content {
-  margin-top: -170px;
-  margin-bottom: 100px;
-}
-/* line 75, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .inner-page:before {
-  position: absolute;
-  content: '';
-  -webkit-transform: rotate(3deg);
-  transform: rotate(1deg);
-  -webkit-transform-origin: 1% 0;
-  transform-origin: 1% 0;
-  margin-top: -200px;
-  left: -25%;
-  z-index: -1;
-  width: 150%;
-  height: 75%;
-  background: inherit;
-  background-color: #ffffff;
-}
-/* line 91, ../sass/pages/_curriculum.scss */
+/* line 24, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-header-image {
   margin-top: 20px;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px 0;
 }
-/* line 95, ../sass/pages/_curriculum.scss */
+/* line 29, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-header-image img {
   margin: 0 auto;
 }
-/* line 102, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .glyphicon {
-  margin-right: 5px;
-  font-size: .75em;
+/* line 34, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-subtitle {
+  font-size: 24px;
+  font-style: italic;
+  color: #603252;
+  font-family: "freight-text-pro";
+  margin-bottom: 20px;
 }
-/* line 107, ../sass/pages/_curriculum.scss */
+/* line 44, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .jumbotron {
   overflow: auto;
 }
-/* line 111, ../sass/pages/_curriculum.scss */
+/* line 48, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-search-form {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-/* line 154, ../sass/pages/_curriculum.scss */
+/* line 54, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-program-description h2 {
+  color: #603252;
+  font-size: 38px;
+}
+/* line 60, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-core-learnings,
 .node-type-curriculum-content .pane-node-field-key-questions {
-  background: #eaeaea;
   margin: 10px 0;
-  padding: 10px;
+  padding: 0;
 }
-/* line 159, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .pane-node-field-core-learnings a,
-.node-type-curriculum-content .pane-node-field-key-questions a {
-  font-family: PT-Sans;
-  color: #333333;
+/* line 65, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-core-learnings a .field-label,
+.node-type-curriculum-content .pane-node-field-key-questions a .field-label {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: "rucksack", sans-serif;
+  color: #603252;
+  font-weight: 500;
 }
-/* line 163, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .pane-node-field-core-learnings a:hover, .node-type-curriculum-content .pane-node-field-core-learnings a:focus,
+/* line 72, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-core-learnings a .field-label .glyphicon,
+.node-type-curriculum-content .pane-node-field-key-questions a .field-label .glyphicon {
+  margin-right: 5px;
+  font-size: 19px;
+}
+/* line 78, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-core-learnings a:hover, .node-type-curriculum-content .pane-node-field-core-learnings a:focus .field-label,
 .node-type-curriculum-content .pane-node-field-key-questions a:hover,
-.node-type-curriculum-content .pane-node-field-key-questions a:focus {
+.node-type-curriculum-content .pane-node-field-key-questions a:focus .field-label {
   text-decoration: none;
 }
-/* line 168, ../sass/pages/_curriculum.scss */
+/* line 82, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-core-learnings .field-item,
+.node-type-curriculum-content .pane-node-field-key-questions .field-item {
+  margin-left: 25px;
+}
+/* line 85, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-core-learnings .field-item .glyphicon,
+.node-type-curriculum-content .pane-node-field-key-questions .field-item .glyphicon {
+  margin-right: 5px;
+  color: #603252;
+}
+/* line 92, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-themes,
 .node-type-curriculum-content .pane-node-field-age-range,
 .node-type-curriculum-content .pane-node-field-timely-relevance {
   margin-bottom: 10px;
 }
-/* line 173, ../sass/pages/_curriculum.scss */
+/* line 97, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-themes .field-label,
 .node-type-curriculum-content .pane-node-field-age-range .field-label,
 .node-type-curriculum-content .pane-node-field-timely-relevance .field-label {
-  font-family: "PT-Sans";
+  font-family: "rucksack", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #603252;
+  text-transform: uppercase;
 }
-/* line 178, ../sass/pages/_curriculum.scss */
+/* line 105, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-themes .field-item a,
+.node-type-curriculum-content .pane-node-field-age-range .field-item a,
+.node-type-curriculum-content .pane-node-field-timely-relevance .field-item a {
+  color: #000;
+  font-size: 15px;
+}
+/* line 111, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-background-resource,
 .node-type-curriculum-content .pane-node-field-discussion-guide,
 .node-type-curriculum-content .pane-node-field-supporting-materials {
   margin: 10px 0;
-  padding: 10px;
+  padding: 0;
 }
-/* line 181, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .pane-node-field-background-resource .glyphicon,
-.node-type-curriculum-content .pane-node-field-discussion-guide .glyphicon,
-.node-type-curriculum-content .pane-node-field-supporting-materials .glyphicon {
-  color: #fff;
+/* line 117, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-background-resource a .field-label,
+.node-type-curriculum-content .pane-node-field-discussion-guide a .field-label,
+.node-type-curriculum-content .pane-node-field-supporting-materials a .field-label {
+  font-size: 23px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #603252;
 }
-/* line 186, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .pane-node-field-background-resource a,
-.node-type-curriculum-content .pane-node-field-discussion-guide a,
-.node-type-curriculum-content .pane-node-field-supporting-materials a {
-  font-family: PT-Sans;
-  color: #ffffff;
+/* line 123, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-background-resource a .field-label .glyphicon,
+.node-type-curriculum-content .pane-node-field-discussion-guide a .field-label .glyphicon,
+.node-type-curriculum-content .pane-node-field-supporting-materials a .field-label .glyphicon {
+  margin-right: 5px;
+  font-size: 20px;
 }
-/* line 190, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .pane-node-field-background-resource a:hover, .node-type-curriculum-content .pane-node-field-background-resource a:focus,
+/* line 129, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-background-resource a:hover, .node-type-curriculum-content .pane-node-field-background-resource a:focus .field-label,
 .node-type-curriculum-content .pane-node-field-discussion-guide a:hover,
-.node-type-curriculum-content .pane-node-field-discussion-guide a:focus,
+.node-type-curriculum-content .pane-node-field-discussion-guide a:focus .field-label,
 .node-type-curriculum-content .pane-node-field-supporting-materials a:hover,
-.node-type-curriculum-content .pane-node-field-supporting-materials a:focus {
+.node-type-curriculum-content .pane-node-field-supporting-materials a:focus .field-label {
   text-decoration: none;
 }
-/* line 194, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .pane-node-field-background-resource {
-  background-color: #3f5869;
+/* line 133, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-background-resource .field-item,
+.node-type-curriculum-content .pane-node-field-discussion-guide .field-item,
+.node-type-curriculum-content .pane-node-field-supporting-materials .field-item {
+  margin-left: 25px;
 }
-/* line 198, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .pane-node-field-discussion-guide {
-  background-color: #7e3030;
+/* line 136, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-background-resource .field-item .glyphicon,
+.node-type-curriculum-content .pane-node-field-discussion-guide .field-item .glyphicon,
+.node-type-curriculum-content .pane-node-field-supporting-materials .field-item .glyphicon {
+  margin-right: 5px;
+  color: #603252;
 }
-/* line 202, ../sass/pages/_curriculum.scss */
-.node-type-curriculum-content .pane-node-field-supporting-materials {
-  background-color: #dda562;
+/* line 140, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-background-resource .field-item a,
+.node-type-curriculum-content .pane-node-field-discussion-guide .field-item a,
+.node-type-curriculum-content .pane-node-field-supporting-materials .field-item a {
+  color: #000;
 }
-/* line 207, ../sass/pages/_curriculum.scss */
+/* line 144, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-background-resource .field-item a:hover, .node-type-curriculum-content .pane-node-field-background-resource .field-item a:focus,
+.node-type-curriculum-content .pane-node-field-discussion-guide .field-item a:hover,
+.node-type-curriculum-content .pane-node-field-discussion-guide .field-item a:focus,
+.node-type-curriculum-content .pane-node-field-supporting-materials .field-item a:hover,
+.node-type-curriculum-content .pane-node-field-supporting-materials .field-item a:focus {
+  text-decoration: underline;
+}
+/* line 151, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .field-name-field-supporting-image img {
   float: left;
   margin: 10px;
 }
-/* line 215, ../sass/pages/_curriculum.scss */
+/* line 159, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-body img {
   max-width: 100%;
   height: auto;
 }
-/* line 221, ../sass/pages/_curriculum.scss */
+/* line 165, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .sidebar {
   margin-top: 20px;
 }
-/* line 225, ../sass/pages/_curriculum.scss */
+/* line 169, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .field-brief-description {
   margin-bottom: 20px;
 }
-/* line 230, ../sass/pages/_curriculum.scss */
+/* line 174, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .node-curriculum-activity-parts .field-title {
-  background: #192d3b;
+  background: #603252;
   padding: 10px;
 }
-/* line 234, ../sass/pages/_curriculum.scss */
+/* line 178, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .node-curriculum-activity-parts .field-title a {
   color: #ffffff;
-  font-family: PT-Sans;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 17px;
 }
-/* line 240, ../sass/pages/_curriculum.scss */
+/* line 183, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .node-curriculum-activity-parts .field-title a .glyphicon {
+  margin-right: 5px;
+}
+/* line 188, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .node-curriculum-activity-parts .field-title a:hover, .node-type-curriculum-content .node-curriculum-activity-parts .field-title a:focus {
   text-decoration: none;
 }
@@ -945,10 +936,10 @@
 
 /* line 29, ../sass/style.scss */
 body {
-  font-family: "freight-text-pro";
+  font-family: "rucksack", sans-serif;
   /* 1 */
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 26px;
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
@@ -958,7 +949,7 @@ body {
 /* line 39, ../sass/style.scss */
 body h1, body h2, body h3, body h4, body h5, body h6, body .h1,
 body .h2, body .h3, body .h4, body .h5, body .h6 {
-  font-family: "pt-sans";
+  font-family: "freight-text-pro";
 }
 /* line 44, ../sass/style.scss */
 body a.btn {
@@ -966,77 +957,123 @@ body a.btn {
 }
 /* line 48, ../sass/style.scss */
 body header {
-  background-color: #192d3b;
+  padding: 25px 0;
+  background-color: #603151;
   color: #ffffff;
 }
-/* line 52, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 body header a, body header a:focus, body header a:hover {
   color: #ffffff;
 }
-/* line 56, ../sass/style.scss */
-body header ul.navbar-nav {
-  float: none;
+/* line 57, ../sass/style.scss */
+body header .inner-header {
+  margin-left: 15px;
+  border-top: #fff solid 1px;
+  float: left;
+  padding-top: 10px;
+}
+/* line 63, ../sass/style.scss */
+body header .inner-header .main-nav {
+  float: left;
+}
+/* line 66, ../sass/style.scss */
+body header .inner-header .main-nav .navbar-nav {
+  float: left;
   text-align: center;
 }
-/* line 60, ../sass/style.scss */
-body header ul.navbar-nav li {
+/* line 70, ../sass/style.scss */
+body header .inner-header .main-nav .navbar-nav li {
+  font-family: "rucksack", sans-serif;
   float: none;
   display: inline-block;
   margin: 0 1.5em;
 }
-/* line 65, ../sass/style.scss */
-body header ul.navbar-nav li a:hover, body header ul.navbar-nav li a:focus {
-  background-color: #192d3b;
+/* line 76, ../sass/style.scss */
+body header .inner-header .main-nav .navbar-nav li a {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1;
+  padding-top: 0;
+}
+/* line 83, ../sass/style.scss */
+body header .inner-header .main-nav .navbar-nav li a:hover, body header .inner-header .main-nav .navbar-nav li a:focus {
   text-decoration: underline;
+  background-color: #603151;
 }
-/* line 72, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
+body header .inner-header .title-wrapper {
+  margin: 0;
+  float: left;
+}
+/* line 98, ../sass/style.scss */
+body header .inner-header .title-wrapper .small-title {
+  font-size: 12px;
+  font-family: "rucksack", sans-serif;
+}
+/* line 103, ../sass/style.scss */
+body header .inner-header .title-wrapper .large-title {
+  font-family: "rucksack", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/* line 115, ../sass/style.scss */
 body header .logo-wrapper {
-  margin: 2em 0 1em;
+  margin: 4px 0;
+  float: left;
 }
-/* line 75, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 body header .logo-wrapper .logo {
-  margin: 0 auto;
+  margin: 0;
   background: url("../images/header-front-logo.png") top center no-repeat;
   height: 40px;
   width: 40px;
   background-size: 40px 40px;
 }
-/* line 85, ../sass/style.scss */
-body header .small-title-wrapper .small-title, body header .small-title-wrapper .large-title, body header .large-title-wrapper .small-title, body header .large-title-wrapper .large-title {
-  margin: 0 auto;
-  text-align: center;
-}
-/* line 89, ../sass/style.scss */
-body header .small-title-wrapper .small-title, body header .large-title-wrapper .small-title {
-  font-size: 1.5em;
-  font-family: "reenie-beanie", cursive;
-}
-/* line 94, ../sass/style.scss */
-body header .small-title-wrapper .large-title, body header .large-title-wrapper .large-title {
-  font-size: 2.5em;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-/* line 103, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 body .region-content {
   min-height: 350px;
 }
-/* line 107, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
+body section.page-content {
+  background: url("../images/title-triangle.png") top center no-repeat;
+  z-index: 1;
+}
+/* line 138, ../sass/style.scss */
+body section.page-content .highlighted {
+  margin-bottom: 100px;
+  background: rgba(255, 255, 255, 0.3);
+}
+/* line 142, ../sass/style.scss */
+body section.page-content .highlighted .panel-panel-inner {
+  z-index: 500;
+}
+/* line 146, ../sass/style.scss */
+body section.page-content .highlighted .panel-panel-inner .pane-node-title h1 {
+  font-size: 37px;
+  color: #603252;
+}
+/* line 156, ../sass/style.scss */
+body section.page-content .highlighted .panel-panel-inner .hr {
+  width: 30%;
+  border-bottom: 2px solid #000;
+  margin: 25px auto;
+}
+/* line 166, ../sass/style.scss */
 body footer {
-  position: relative;
-  background: #eaeaea;
+  background: #d4d4d4;
   z-index: 1;
   padding: 3em;
   min-height: 250px;
 }
-/* line 114, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 body footer .footer-credit {
   text-align: center;
-  font-family: "PT Sans";
   font-size: .75em;
-  margin-top: -45px;
 }
-/* line 120, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 body footer .footer-credit .icenter-logo {
   background: url("../images/footer-icenter-logo.png") 0 0 no-repeat;
   background-size: 100px 30px;
@@ -1046,7 +1083,7 @@ body footer .footer-credit .icenter-logo {
   margin-top: 5px;
   margin-right: 20px;
 }
-/* line 130, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 body footer .footer-credit .jjf-logo {
   background: url("../images/footer-jjf-logo.jpg") 0 0 no-repeat;
   background-size: 100px 30px;
@@ -1054,33 +1091,6 @@ body footer .footer-credit .jjf-logo {
   height: 30px;
   display: inline-block;
   margin-top: 5px;
-}
-/* line 141, ../sass/style.scss */
-body footer:before {
-  position: absolute;
-  content: '';
-  -webkit-transform: rotate(3deg);
-  transform: rotate(3deg);
-  -webkit-transform-origin: 3% 0;
-  transform-origin: 3% 0;
-  margin-top: -200px;
-  left: -25%;
-  z-index: -1;
-  width: 150%;
-  height: 75%;
-  background: inherit;
-  background-color: #eaeaea;
-}
-
-/* line 158, ../sass/style.scss */
-section {
-  position: relative;
-}
-
-/* line 161, ../sass/style.scss */
-section:before {
-  position: absolute;
-  content: '';
 }
 
 /*# sourceMappingURL=style.css.map */

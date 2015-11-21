@@ -18,7 +18,7 @@ $grid-gutter-width: 10px;
 
 @import "compass/css3/border-radius";
 //@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
-//@import "mixins";
+@import "mixins";
 @import "pages/homepage";
 @import "pages/curriculum";
 @import "pages/resource";
@@ -27,9 +27,9 @@ $grid-gutter-width: 10px;
 @import "pages/landing";
 
 body {
-  font-family: "freight-text-pro"; /* 1 */
-  font-size: 18px;
-  line-height: 30px;
+  font-family: "rucksack", sans-serif; /* 1 */
+  font-size: 14px;
+  line-height: 26px;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   overflow-x: hidden;
@@ -38,7 +38,7 @@ body {
 
   h1, h2, h3, h4, h5, h6, .h1, 
   .h2, .h3, .h4, .h5, .h6 {
-    font-family: "pt-sans";  
+    font-family: "freight-text-pro";  
   }
   
   a.btn {
@@ -46,76 +46,132 @@ body {
   }
   
   header {
-    background-color: #192d3b;
+    padding: 25px 0;
+    background-color: #603151;
     color: #ffffff;
     
     a, a:focus, a:hover {
       color: #ffffff;
     }
     
-    ul.navbar-nav {
-      float: none;
-      text-align: center;
+    .inner-header {
+      margin-left: 15px;
+      border-top: #fff solid 1px;
+      float: left;
+      padding-top: 10px;
       
-      li {
-        float: none;
-        display: inline-block;
-        margin: 0 1.5em;
+      .main-nav {
+        float: left;
+      
+        .navbar-nav {
+          float: left;
+          text-align: center;
+          
+          li {
+            font-family: "rucksack", sans-serif;
+            float: none;
+            display: inline-block;
+            margin: 0 1.5em;
+            
+            a {
+              text-transform: uppercase;
+              font-size: 16px;
+              line-height: 1;
+              padding-top: 0;              
+            }
+
+            a:hover, a:focus {
+              text-decoration: underline;
+              background-color: #603151;
+            }
+          }
+        }
+      }
+      
+      .title-wrapper {
+        margin: 0;;
+        float: left;
+        .small-title, .large-title {
+          
+          //text-align: center;
+        }
+        .small-title {
+          font-size: 12px;
+          font-family: "rucksack", sans-serif;
+        }
         
-        a:hover, a:focus {
-          background-color: #192d3b;
-          text-decoration: underline;
+        .large-title {
+          //margin-bottom: 120px;
+          font-family: "rucksack", sans-serif;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 1;
+          letter-spacing: 1px;
+          text-transform: uppercase;
         }
       }
     }
-    
-    .logo-wrapper {
-      margin: 2em 0 1em;
+
+     .logo-wrapper {
+      margin: 4px 0;
+      float: left;
+     // display: inline-block;
 
       .logo {
-        margin: 0 auto;
+        margin: 0;
         background: url('../images/header-front-logo.png') top center no-repeat;
         height: 40px;
         width: 40px;
         background-size: 40px 40px;
       }
-    }
-
-    .small-title-wrapper, .large-title-wrapper {
-      .small-title, .large-title {
-        margin: 0 auto;
-        text-align: center;
-      }
-      .small-title {
-        font-size: 1.5em;
-        font-family: "reenie-beanie", cursive;
-      }
-      
-      .large-title {
-        //margin-bottom: 120px;
-        font-size: 2.5em;
-        line-height: 1.2;
-        text-transform: uppercase;
-      }
-    }
+    }  
   }
   
   .region-content {
     min-height: 350px;
   }
 
+  section.page-content {
+    background: url('../images/title-triangle.png') top center no-repeat;
+    z-index: 1;
+    
+    .highlighted {
+      margin-bottom: 100px;
+      background: rgba(3258,258,258,0.3);
+      
+      .panel-panel-inner {
+        z-index: 500;
+
+        .pane-node-title {
+          h1 {
+            font-size: 37px;
+            color: $purple;
+          }
+        }
+        
+        .pane-node-field-introduction {
+
+        }
+        
+        .hr {
+          width: 30%;
+          border-bottom: 2px solid #000;
+          margin: 25px auto;
+        }
+      }
+    }
+  }
+
+
   footer {
-    position: relative;
-    background: #eaeaea;
+    background: #d4d4d4;
     z-index: 1;
     padding: 3em;
     min-height: 250px;
     
     .footer-credit {
       text-align: center;
-      font-family: "PT Sans";
       font-size: .75em;
-      margin-top: -45px;
 
       .icenter-logo {
         background: url("../images/footer-icenter-logo.png") 0 0 no-repeat;
@@ -137,28 +193,4 @@ body {
       }
     }
   }
-
-  footer:before {
-    position: absolute;
-    content:'';
-    -webkit-transform: rotate(3deg);
-    transform: rotate(3deg);
-    -webkit-transform-origin: 3% 0;
-    transform-origin: 3% 0;
-    margin-top: -200px;
-    left: -25%;
-    z-index: -1;
-    width: 150%;
-    height: 75%;
-    background: inherit;    
-    background-color: #eaeaea;
-  }
-}
-
-section {
-    position: relative;
-}
-section:before {
-    position: absolute;
-    content:'';
 }
