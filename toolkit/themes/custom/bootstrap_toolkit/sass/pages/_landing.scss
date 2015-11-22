@@ -56,75 +56,39 @@
       border-bottom: 1px solid #000;
     }
   }
-
-  .content-abstract:before {
-      -webkit-transform: rotate(-3deg);
-      transform: rotate(-3deg);
-      -webkit-transform-origin: 3% 0;
-      transform-origin: 3% 0;
-      top: 0;
-      left: -25%;
-      z-index: -1;
-      width: 150%;
-      height: 75%;
-      background: inherit;
-      overflow: hidden;
-  }
   
-  section.inner-page {
-    background: #fff;
-    z-index: 1;
-    padding: 3em;
-    
-    .page-content {
-      margin-top: -100px;
-      margin-bottom: 50px;
+  section.page-content {
       
-      .views-field-title {
-        text-transform: uppercase;
-        font-weight: bold;
-        
-        a { 
-          color: #000;
-        }
-      }
-      .views-field-field-header-image {
-        margin-bottom: 10px;
-      }
-      .views-field-field-introduction {
-        margin-bottom: 40px;
-      }
+    .views-field-title {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 25px;
       
-      .views-submit-button {
-        .btn-info {
-          background-color: #192d3b; 
-          border-color: #192d3b;
-        }
-      }
-      
-      .views-widget-filter-field_themes_tid, .views-widget-filter-field_values_tid {
-        
-        label {
-          text-transform: uppercase;
-        }
+      a { 
+        color: #000;
       }
     }
-  }
-
-  .inner-page:before {
-    position: absolute;
-    content:'';
-    -webkit-transform: rotate(4deg);
-    transform: rotate(4deg);
-    -webkit-transform-origin: 3% 0;
-    transform-origin: 3% 0;
-    margin-top: -200px;
-    left: -25%;
-    z-index: -1;
-    width: 150%;
-    height: 75%;
-    background: inherit;    
-    background-color: #ffffff;
+    .views-field-field-header-image {
+      margin-bottom: 10px;
+    }
+    .views-field-field-introduction {
+      margin-bottom: 40px;
+    }
+    
+    .views-submit-button {
+      .btn-info {
+        background-color: #192d3b; 
+        border-color: #192d3b;
+      }
+    }
+    
+    .views-widget-filter-field_themes_tid, .views-widget-filter-field_values_tid {
+      
+      label {
+        text-transform: uppercase;
+      }
+    }
   }
 
   .pane-node-field-header-image {
@@ -147,7 +111,21 @@
       font-family: "PT-Sans";
     }
   }
-
+  .pane-taxonomy-sidebar-panel-pane-1, .pane-taxonomy-sidebar-panel-pane-2 {
+    h2 {
+      font-family: $rucksack;
+      font-size: 23px;
+      font-weight: 500;
+    }
+    .pane-content {
+      font-size: 15px;
+      line-height: 20px;
+      
+      a {
+        color: #000;
+      }
+    }
+  }
   .pane-node-field-age-range,
   .pane-node-field-program-duration {
     display: inline;

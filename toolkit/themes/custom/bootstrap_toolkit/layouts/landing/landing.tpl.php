@@ -13,18 +13,16 @@
 <section class="page-content">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-push-4 content panel-panel highlighted">
+      <div class="col-md-8 col-md-offset-1 content panel-panel highlighted">
         <div class="title content-programs">
           <?php print $content['title']; ?>
         </div>
-        <div class="hr">
-        </div>
         <div class="subtitle content-programs">
           <?php print $content['subtitle']; ?>
-          <?php print $content['contentmain']; ?>
+          <?php print $content['contentmain']; ?>        
         </div>
       </div>
-      <div class="col-md-4 col-md-pull-8 sidebar panel-panel">
+      <div class="col-md-3 sidebar panel-panel">
         <div class="panel-panel-inner">
           <?php print $content['sidebar']; ?>
         </div>
