@@ -44,18 +44,21 @@ function toolkit_taxonomy_displays_views_default_views() {
     'image_style' => 'content_list_image',
     'image_link' => 'content',
   );
+  /* Field: Content: Subtitle */
+  $handler->display->display_options['fields']['field_subtitle']['id'] = 'field_subtitle';
+  $handler->display->display_options['fields']['field_subtitle']['table'] = 'field_data_field_subtitle';
+  $handler->display->display_options['fields']['field_subtitle']['field'] = 'field_subtitle';
+  $handler->display->display_options['fields']['field_subtitle']['label'] = '';
+  $handler->display->display_options['fields']['field_subtitle']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_subtitle']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '[title] [field_subtitle]';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Introduction */
-  $handler->display->display_options['fields']['field_introduction']['id'] = 'field_introduction';
-  $handler->display->display_options['fields']['field_introduction']['table'] = 'field_data_field_introduction';
-  $handler->display->display_options['fields']['field_introduction']['field'] = 'field_introduction';
-  $handler->display->display_options['fields']['field_introduction']['label'] = '';
-  $handler->display->display_options['fields']['field_introduction']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Sticky */
   $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['table'] = 'node';
@@ -195,6 +198,7 @@ function toolkit_taxonomy_displays_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
+    t('[title] [field_subtitle]'),
     t('All'),
     t('%1'),
     t('Term display pane'),

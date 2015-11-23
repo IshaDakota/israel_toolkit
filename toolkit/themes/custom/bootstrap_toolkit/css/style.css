@@ -834,58 +834,70 @@
 .landing section.content-abstract .highlighted:after {
   border-bottom: 1px solid #000;
 }
-/* line 63, ../sass/pages/_landing.scss */
-.landing section.page-content .pane-curriculum-content-panel-pane-1 h2, .landing section.page-content .pane-curriculum-content-panel-pane-2 h2 {
+/* line 65, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-curriculum-content-panel-pane-1 h2,
+.landing section.page-content .pane-curriculum-content-panel-pane-2 h2,
+.landing section.page-content .pane-theme-terms-panel-pane-1 h2 {
   font-size: 36px;
   color: #603252;
 }
-/* line 68, ../sass/pages/_landing.scss */
-.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-title, .landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-title {
+/* line 70, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-title,
+.landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-title,
+.landing section.page-content .pane-theme-terms-panel-pane-1 .views-field-title {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 25px;
 }
-/* line 74, ../sass/pages/_landing.scss */
-.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-title a, .landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-title a {
+/* line 76, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-title a,
+.landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-title a,
+.landing section.page-content .pane-theme-terms-panel-pane-1 .views-field-title a {
   color: #000;
 }
-/* line 78, ../sass/pages/_landing.scss */
-.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-field-header-image, .landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-field-header-image {
+/* line 80, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-field-header-image,
+.landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-field-header-image,
+.landing section.page-content .pane-theme-terms-panel-pane-1 .views-field-field-header-image {
   margin-bottom: 10px;
 }
-/* line 81, ../sass/pages/_landing.scss */
-.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-field-introduction, .landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-field-introduction {
+/* line 83, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-field-introduction,
+.landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-field-introduction,
+.landing section.page-content .pane-theme-terms-panel-pane-1 .views-field-field-introduction {
   margin-bottom: 40px;
 }
-/* line 86, ../sass/pages/_landing.scss */
-.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-submit-button .btn-info, .landing section.page-content .pane-curriculum-content-panel-pane-2 .views-submit-button .btn-info {
+/* line 88, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-submit-button .btn-info,
+.landing section.page-content .pane-curriculum-content-panel-pane-2 .views-submit-button .btn-info,
+.landing section.page-content .pane-theme-terms-panel-pane-1 .views-submit-button .btn-info {
   background-color: #192d3b;
   border-color: #192d3b;
 }
-/* line 94, ../sass/pages/_landing.scss */
+/* line 96, ../sass/pages/_landing.scss */
 .landing section.page-content .pane-resource-library-panel-pane-1 h3 {
   font-family: "rucksack", sans-serif;
   font-size: 23px;
 }
-/* line 98, ../sass/pages/_landing.scss */
+/* line 100, ../sass/pages/_landing.scss */
 .landing section.page-content .pane-resource-library-panel-pane-1 h3 a {
   color: #000;
 }
-/* line 106, ../sass/pages/_landing.scss */
+/* line 108, ../sass/pages/_landing.scss */
 .landing section.page-content .views-widget-filter-field_themes_tid label, .landing section.page-content .views-widget-filter-field_values_tid label {
   text-transform: uppercase;
 }
-/* line 112, ../sass/pages/_landing.scss */
+/* line 114, ../sass/pages/_landing.scss */
 .landing .pane-node-field-header-image {
   margin-top: 20px;
 }
-/* line 116, ../sass/pages/_landing.scss */
+/* line 118, ../sass/pages/_landing.scss */
 .landing .glyphicon {
   margin-right: 5px;
   font-size: .75em;
 }
-/* line 122, ../sass/pages/_landing.scss */
+/* line 124, ../sass/pages/_landing.scss */
 .landing .sidebar .jumbotron {
   overflow: auto;
   margin-top: 1em;
@@ -895,34 +907,34 @@
   font-size: 18px;
   font-family: "PT-Sans";
 }
-/* line 133, ../sass/pages/_landing.scss */
+/* line 135, ../sass/pages/_landing.scss */
 .landing .pane-taxonomy-sidebar-panel-pane-1 h2, .landing .pane-taxonomy-sidebar-panel-pane-2 h2 {
   font-family: "rucksack", sans-serif;
   font-size: 23px;
   font-weight: 500;
   color: #603252;
 }
-/* line 140, ../sass/pages/_landing.scss */
+/* line 142, ../sass/pages/_landing.scss */
 .landing .pane-taxonomy-sidebar-panel-pane-1 .pane-content, .landing .pane-taxonomy-sidebar-panel-pane-2 .pane-content {
   font-size: 15px;
   line-height: 20px;
 }
-/* line 144, ../sass/pages/_landing.scss */
+/* line 146, ../sass/pages/_landing.scss */
 .landing .pane-taxonomy-sidebar-panel-pane-1 .pane-content a, .landing .pane-taxonomy-sidebar-panel-pane-2 .pane-content a {
   color: #000;
 }
-/* line 150, ../sass/pages/_landing.scss */
+/* line 152, ../sass/pages/_landing.scss */
 .landing .pane-search-form {
   margin-top: 25px;
 }
-/* line 154, ../sass/pages/_landing.scss */
+/* line 156, ../sass/pages/_landing.scss */
 .landing .pane-node-field-age-range,
 .landing .pane-node-field-program-duration {
   display: inline;
   float: left;
   margin-right: 40px;
 }
-/* line 163, ../sass/pages/_landing.scss */
+/* line 165, ../sass/pages/_landing.scss */
 .landing .field-name-field-age-range .field-item,
 .landing .field-name-field-program-duration .field-item {
   display: inline;
