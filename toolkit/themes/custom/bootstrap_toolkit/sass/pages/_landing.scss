@@ -58,28 +58,46 @@
   }
   
   section.page-content {
+    .pane-curriculum-content-panel-pane-1, .pane-curriculum-content-panel-pane-2 {
       
-    .views-field-title {
-      text-transform: uppercase;
-      font-size: 16px;
-      font-weight: 500;
-      margin-bottom: 25px;
+      h2 {
+        font-size: 36px;
+        color: $purple;  
+      }
+       
+      .views-field-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        
+        a { 
+          color: #000;
+        }
+      }
+      .views-field-field-header-image {
+        margin-bottom: 10px;
+      }
+      .views-field-field-introduction {
+        margin-bottom: 40px;
+      }
       
-      a { 
-        color: #000;
+      .views-submit-button {
+        .btn-info {
+          background-color: #192d3b; 
+          border-color: #192d3b;
+        }
       }
     }
-    .views-field-field-header-image {
-      margin-bottom: 10px;
-    }
-    .views-field-field-introduction {
-      margin-bottom: 40px;
-    }
     
-    .views-submit-button {
-      .btn-info {
-        background-color: #192d3b; 
-        border-color: #192d3b;
+    .pane-resource-library-panel-pane-1 {
+      h3 {
+        font-family: $rucksack;
+        font-size: 23px;
+        
+        a {
+          color: #000;
+        }
       }
     }
     
@@ -116,7 +134,9 @@
       font-family: $rucksack;
       font-size: 23px;
       font-weight: 500;
+      color: $purple;
     }
+
     .pane-content {
       font-size: 15px;
       line-height: 20px;
@@ -126,6 +146,11 @@
       }
     }
   }
+  
+  .pane-search-form {
+    margin-top: 25px;
+  }
+  
   .pane-node-field-age-range,
   .pane-node-field-program-duration {
     display: inline;
