@@ -52,6 +52,8 @@ function toolkit_taxonomy_displays_default_page_manager_handlers() {
       'default' => NULL,
       'sidebar' => NULL,
       'contentmain' => NULL,
+      'title' => NULL,
+      'subtitle' => NULL,
     ),
   );
   $display->cache = array();
@@ -85,20 +87,16 @@ function toolkit_taxonomy_displays_default_page_manager_handlers() {
     $display->content['new-6c51b5ac-3797-4a1c-b507-b205ed6594b3'] = $pane;
     $display->panels['contentmain'][0] = 'new-6c51b5ac-3797-4a1c-b507-b205ed6594b3';
     $pane = new stdClass();
-    $pane->pid = 'new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+    $pane->pid = 'new-76fc5be2-cb67-44b3-98a7-c922c13c0016';
     $pane->panel = 'sidebar';
-    $pane->type = 'term_list';
-    $pane->subtype = 'term_list';
+    $pane->type = 'block';
+    $pane->subtype = 'search-form';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'title' => NULL,
-      'type' => 'top',
-      'list_type' => 'ul',
-      'path' => 'taxonomy/term',
-      'context' => 'argument_term_1',
       'override_title' => 1,
-      'override_title_text' => 'Timely Relevance',
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -108,9 +106,47 @@ function toolkit_taxonomy_displays_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
-    $display->content['new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40'] = $pane;
-    $display->panels['sidebar'][0] = 'new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+    $pane->uuid = '76fc5be2-cb67-44b3-98a7-c922c13c0016';
+    $display->content['new-76fc5be2-cb67-44b3-98a7-c922c13c0016'] = $pane;
+    $display->panels['sidebar'][0] = 'new-76fc5be2-cb67-44b3-98a7-c922c13c0016';
+    $pane = new stdClass();
+    $pane->pid = 'new-b966c324-5f63-403b-bebb-6eac3f7a9cdc';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'taxonomy_sidebar-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'b966c324-5f63-403b-bebb-6eac3f7a9cdc';
+    $display->content['new-b966c324-5f63-403b-bebb-6eac3f7a9cdc'] = $pane;
+    $display->panels['sidebar'][1] = 'new-b966c324-5f63-403b-bebb-6eac3f7a9cdc';
+    $pane = new stdClass();
+    $pane->pid = 'new-be8825e6-fc92-4ca7-a421-539bafdb1f42';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'taxonomy_sidebar-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = 'be8825e6-fc92-4ca7-a421-539bafdb1f42';
+    $display->content['new-be8825e6-fc92-4ca7-a421-539bafdb1f42'] = $pane;
+    $display->panels['sidebar'][2] = 'new-be8825e6-fc92-4ca7-a421-539bafdb1f42';
     $pane = new stdClass();
     $pane->pid = 'new-190c219c-abe3-4ac3-b2d1-b85aaeba261b';
     $pane->panel = 'subtitle';
@@ -125,7 +161,9 @@ function toolkit_taxonomy_displays_default_page_manager_handlers() {
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -151,7 +189,9 @@ function toolkit_taxonomy_displays_default_page_manager_handlers() {
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -160,7 +200,7 @@ function toolkit_taxonomy_displays_default_page_manager_handlers() {
     $display->content['new-90e1e0b7-8ba9-4b6e-89f1-3a2491fab341'] = $pane;
     $display->panels['title'][0] = 'new-90e1e0b7-8ba9-4b6e-89f1-3a2491fab341';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-cd322d01-1a6c-4ead-bfa8-7dffd8059d40';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $export['term_view__panel_context_04299943-b859-4189-a271-7eb83def68ad'] = $handler;
 
@@ -567,20 +607,16 @@ function toolkit_taxonomy_displays_default_page_manager_handlers() {
     $display->content['new-ee9171ca-0277-415f-b2ac-610157456010'] = $pane;
     $display->panels['contentmain'][0] = 'new-ee9171ca-0277-415f-b2ac-610157456010';
     $pane = new stdClass();
-    $pane->pid = 'new-d3e75404-34e6-431d-8e66-0d5450ee2d4c';
+    $pane->pid = 'new-0f9815fa-d4e7-4bd4-8e72-ba6dede86bdb';
     $pane->panel = 'sidebar';
-    $pane->type = 'term_list';
-    $pane->subtype = 'term_list';
+    $pane->type = 'block';
+    $pane->subtype = 'search-form';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'title' => NULL,
-      'type' => 'top',
-      'list_type' => 'ul',
-      'path' => 'taxonomy/term',
-      'context' => 'argument_term_1',
       'override_title' => 1,
-      'override_title_text' => 'Themes',
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -590,9 +626,47 @@ function toolkit_taxonomy_displays_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'd3e75404-34e6-431d-8e66-0d5450ee2d4c';
-    $display->content['new-d3e75404-34e6-431d-8e66-0d5450ee2d4c'] = $pane;
-    $display->panels['sidebar'][0] = 'new-d3e75404-34e6-431d-8e66-0d5450ee2d4c';
+    $pane->uuid = '0f9815fa-d4e7-4bd4-8e72-ba6dede86bdb';
+    $display->content['new-0f9815fa-d4e7-4bd4-8e72-ba6dede86bdb'] = $pane;
+    $display->panels['sidebar'][0] = 'new-0f9815fa-d4e7-4bd4-8e72-ba6dede86bdb';
+    $pane = new stdClass();
+    $pane->pid = 'new-748457b5-3f15-466e-b13b-ae960d6df376';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'taxonomy_sidebar-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '748457b5-3f15-466e-b13b-ae960d6df376';
+    $display->content['new-748457b5-3f15-466e-b13b-ae960d6df376'] = $pane;
+    $display->panels['sidebar'][1] = 'new-748457b5-3f15-466e-b13b-ae960d6df376';
+    $pane = new stdClass();
+    $pane->pid = 'new-9cf2a205-5d9c-4647-bdce-68d1108ce8b7';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'taxonomy_sidebar-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '9cf2a205-5d9c-4647-bdce-68d1108ce8b7';
+    $display->content['new-9cf2a205-5d9c-4647-bdce-68d1108ce8b7'] = $pane;
+    $display->panels['sidebar'][2] = 'new-9cf2a205-5d9c-4647-bdce-68d1108ce8b7';
     $pane = new stdClass();
     $pane->pid = 'new-844d07ef-b94f-4c34-9713-98b5b8e887a0';
     $pane->panel = 'subtitle';

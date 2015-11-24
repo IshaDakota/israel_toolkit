@@ -834,83 +834,70 @@
 .landing section.content-abstract .highlighted:after {
   border-bottom: 1px solid #000;
 }
-/* line 60, ../sass/pages/_landing.scss */
-.landing .content-abstract:before {
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-  -webkit-transform-origin: 3% 0;
-  transform-origin: 3% 0;
-  top: 0;
-  left: -25%;
-  z-index: -1;
-  width: 150%;
-  height: 75%;
-  background: inherit;
-  overflow: hidden;
+/* line 65, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-curriculum-content-panel-pane-1 h2,
+.landing section.page-content .pane-curriculum-content-panel-pane-2 h2,
+.landing section.page-content .pane-theme-terms-panel-pane-1 h2 {
+  font-size: 36px;
+  color: #603252;
 }
-/* line 74, ../sass/pages/_landing.scss */
-.landing section.inner-page {
-  background: #fff;
-  z-index: 1;
-  padding: 3em;
-}
-/* line 79, ../sass/pages/_landing.scss */
-.landing section.inner-page .page-content {
-  margin-top: -100px;
-  margin-bottom: 50px;
-}
-/* line 83, ../sass/pages/_landing.scss */
-.landing section.inner-page .page-content .views-field-title {
+/* line 70, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-title,
+.landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-title,
+.landing section.page-content .pane-theme-terms-panel-pane-1 .views-field-title {
   text-transform: uppercase;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 25px;
 }
-/* line 87, ../sass/pages/_landing.scss */
-.landing section.inner-page .page-content .views-field-title a {
+/* line 76, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-title a,
+.landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-title a,
+.landing section.page-content .pane-theme-terms-panel-pane-1 .views-field-title a {
   color: #000;
 }
-/* line 91, ../sass/pages/_landing.scss */
-.landing section.inner-page .page-content .views-field-field-header-image {
+/* line 80, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-field-header-image,
+.landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-field-header-image,
+.landing section.page-content .pane-theme-terms-panel-pane-1 .views-field-field-header-image {
   margin-bottom: 10px;
 }
-/* line 94, ../sass/pages/_landing.scss */
-.landing section.inner-page .page-content .views-field-field-introduction {
+/* line 83, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-field-introduction,
+.landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-field-introduction,
+.landing section.page-content .pane-theme-terms-panel-pane-1 .views-field-field-introduction {
   margin-bottom: 40px;
 }
-/* line 99, ../sass/pages/_landing.scss */
-.landing section.inner-page .page-content .views-submit-button .btn-info {
+/* line 88, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-curriculum-content-panel-pane-1 .views-submit-button .btn-info,
+.landing section.page-content .pane-curriculum-content-panel-pane-2 .views-submit-button .btn-info,
+.landing section.page-content .pane-theme-terms-panel-pane-1 .views-submit-button .btn-info {
   background-color: #192d3b;
   border-color: #192d3b;
 }
-/* line 107, ../sass/pages/_landing.scss */
-.landing section.inner-page .page-content .views-widget-filter-field_themes_tid label, .landing section.inner-page .page-content .views-widget-filter-field_values_tid label {
+/* line 96, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-resource-library-panel-pane-1 h3 {
+  font-family: "rucksack", sans-serif;
+  font-size: 23px;
+}
+/* line 100, ../sass/pages/_landing.scss */
+.landing section.page-content .pane-resource-library-panel-pane-1 h3 a {
+  color: #000;
+}
+/* line 108, ../sass/pages/_landing.scss */
+.landing section.page-content .views-widget-filter-field_themes_tid label, .landing section.page-content .views-widget-filter-field_values_tid label {
   text-transform: uppercase;
 }
 /* line 114, ../sass/pages/_landing.scss */
-.landing .inner-page:before {
-  position: absolute;
-  content: '';
-  -webkit-transform: rotate(4deg);
-  transform: rotate(4deg);
-  -webkit-transform-origin: 3% 0;
-  transform-origin: 3% 0;
-  margin-top: -200px;
-  left: -25%;
-  z-index: -1;
-  width: 150%;
-  height: 75%;
-  background: inherit;
-  background-color: #ffffff;
-}
-/* line 130, ../sass/pages/_landing.scss */
 .landing .pane-node-field-header-image {
   margin-top: 20px;
 }
-/* line 134, ../sass/pages/_landing.scss */
+/* line 118, ../sass/pages/_landing.scss */
 .landing .glyphicon {
   margin-right: 5px;
   font-size: .75em;
 }
-/* line 140, ../sass/pages/_landing.scss */
+/* line 124, ../sass/pages/_landing.scss */
 .landing .sidebar .jumbotron {
   overflow: auto;
   margin-top: 1em;
@@ -920,14 +907,34 @@
   font-size: 18px;
   font-family: "PT-Sans";
 }
-/* line 151, ../sass/pages/_landing.scss */
+/* line 135, ../sass/pages/_landing.scss */
+.landing .pane-taxonomy-sidebar-panel-pane-1 h2, .landing .pane-taxonomy-sidebar-panel-pane-2 h2 {
+  font-family: "rucksack", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  color: #603252;
+}
+/* line 142, ../sass/pages/_landing.scss */
+.landing .pane-taxonomy-sidebar-panel-pane-1 .pane-content, .landing .pane-taxonomy-sidebar-panel-pane-2 .pane-content {
+  font-size: 15px;
+  line-height: 20px;
+}
+/* line 146, ../sass/pages/_landing.scss */
+.landing .pane-taxonomy-sidebar-panel-pane-1 .pane-content a, .landing .pane-taxonomy-sidebar-panel-pane-2 .pane-content a {
+  color: #000;
+}
+/* line 152, ../sass/pages/_landing.scss */
+.landing .pane-search-form {
+  margin-top: 25px;
+}
+/* line 156, ../sass/pages/_landing.scss */
 .landing .pane-node-field-age-range,
 .landing .pane-node-field-program-duration {
   display: inline;
   float: left;
   margin-right: 40px;
 }
-/* line 160, ../sass/pages/_landing.scss */
+/* line 165, ../sass/pages/_landing.scss */
 .landing .field-name-field-age-range .field-item,
 .landing .field-name-field-program-duration .field-item {
   display: inline;
