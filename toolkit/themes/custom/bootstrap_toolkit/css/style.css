@@ -360,12 +360,13 @@
   color: #ffffff;
   font-weight: 500;
   font-size: 17px;
+  text-transform: uppercase;
 }
-/* line 183, ../sass/pages/_curriculum.scss */
+/* line 184, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .node-curriculum-activity-parts .field-title a .glyphicon {
   margin-right: 5px;
 }
-/* line 188, ../sass/pages/_curriculum.scss */
+/* line 189, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .node-curriculum-activity-parts .field-title a:hover, .node-type-curriculum-content .node-curriculum-activity-parts .field-title a:focus {
   text-decoration: none;
 }
@@ -792,56 +793,48 @@
  * https://drupal.org/node/1707736
  */
 /* line 13, ../sass/pages/_landing.scss */
-.landing .logo-wrapper {
-  margin: 1em 0;
-}
-/* line 19, ../sass/pages/_landing.scss */
-.landing .large-title-wrapper .large-title {
-  margin-bottom: 120px;
-}
-/* line 25, ../sass/pages/_landing.scss */
 .landing section.content-abstract {
   background: #eaeaea;
   z-index: 1;
   padding: 3em;
 }
-/* line 30, ../sass/pages/_landing.scss */
+/* line 18, ../sass/pages/_landing.scss */
 .landing section.content-abstract .highlighted {
   margin-top: -50px;
   margin-bottom: 100px;
 }
-/* line 34, ../sass/pages/_landing.scss */
+/* line 22, ../sass/pages/_landing.scss */
 .landing section.content-abstract .highlighted h1 {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 39, ../sass/pages/_landing.scss */
+/* line 27, ../sass/pages/_landing.scss */
 .landing section.content-abstract .highlighted .hr {
   width: 50%;
   border-bottom: 2px solid #000;
   margin: 25px auto;
 }
-/* line 45, ../sass/pages/_landing.scss */
+/* line 33, ../sass/pages/_landing.scss */
 .landing section.content-abstract .highlighted .subtitle {
   text-align: center;
   font-family: "PT-Sans";
 }
-/* line 50, ../sass/pages/_landing.scss */
+/* line 38, ../sass/pages/_landing.scss */
 .landing section.content-abstract .highlighted .pane-node-field-introduction {
   text-align: center;
 }
-/* line 55, ../sass/pages/_landing.scss */
+/* line 43, ../sass/pages/_landing.scss */
 .landing section.content-abstract .highlighted:after {
   border-bottom: 1px solid #000;
 }
-/* line 65, ../sass/pages/_landing.scss */
+/* line 53, ../sass/pages/_landing.scss */
 .landing section.page-content .pane-curriculum-content-panel-pane-1 h2,
 .landing section.page-content .pane-curriculum-content-panel-pane-2 h2,
 .landing section.page-content .pane-theme-terms-panel-pane-1 h2 {
   font-size: 36px;
   color: #603252;
 }
-/* line 70, ../sass/pages/_landing.scss */
+/* line 58, ../sass/pages/_landing.scss */
 .landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-title,
 .landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-title,
 .landing section.page-content .pane-theme-terms-panel-pane-1 .views-field-title {
@@ -850,54 +843,54 @@
   font-weight: 500;
   margin-bottom: 25px;
 }
-/* line 76, ../sass/pages/_landing.scss */
+/* line 64, ../sass/pages/_landing.scss */
 .landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-title a,
 .landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-title a,
 .landing section.page-content .pane-theme-terms-panel-pane-1 .views-field-title a {
   color: #000;
 }
-/* line 80, ../sass/pages/_landing.scss */
+/* line 68, ../sass/pages/_landing.scss */
 .landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-field-header-image,
 .landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-field-header-image,
 .landing section.page-content .pane-theme-terms-panel-pane-1 .views-field-field-header-image {
   margin-bottom: 10px;
 }
-/* line 83, ../sass/pages/_landing.scss */
+/* line 71, ../sass/pages/_landing.scss */
 .landing section.page-content .pane-curriculum-content-panel-pane-1 .views-field-field-introduction,
 .landing section.page-content .pane-curriculum-content-panel-pane-2 .views-field-field-introduction,
 .landing section.page-content .pane-theme-terms-panel-pane-1 .views-field-field-introduction {
   margin-bottom: 40px;
 }
-/* line 88, ../sass/pages/_landing.scss */
+/* line 76, ../sass/pages/_landing.scss */
 .landing section.page-content .pane-curriculum-content-panel-pane-1 .views-submit-button .btn-info,
 .landing section.page-content .pane-curriculum-content-panel-pane-2 .views-submit-button .btn-info,
 .landing section.page-content .pane-theme-terms-panel-pane-1 .views-submit-button .btn-info {
   background-color: #192d3b;
   border-color: #192d3b;
 }
-/* line 96, ../sass/pages/_landing.scss */
+/* line 84, ../sass/pages/_landing.scss */
 .landing section.page-content .pane-resource-library-panel-pane-1 h3 {
   font-family: "rucksack", sans-serif;
   font-size: 23px;
 }
-/* line 100, ../sass/pages/_landing.scss */
+/* line 88, ../sass/pages/_landing.scss */
 .landing section.page-content .pane-resource-library-panel-pane-1 h3 a {
   color: #000;
 }
-/* line 108, ../sass/pages/_landing.scss */
+/* line 96, ../sass/pages/_landing.scss */
 .landing section.page-content .views-widget-filter-field_themes_tid label, .landing section.page-content .views-widget-filter-field_values_tid label {
   text-transform: uppercase;
 }
-/* line 114, ../sass/pages/_landing.scss */
+/* line 102, ../sass/pages/_landing.scss */
 .landing .pane-node-field-header-image {
   margin-top: 20px;
 }
-/* line 118, ../sass/pages/_landing.scss */
+/* line 106, ../sass/pages/_landing.scss */
 .landing .glyphicon {
   margin-right: 5px;
   font-size: .75em;
 }
-/* line 124, ../sass/pages/_landing.scss */
+/* line 112, ../sass/pages/_landing.scss */
 .landing .sidebar .jumbotron {
   overflow: auto;
   margin-top: 1em;
@@ -907,34 +900,34 @@
   font-size: 18px;
   font-family: "PT-Sans";
 }
-/* line 135, ../sass/pages/_landing.scss */
+/* line 123, ../sass/pages/_landing.scss */
 .landing .pane-taxonomy-sidebar-panel-pane-1 h2, .landing .pane-taxonomy-sidebar-panel-pane-2 h2 {
   font-family: "rucksack", sans-serif;
   font-size: 23px;
   font-weight: 500;
   color: #603252;
 }
-/* line 142, ../sass/pages/_landing.scss */
+/* line 130, ../sass/pages/_landing.scss */
 .landing .pane-taxonomy-sidebar-panel-pane-1 .pane-content, .landing .pane-taxonomy-sidebar-panel-pane-2 .pane-content {
   font-size: 15px;
   line-height: 20px;
 }
-/* line 146, ../sass/pages/_landing.scss */
+/* line 134, ../sass/pages/_landing.scss */
 .landing .pane-taxonomy-sidebar-panel-pane-1 .pane-content a, .landing .pane-taxonomy-sidebar-panel-pane-2 .pane-content a {
   color: #000;
 }
-/* line 152, ../sass/pages/_landing.scss */
+/* line 140, ../sass/pages/_landing.scss */
 .landing .pane-search-form {
   margin-top: 25px;
 }
-/* line 156, ../sass/pages/_landing.scss */
+/* line 144, ../sass/pages/_landing.scss */
 .landing .pane-node-field-age-range,
 .landing .pane-node-field-program-duration {
   display: inline;
   float: left;
   margin-right: 40px;
 }
-/* line 165, ../sass/pages/_landing.scss */
+/* line 153, ../sass/pages/_landing.scss */
 .landing .field-name-field-age-range .field-item,
 .landing .field-name-field-program-duration .field-item {
   display: inline;
@@ -1045,7 +1038,7 @@ body .region-content {
 }
 /* line 134, ../sass/style.scss */
 body section.page-content {
-  background: url("../images/title-triangle.png") top center no-repeat;
+  background: url("../images/angled-background.png") center -450px no-repeat;
   z-index: 1;
 }
 /* line 138, ../sass/style.scss */
