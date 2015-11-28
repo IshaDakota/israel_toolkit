@@ -10,43 +10,32 @@
 
 .front {
   
-  header {
-    padding-bottom: 25px;
-  }
-
-  .homepage {
-      z-index: 1;
-      padding: 1em 2.5em 4em;
-  }
-  
-  .homepage:before {
-      -webkit-transform: rotate(-3deg);
-      transform: rotate(-3deg);
-      -webkit-transform-origin: 3% 0;
-      transform-origin: 3% 0;
-      top: 0;
-      left: -25%;
-      z-index: -1;
-      width: 150%;
-      height: 75%;
-      background: inherit;
-      overflow: hidden;
-  }
-  
   section.homepage {
       background: #fff;
   }
 
-  .homepage-message-wrapper {
-    margin: 0 auto 4em;;
-    text-align: center;
-    max-width: 780px;
-
-    .homepage-message {
-      font-size: .9em;
-      line-height: 1.2;        
-    }
+  .homepage-message {
+     background: url(../images/homepage-bkgnd.jpg) center top no-repeat;
+     background-size: cover;
+     height: auto;
+     
+     .message-container {
+       font-size: 22px;
+       line-height: 1.6;
+       background: rgba(255,255,255,0.9);
+       margin-top: 80px;
+       margin-bottom: 80px;
+       padding: 45px 25px;
+       
+       .message-text {
+         padding: 40px 0;
+         border-top: 3px solid $purple;
+         border-bottom: 3px solid $purple;
+       }
+     }
+     
   }
+  
   .learn-more-wrapper {
     margin: 0 auto 4.5em;;
     padding-top: 1em;

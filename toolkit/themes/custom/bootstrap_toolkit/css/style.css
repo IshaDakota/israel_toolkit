@@ -17,44 +17,31 @@
  * https://drupal.org/node/1707736
  */
 /* line 13, ../sass/pages/_homepage.scss */
-.front header {
-  padding-bottom: 25px;
-}
-/* line 17, ../sass/pages/_homepage.scss */
-.front .homepage {
-  z-index: 1;
-  padding: 1em 2.5em 4em;
-}
-/* line 22, ../sass/pages/_homepage.scss */
-.front .homepage:before {
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-  -webkit-transform-origin: 3% 0;
-  transform-origin: 3% 0;
-  top: 0;
-  left: -25%;
-  z-index: -1;
-  width: 150%;
-  height: 75%;
-  background: inherit;
-  overflow: hidden;
-}
-/* line 36, ../sass/pages/_homepage.scss */
 .front section.homepage {
   background: #fff;
 }
-/* line 40, ../sass/pages/_homepage.scss */
-.front .homepage-message-wrapper {
-  margin: 0 auto 4em;
-  text-align: center;
-  max-width: 780px;
+/* line 17, ../sass/pages/_homepage.scss */
+.front .homepage-message {
+  background: url(../images/homepage-bkgnd.jpg) center top no-repeat;
+  background-size: cover;
+  height: auto;
 }
-/* line 45, ../sass/pages/_homepage.scss */
-.front .homepage-message-wrapper .homepage-message {
-  font-size: .9em;
-  line-height: 1.2;
+/* line 22, ../sass/pages/_homepage.scss */
+.front .homepage-message .message-container {
+  font-size: 22px;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.9);
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 45px 25px;
 }
-/* line 50, ../sass/pages/_homepage.scss */
+/* line 30, ../sass/pages/_homepage.scss */
+.front .homepage-message .message-container .message-text {
+  padding: 40px 0;
+  border-top: 3px solid #603252;
+  border-bottom: 3px solid #603252;
+}
+/* line 39, ../sass/pages/_homepage.scss */
 .front .learn-more-wrapper {
   margin: 0 auto 4.5em;
   padding-top: 1em;
@@ -62,59 +49,59 @@
   border-top: 1px solid #ffffff;
   text-align: center;
 }
-/* line 57, ../sass/pages/_homepage.scss */
+/* line 46, ../sass/pages/_homepage.scss */
 .front .learn-more-wrapper .learn-more {
   text-transform: uppercase;
   font-size: 1.2em;
   line-height: 1.2;
 }
-/* line 64, ../sass/pages/_homepage.scss */
+/* line 53, ../sass/pages/_homepage.scss */
 .front .buckets {
   margin-bottom: 70px;
 }
-/* line 70, ../sass/pages/_homepage.scss */
+/* line 59, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section {
   margin-top: 130px;
 }
-/* line 73, ../sass/pages/_homepage.scss */
+/* line 62, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section h2.pane-title {
   text-align: center;
 }
-/* line 78, ../sass/pages/_homepage.scss */
+/* line 67, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.left, .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.right {
   background-image: none;
 }
-/* line 81, ../sass/pages/_homepage.scss */
+/* line 70, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.left .icon-prev, .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.left .icon-next, .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.right .icon-prev, .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.right .icon-next {
   color: #000;
   font-size: 100px;
 }
-/* line 89, ../sass/pages/_homepage.scss */
+/* line 78, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section .view-toolkit-sliders .item img {
   padding-top: 150px;
   margin: 0 auto;
 }
-/* line 94, ../sass/pages/_homepage.scss */
+/* line 83, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section .view-toolkit-sliders .item .carousel-caption {
   bottom: auto;
   top: 0;
   text-shadow: none;
 }
-/* line 99, ../sass/pages/_homepage.scss */
+/* line 88, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section .view-toolkit-sliders .item .carousel-caption h3 {
   color: #428bca;
 }
-/* line 103, ../sass/pages/_homepage.scss */
+/* line 92, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section .view-toolkit-sliders .item .carousel-caption p {
   color: #000000;
 }
-/* line 112, ../sass/pages/_homepage.scss */
+/* line 101, ../sass/pages/_homepage.scss */
 .front .hr {
   width: 50%;
   border-bottom: 2px solid #000;
   margin: 25px auto;
 }
-/* line 119, ../sass/pages/_homepage.scss */
+/* line 108, ../sass/pages/_homepage.scss */
 .front .window .toolkit-title a {
   display: block;
   max-height: 230px;
@@ -124,12 +111,12 @@
   font-family: "freight-text-pro";
   font-size: 1.2em;
 }
-/* line 130, ../sass/pages/_homepage.scss */
+/* line 119, ../sass/pages/_homepage.scss */
 .front .window .toolkit-title a:hover {
   text-decoration: none;
   transition: all 0.3s ease 0s;
 }
-/* line 135, ../sass/pages/_homepage.scss */
+/* line 124, ../sass/pages/_homepage.scss */
 .front .window .toolkit-desc {
   margin-top: 10px;
   text-align: center;
@@ -138,31 +125,31 @@
   font-weight: bold;
   font-family: "PT-Sans";
 }
-/* line 143, ../sass/pages/_homepage.scss */
+/* line 132, ../sass/pages/_homepage.scss */
 .front .window .toolkit-desc p {
   margin-bottom: 20px;
 }
-/* line 150, ../sass/pages/_homepage.scss */
+/* line 139, ../sass/pages/_homepage.scss */
 .front .toolkit-content .toolkit-title a {
   background: linear-gradient(rgba(63, 88, 105, 0.5), rgba(63, 88, 105, 0.5)), url(../images/content.jpg);
 }
-/* line 159, ../sass/pages/_homepage.scss */
+/* line 148, ../sass/pages/_homepage.scss */
 .front .toolkit-content .toolkit-title a:hover {
   background: linear-gradient(rgba(63, 88, 105, 0.7), rgba(63, 88, 105, 0.7)), url(../images/content.jpg);
 }
-/* line 171, ../sass/pages/_homepage.scss */
+/* line 160, ../sass/pages/_homepage.scss */
 .front .toolkit-concepts .toolkit-title a {
   background: linear-gradient(rgba(126, 48, 48, 0.5), rgba(126, 48, 48, 0.5)), url(../images/concepts.jpg);
 }
-/* line 180, ../sass/pages/_homepage.scss */
+/* line 169, ../sass/pages/_homepage.scss */
 .front .toolkit-concepts .toolkit-title a:hover {
   background: linear-gradient(rgba(126, 48, 48, 0.7), rgba(126, 48, 48, 0.7)), url(../images/concepts.jpg);
 }
-/* line 192, ../sass/pages/_homepage.scss */
+/* line 181, ../sass/pages/_homepage.scss */
 .front .toolkit-library .toolkit-title a {
   background: linear-gradient(rgba(221, 165, 98, 0.5), rgba(221, 165, 98, 0.5)), url(../images/library.jpg);
 }
-/* line 201, ../sass/pages/_homepage.scss */
+/* line 190, ../sass/pages/_homepage.scss */
 .front .toolkit-library .toolkit-title a:hover {
   background: linear-gradient(rgba(221, 165, 98, 0.7), rgba(221, 165, 98, 0.7)), url(../images/library.jpg);
 }
