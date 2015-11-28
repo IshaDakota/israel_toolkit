@@ -267,21 +267,27 @@
   color: #603252;
   text-transform: uppercase;
 }
-/* line 105, ../sass/pages/_curriculum.scss */
+/* line 104, ../sass/pages/_curriculum.scss */
+.node-type-curriculum-content .pane-node-field-themes .field-label a .glyphicon,
+.node-type-curriculum-content .pane-node-field-age-range .field-label a .glyphicon,
+.node-type-curriculum-content .pane-node-field-timely-relevance .field-label a .glyphicon {
+  color: #603252;
+}
+/* line 109, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-themes .field-item a,
 .node-type-curriculum-content .pane-node-field-age-range .field-item a,
 .node-type-curriculum-content .pane-node-field-timely-relevance .field-item a {
   color: #000;
   font-size: 15px;
 }
-/* line 111, ../sass/pages/_curriculum.scss */
+/* line 115, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-background-resource,
 .node-type-curriculum-content .pane-node-field-discussion-guide,
 .node-type-curriculum-content .pane-node-field-supporting-materials {
   margin: 10px 0;
   padding: 0;
 }
-/* line 117, ../sass/pages/_curriculum.scss */
+/* line 121, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-background-resource a .field-label,
 .node-type-curriculum-content .pane-node-field-discussion-guide a .field-label,
 .node-type-curriculum-content .pane-node-field-supporting-materials a .field-label {
@@ -290,14 +296,14 @@
   text-transform: uppercase;
   color: #603252;
 }
-/* line 123, ../sass/pages/_curriculum.scss */
+/* line 127, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-background-resource a .field-label .glyphicon,
 .node-type-curriculum-content .pane-node-field-discussion-guide a .field-label .glyphicon,
 .node-type-curriculum-content .pane-node-field-supporting-materials a .field-label .glyphicon {
   margin-right: 5px;
   font-size: 20px;
 }
-/* line 129, ../sass/pages/_curriculum.scss */
+/* line 133, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-background-resource a:hover, .node-type-curriculum-content .pane-node-field-background-resource a:focus .field-label,
 .node-type-curriculum-content .pane-node-field-discussion-guide a:hover,
 .node-type-curriculum-content .pane-node-field-discussion-guide a:focus .field-label,
@@ -305,26 +311,26 @@
 .node-type-curriculum-content .pane-node-field-supporting-materials a:focus .field-label {
   text-decoration: none;
 }
-/* line 133, ../sass/pages/_curriculum.scss */
+/* line 137, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-background-resource .field-item,
 .node-type-curriculum-content .pane-node-field-discussion-guide .field-item,
 .node-type-curriculum-content .pane-node-field-supporting-materials .field-item {
   margin-left: 25px;
 }
-/* line 136, ../sass/pages/_curriculum.scss */
+/* line 140, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-background-resource .field-item .glyphicon,
 .node-type-curriculum-content .pane-node-field-discussion-guide .field-item .glyphicon,
 .node-type-curriculum-content .pane-node-field-supporting-materials .field-item .glyphicon {
   margin-right: 5px;
   color: #603252;
 }
-/* line 140, ../sass/pages/_curriculum.scss */
+/* line 144, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-background-resource .field-item a,
 .node-type-curriculum-content .pane-node-field-discussion-guide .field-item a,
 .node-type-curriculum-content .pane-node-field-supporting-materials .field-item a {
   color: #000;
 }
-/* line 144, ../sass/pages/_curriculum.scss */
+/* line 148, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-field-background-resource .field-item a:hover, .node-type-curriculum-content .pane-node-field-background-resource .field-item a:focus,
 .node-type-curriculum-content .pane-node-field-discussion-guide .field-item a:hover,
 .node-type-curriculum-content .pane-node-field-discussion-guide .field-item a:focus,
@@ -332,41 +338,41 @@
 .node-type-curriculum-content .pane-node-field-supporting-materials .field-item a:focus {
   text-decoration: underline;
 }
-/* line 151, ../sass/pages/_curriculum.scss */
+/* line 155, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .field-name-field-supporting-image img {
   float: left;
   margin: 10px;
 }
-/* line 159, ../sass/pages/_curriculum.scss */
+/* line 163, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .pane-node-body img {
   max-width: 100%;
   height: auto;
 }
-/* line 165, ../sass/pages/_curriculum.scss */
+/* line 169, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .sidebar {
   margin-top: 20px;
 }
-/* line 169, ../sass/pages/_curriculum.scss */
+/* line 173, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .field-brief-description {
   margin-bottom: 20px;
 }
-/* line 174, ../sass/pages/_curriculum.scss */
+/* line 178, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .node-curriculum-activity-parts .field-title {
   background: #603252;
   padding: 10px;
 }
-/* line 178, ../sass/pages/_curriculum.scss */
+/* line 182, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .node-curriculum-activity-parts .field-title a {
   color: #ffffff;
   font-weight: 500;
   font-size: 17px;
   text-transform: uppercase;
 }
-/* line 184, ../sass/pages/_curriculum.scss */
+/* line 188, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .node-curriculum-activity-parts .field-title a .glyphicon {
   margin-right: 5px;
 }
-/* line 189, ../sass/pages/_curriculum.scss */
+/* line 193, ../sass/pages/_curriculum.scss */
 .node-type-curriculum-content .node-curriculum-activity-parts .field-title a:hover, .node-type-curriculum-content .node-curriculum-activity-parts .field-title a:focus {
   text-decoration: none;
 }
