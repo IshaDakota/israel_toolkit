@@ -98,6 +98,19 @@
     }
   }
   
+  .homepage-texts {
+    h2  {
+      padding: 10px 50px;
+      color: #fff;
+    }
+  }
+  
+  .approach h2 { background: $pink; }
+  .pillars h2 { background: $aqua; }
+  .values h2 { background: $purple; }
+
+
+  
   .hr {
     width: 50%;
     border-bottom: 2px solid #000;
@@ -197,4 +210,42 @@
         url(../images/library.jpg);  
     }    
   }
+
+.slider {
+  .panel-panel {
+    padding-top: 50px;
+  }
+}
+  .slide__media {
+    background: $dark-gray;
+
+  }
+  
+  .slide__caption {
+    color: #fff;
+    a {
+      color: #fff;
+    }
+    p {
+      font-size: 18px;
+      padding-right: 50px;
+    }
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-prev::before, .slick-next::before {
+    color: #fff;
+    font-size: 4rem;
+  }
+  .slick__arrow {
+
+  }
+  
 }

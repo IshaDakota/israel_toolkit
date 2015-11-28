@@ -22,7 +22,7 @@
     </div>
   </div>
   <div class="container">
-    <div class="row learn-more">
+    <div class="row homepage-texts approach">
       <div class="col-md-12 content panel-panel">
         <div class="panel-panel-inner">
           <?php print $content['window1']; ?>
@@ -31,7 +31,7 @@
     </div>
   </div>
   <div class="container">
-    <div class="row learn-more">
+    <div class="row homepage-texts pillars">
       <div class="col-md-12 content panel-panel">
         <div class="panel-panel-inner">
           <?php print $content['window2']; ?>
@@ -40,7 +40,7 @@
     </div>
   </div>
   <div class="container">
-    <div class="row learn-more">
+    <div class="row homepage-texts values">
       <div class="col-md-12 content panel-panel">
         <div class="panel-panel-inner">
           <?php print $content['window3']; ?>
