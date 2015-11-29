@@ -41,7 +41,12 @@
   border-top: 3px solid #603252;
   border-bottom: 3px solid #603252;
 }
-/* line 39, ../sass/pages/_homepage.scss */
+/* line 35, ../sass/pages/_homepage.scss */
+.front .homepage-message .message-container .message-text a {
+  color: #000;
+  font-weight: 500;
+}
+/* line 45, ../sass/pages/_homepage.scss */
 .front .learn-more-wrapper {
   margin: 0 auto 4.5em;
   padding-top: 1em;
@@ -49,76 +54,117 @@
   border-top: 1px solid #ffffff;
   text-align: center;
 }
-/* line 46, ../sass/pages/_homepage.scss */
+/* line 52, ../sass/pages/_homepage.scss */
 .front .learn-more-wrapper .learn-more {
   text-transform: uppercase;
   font-size: 1.2em;
   line-height: 1.2;
 }
-/* line 53, ../sass/pages/_homepage.scss */
+/* line 59, ../sass/pages/_homepage.scss */
 .front .buckets {
   margin-bottom: 70px;
 }
-/* line 59, ../sass/pages/_homepage.scss */
+/* line 65, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section {
   margin-top: 130px;
 }
-/* line 62, ../sass/pages/_homepage.scss */
+/* line 68, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section h2.pane-title {
   text-align: center;
 }
-/* line 67, ../sass/pages/_homepage.scss */
+/* line 73, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.left, .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.right {
   background-image: none;
 }
-/* line 70, ../sass/pages/_homepage.scss */
+/* line 76, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.left .icon-prev, .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.left .icon-next, .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.right .icon-prev, .front .learn-more #expand-section .view-toolkit-sliders .carousel-control.right .icon-next {
   color: #000;
   font-size: 100px;
 }
-/* line 78, ../sass/pages/_homepage.scss */
+/* line 84, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section .view-toolkit-sliders .item img {
   padding-top: 150px;
   margin: 0 auto;
 }
-/* line 83, ../sass/pages/_homepage.scss */
+/* line 89, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section .view-toolkit-sliders .item .carousel-caption {
   bottom: auto;
   top: 0;
   text-shadow: none;
 }
-/* line 88, ../sass/pages/_homepage.scss */
+/* line 94, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section .view-toolkit-sliders .item .carousel-caption h3 {
   color: #428bca;
 }
-/* line 92, ../sass/pages/_homepage.scss */
+/* line 98, ../sass/pages/_homepage.scss */
 .front .learn-more #expand-section .view-toolkit-sliders .item .carousel-caption p {
   color: #000000;
 }
-/* line 102, ../sass/pages/_homepage.scss */
+/* line 107, ../sass/pages/_homepage.scss */
+.front .homepage-texts {
+  min-height: 100vh;
+}
+/* line 110, ../sass/pages/_homepage.scss */
 .front .homepage-texts h2 {
   padding: 10px 50px;
   color: #fff;
 }
-/* line 108, ../sass/pages/_homepage.scss */
+/* line 115, ../sass/pages/_homepage.scss */
+.front .homepage-texts .view-id-page_element {
+  padding-top: 50px;
+}
+/* line 119, ../sass/pages/_homepage.scss */
+.front .homepage-texts p {
+  padding: 0 50px;
+  font-size: 20px;
+  line-height: 36px;
+}
+/* line 125, ../sass/pages/_homepage.scss */
+.front .homepage-texts img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+/* line 131, ../sass/pages/_homepage.scss */
+.front .homepage-texts .nav-boxes {
+  text-align: center;
+  font-size: 36px;
+}
+/* line 137, ../sass/pages/_homepage.scss */
+.front .homepage-texts .nav-boxes a .glyphicon {
+  margin: 65px 50px;
+}
+/* line 146, ../sass/pages/_homepage.scss */
 .front .approach h2 {
   background: #f45d52;
 }
-/* line 109, ../sass/pages/_homepage.scss */
+/* line 150, ../sass/pages/_homepage.scss */
+.front .approach .nav-boxes a {
+  color: #f45d52;
+}
+/* line 157, ../sass/pages/_homepage.scss */
 .front .pillars h2 {
   background: #2689a6;
 }
-/* line 110, ../sass/pages/_homepage.scss */
+/* line 161, ../sass/pages/_homepage.scss */
+.front .pillars .nav-boxes a {
+  color: #2689a6;
+}
+/* line 168, ../sass/pages/_homepage.scss */
 .front .values h2 {
   background: #603252;
 }
-/* line 114, ../sass/pages/_homepage.scss */
+/* line 172, ../sass/pages/_homepage.scss */
+.front .values .nav-boxes a {
+  color: #603252;
+}
+/* line 177, ../sass/pages/_homepage.scss */
 .front .hr {
   width: 50%;
   border-bottom: 2px solid #000;
   margin: 25px auto;
 }
-/* line 121, ../sass/pages/_homepage.scss */
+/* line 184, ../sass/pages/_homepage.scss */
 .front .window .toolkit-title a {
   display: block;
   max-height: 230px;
@@ -128,12 +174,12 @@
   font-family: "freight-text-pro";
   font-size: 1.2em;
 }
-/* line 132, ../sass/pages/_homepage.scss */
+/* line 195, ../sass/pages/_homepage.scss */
 .front .window .toolkit-title a:hover {
   text-decoration: none;
   transition: all 0.3s ease 0s;
 }
-/* line 137, ../sass/pages/_homepage.scss */
+/* line 200, ../sass/pages/_homepage.scss */
 .front .window .toolkit-desc {
   margin-top: 10px;
   text-align: center;
@@ -142,64 +188,64 @@
   font-weight: bold;
   font-family: "PT-Sans";
 }
-/* line 145, ../sass/pages/_homepage.scss */
+/* line 208, ../sass/pages/_homepage.scss */
 .front .window .toolkit-desc p {
   margin-bottom: 20px;
 }
-/* line 152, ../sass/pages/_homepage.scss */
+/* line 215, ../sass/pages/_homepage.scss */
 .front .toolkit-content .toolkit-title a {
   background: linear-gradient(rgba(63, 88, 105, 0.5), rgba(63, 88, 105, 0.5)), url(../images/content.jpg);
 }
-/* line 161, ../sass/pages/_homepage.scss */
+/* line 224, ../sass/pages/_homepage.scss */
 .front .toolkit-content .toolkit-title a:hover {
   background: linear-gradient(rgba(63, 88, 105, 0.7), rgba(63, 88, 105, 0.7)), url(../images/content.jpg);
 }
-/* line 173, ../sass/pages/_homepage.scss */
+/* line 236, ../sass/pages/_homepage.scss */
 .front .toolkit-concepts .toolkit-title a {
   background: linear-gradient(rgba(126, 48, 48, 0.5), rgba(126, 48, 48, 0.5)), url(../images/concepts.jpg);
 }
-/* line 182, ../sass/pages/_homepage.scss */
+/* line 245, ../sass/pages/_homepage.scss */
 .front .toolkit-concepts .toolkit-title a:hover {
   background: linear-gradient(rgba(126, 48, 48, 0.7), rgba(126, 48, 48, 0.7)), url(../images/concepts.jpg);
 }
-/* line 194, ../sass/pages/_homepage.scss */
+/* line 257, ../sass/pages/_homepage.scss */
 .front .toolkit-library .toolkit-title a {
   background: linear-gradient(rgba(221, 165, 98, 0.5), rgba(221, 165, 98, 0.5)), url(../images/library.jpg);
 }
-/* line 203, ../sass/pages/_homepage.scss */
+/* line 266, ../sass/pages/_homepage.scss */
 .front .toolkit-library .toolkit-title a:hover {
   background: linear-gradient(rgba(221, 165, 98, 0.7), rgba(221, 165, 98, 0.7)), url(../images/library.jpg);
 }
-/* line 215, ../sass/pages/_homepage.scss */
+/* line 278, ../sass/pages/_homepage.scss */
 .front .slider .panel-panel {
   padding-top: 50px;
 }
-/* line 219, ../sass/pages/_homepage.scss */
+/* line 282, ../sass/pages/_homepage.scss */
 .front .slide__media {
   background: #555555;
 }
-/* line 224, ../sass/pages/_homepage.scss */
+/* line 287, ../sass/pages/_homepage.scss */
 .front .slide__caption {
   color: #fff;
 }
-/* line 226, ../sass/pages/_homepage.scss */
+/* line 289, ../sass/pages/_homepage.scss */
 .front .slide__caption a {
   color: #fff;
 }
-/* line 229, ../sass/pages/_homepage.scss */
+/* line 292, ../sass/pages/_homepage.scss */
 .front .slide__caption p {
   font-size: 18px;
   padding-right: 50px;
 }
-/* line 235, ../sass/pages/_homepage.scss */
+/* line 298, ../sass/pages/_homepage.scss */
 .front .slick-next {
   right: 10px;
 }
-/* line 239, ../sass/pages/_homepage.scss */
+/* line 302, ../sass/pages/_homepage.scss */
 .front .slick-prev {
   left: 10px;
 }
-/* line 243, ../sass/pages/_homepage.scss */
+/* line 306, ../sass/pages/_homepage.scss */
 .front .slick-prev::before, .front .slick-next::before {
   color: #fff;
   font-size: 4rem;

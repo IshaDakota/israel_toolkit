@@ -61,6 +61,7 @@ scripts[] = 'js/bootstrap_toolkit.js'
 scripts[] = 'js/slick.min.js'
 scripts[] = 'js/toolkit_collapse.js'
 scripts[] = 'js/carousel.js'
+scripts[] = 'js/anchors.js'
 
 ; ;-------------------------
 ; ; METHOD 2: Bootstrap CDN
