@@ -121,7 +121,6 @@
   }
   
   .homepage-texts {
-    //min-height: 100vh;
     margin-bottom: 58px;
     
     h2  {
@@ -133,10 +132,14 @@
       padding-top: 50px;
     }
     
-    p {
+    p, ul {
       padding: 0 50px;
       font-size: 20px;
       line-height: 36px;
+    }
+    
+    ul {
+      margin-left: 50px;
     }
     
     img {
