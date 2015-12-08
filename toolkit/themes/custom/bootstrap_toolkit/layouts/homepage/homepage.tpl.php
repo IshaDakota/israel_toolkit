@@ -34,12 +34,6 @@
           </div>      
         </div>
       </div>
-      <div class="row">
-        <div class="nav-boxes">
-          <a href="#pillars-box" class="smooth"><span class="glyphicon glyphicon-chevron-down"></span></a>
-          <a href="#page-top" class="smooth">Top</a>
-        </div>
-      </div>  
     </div>
 
     <div id="pillars-box" class="homepage-texts pillars">
@@ -54,13 +48,6 @@
           </div>      
         </div>
       </div>
-      <div class="row">
-        <div class="nav-boxes">
-          <a href="#approach-box" class="smooth"><span class="glyphicon glyphicon-chevron-up"></span></a>
-          <a href="#page-top" class="smooth">Top</a>
-          <a href="#values-box" class="smooth"><span class="glyphicon glyphicon-chevron-down"></span></a>
-        </div>
-      </div>
     </div>
 
     <div id="values-box" class="homepage-texts values">
@@ -73,12 +60,6 @@
           <div class="panel-panel-inner">
             <?php print $content['window3']; ?>
           </div>      
-        </div>
-      </div>
-      <div class="row">
-        <div class="nav-boxes">
-          <a href="#page-top" class="smooth">Top</a>
-          <a href="#pillars-box" class="smooth"><span class="glyphicon glyphicon-chevron-up"></span></a>
         </div>
       </div>
     </div>
