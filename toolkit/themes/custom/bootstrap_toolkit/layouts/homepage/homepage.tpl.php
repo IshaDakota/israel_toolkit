@@ -1,51 +1,84 @@
-<?php
-/**
- * @file
- * Template for Toolkit Homepage.
- *
- * Variables:
- * - $css_id: An optional CSS id to use for the layout.
- * - $content: An array of content, each item in the array is keyed to one
- * panel of the layout. This layout supports the following sections:
- */
-?>
+<section id="page-top" class="homepage-content">
+  <div class="fluid-container">
+    <div class="row">
+      <div class="homepage-message clearfix">
+        <div class="col-md-6 col-md-offset-3 panel-panel">
+          <div class="message-container">
+            <div class="message-text">
+              <?php print $content['description']; ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div id="content-slider" class="row slider">
+      <div class="col-md-12 content panel-panel">
+        <div class="panel-panel-inner">
+          <?php print $content['slider']; ?>
+        </div>
+      </div>
+    </div>
+    <div id="approach-box" class="homepage-texts approach">
+      <div class="row">
+        <h2>Our Approach</h2>
+        <div class="col-md-4">
+          <img src="<?php print path_to_theme() ?>/images/approaches.png" class="img-responsive">
+        </div>
+        <div class="col-md-8 content panel-panel">
+          <div class="panel-panel-inner">
+            <?php print $content['window1']; ?>
+          </div>      
+        </div>
+      </div>
+      <div class="row">
+        <div class="nav-boxes">
+          <a href="#pillars-box" class="smooth"><span class="glyphicon glyphicon-chevron-down"></span></a>
+          <a href="#page-top" class="smooth">Top</a>
+        </div>
+      </div>  
+    </div>
 
-<div class="panel-display homepage clearfix <?php if (!empty($classes)) { print $classes; } ?><?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
-  <div class="row buckets">
-    <div class="col-md-4 panel-panel">
-      <div class="panel-panel-inner">
-        <div class="window toolkit-content">
-          <div class="toolkit-title upper h3"><a href="curriculum-content"><?php print t('Programs & Activities'); ?></a></div>
-          <div class="toolkit-desc"><?php print $content['window1']; ?></div>
+    <div id="pillars-box" class="homepage-texts pillars">
+      <div class="row">
+        <h2>Educational Pillars</h2>
+        <div class="col-md-4 col-md-push-8">
+          <img src="<?php print path_to_theme() ?>/images/pillars.png" class="img-responsive">
+        </div>
+        <div class="col-md-8 col-md-pull-4 content panel-panel">
+          <div class="panel-panel-inner">
+            <?php print $content['window2']; ?>
+          </div>      
+        </div>
+      </div>
+      <div class="row">
+        <div class="nav-boxes">
+          <a href="#approach-box" class="smooth"><span class="glyphicon glyphicon-chevron-up"></span></a>
+          <a href="#page-top" class="smooth">Top</a>
+          <a href="#values-box" class="smooth"><span class="glyphicon glyphicon-chevron-down"></span></a>
         </div>
       </div>
     </div>
-    <div class="col-md-4 panel-panel">
-      <div class="panel-panel-inner">
-        <div class="window toolkit-library">
-          <div class="toolkit-title upper h3"><a href="resource-library"><?php print t('Educational Resources'); ?></a></div>
-          <div class="toolkit-desc"><?php print $content['window3']; ?></div>
+
+    <div id="values-box" class="homepage-texts values">
+      <div class="row">
+        <h2>Framing Values</h2>
+        <div class="col-md-4">
+          <img src="<?php print path_to_theme() ?>/images/values.png" class="img-responsive">
+        </div>
+        <div class="col-md-8 content panel-panel clearfix">
+          <div class="panel-panel-inner">
+            <?php print $content['window3']; ?>
+          </div>      
         </div>
       </div>
-    </div>
-    <div class="col-md-4 panel-panel">
-      <div class="panel-panel-inner">
-        <div class="window toolkit-concepts">
-          <div class="toolkit-title upper h3"><a href="questions-concepts"><?php print t('Questions & Concepts'); ?></a></div>
-          <div class="toolkit-desc"><?php print $content['window2']; ?></div>
+      <div class="row">
+        <div class="nav-boxes">
+          <a href="#page-top" class="smooth">Top</a>
+          <a href="#pillars-box" class="smooth"><span class="glyphicon glyphicon-chevron-up"></span></a>
         </div>
       </div>
     </div>
   </div>
-  <div class="row learn-more">
-    <div class="col-md-12 content panel-panel">
-      <div class="panel-panel-inner">
-        <div class="hr"></div>
-        <div id="expand-section">
-          <a id="specialcontent"></a>
-          <?php print $content['contentmain']; ?>
-        </div>
-      </div>
-    </div>
-  </div>
-</div><!-- /.burr-flipped -->
+</section>

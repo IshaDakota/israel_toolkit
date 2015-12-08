@@ -30,11 +30,11 @@ function toolkit_content_slider_image_default_styles() {
   $styles['slider_image'] = array(
     'label' => 'Slider Image',
     'effects' => array(
-      2 => array(
+      3 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 600,
-          'height' => 600,
+          'width' => 640,
+          'height' => 480,
         ),
         'weight' => 1,
       ),

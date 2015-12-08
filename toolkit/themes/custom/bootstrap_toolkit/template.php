@@ -5,6 +5,15 @@
  * template.php
  */
 
+/**
+ * Preprocess page.
+ */
+function bootstrap_subtheme_preprocess_page(&$variables) {
+//  drupal_add_js('js/carousel.js');
+}
+
+
+
 function bootstrap_toolkit_preprocess_field(&$variables) {
 
   // Add 'img-responsive' class to header images.
