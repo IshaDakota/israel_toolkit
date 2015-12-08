@@ -5,6 +5,8 @@
         <div class="col-md-6 col-md-offset-3 panel-panel">
           <div class="message-container">
             <div class="message-text">
+              <h1 class="homepage-title">Approaching Conflicts</h1>
+              <h2 class="homepage-subtitle">Contexts, Perspectives, and Values in Israel Education</h2>
               <?php print $content['description']; ?>
             </div>
           </div>

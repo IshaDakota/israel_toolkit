@@ -20,7 +20,7 @@
      height: auto;
      
      .message-container {
-       font-size: 22px;
+       font-size: 20px;
        line-height: 1.6;
        background: rgba(255,255,255,0.9);
        margin-top: 80px;
@@ -28,9 +28,24 @@
        padding: 45px 25px;
        
        .message-text {
-         padding: 40px 0;
-         border-top: 3px solid $purple;
-         border-bottom: 3px solid $purple;
+         padding: 15px 0 40px;
+         border-top: 1px solid $purple;
+         border-bottom: 1px solid $purple;
+         
+         .homepage-title {
+           font-size: 36px;
+           font-family: "rucksack", sans-serif;
+           text-transform: uppercase;
+           font-weight: 500;
+           color: $purple;
+         }
+        .homepage-subtitle {
+           font-family: "rucksack", sans-serif;
+           font-size: 22px;
+           margin-top: 0;
+           margin-bottom: 25px;
+           color: $purple;
+         }
          
          a {
            color: #000;
