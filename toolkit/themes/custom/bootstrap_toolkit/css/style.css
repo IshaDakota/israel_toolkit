@@ -1029,21 +1029,27 @@
   line-height: 20px;
 }
 /* line 134, ../sass/pages/_landing.scss */
+.landing .pane-taxonomy-sidebar-panel-pane-1 .pane-content .views-row, .landing .pane-taxonomy-sidebar-panel-pane-2 .pane-content .views-row {
+  margin-bottom: 6px;
+  padding-left: 7px;
+  text-indent: -7px;
+}
+/* line 140, ../sass/pages/_landing.scss */
 .landing .pane-taxonomy-sidebar-panel-pane-1 .pane-content a, .landing .pane-taxonomy-sidebar-panel-pane-2 .pane-content a {
   color: #000;
 }
-/* line 140, ../sass/pages/_landing.scss */
+/* line 146, ../sass/pages/_landing.scss */
 .landing .pane-search-form {
   margin-top: 25px;
 }
-/* line 144, ../sass/pages/_landing.scss */
+/* line 150, ../sass/pages/_landing.scss */
 .landing .pane-node-field-age-range,
 .landing .pane-node-field-program-duration {
   display: inline;
   float: left;
   margin-right: 40px;
 }
-/* line 153, ../sass/pages/_landing.scss */
+/* line 159, ../sass/pages/_landing.scss */
 .landing .field-name-field-age-range .field-item,
 .landing .field-name-field-program-duration .field-item {
   display: inline;
