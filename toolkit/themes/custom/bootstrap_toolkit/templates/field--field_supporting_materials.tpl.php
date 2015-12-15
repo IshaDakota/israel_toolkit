@@ -1,6 +1,6 @@
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
-    <a class="collapsed" data-toggle="collapse" href="#collapse-supporting-materials"></span><div class="field-label"<?php print $title_attributes; ?>><span class="glyphicon glyphicon-plus-sign"></span>Resources Refrenced</div></a>
+    <a class="collapsed" data-toggle="collapse" href="#collapse-supporting-materials"></span><div class="field-label"<?php print $title_attributes; ?>><span class="glyphicon glyphicon-plus-sign"></span>Resources Referenced</div></a>
   <?php endif; ?>
   <div id ="collapse-supporting-materials" class="collapse field-items"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item): ?>

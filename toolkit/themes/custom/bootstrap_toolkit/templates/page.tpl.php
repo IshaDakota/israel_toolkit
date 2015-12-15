@@ -114,7 +114,7 @@
       <div class="col-md-12 footer-credit">
         <div class="icenter-logo"></div>
         <div class="jjf-logo"></div>
-        <p>The Conflict Toolkit is a project of <a href="http://www.theicenter.org">the iCenter</a> made possible through a grant from the Jim Joseph Foundation.</p>
+        <p><em>Approaching Conflicts</em> is a project of <a href="http://www.theicenter.org">the iCenter</a> made possible through a grant from the Jim Joseph Foundation.</p>
       </div>
     </div>
   </div>
